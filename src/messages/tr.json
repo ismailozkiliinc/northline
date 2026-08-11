@@ -1,0 +1,872 @@
+{
+  "meta": {
+    "title": "Northline — Dijital ürün stüdyosu",
+    "description": "İşletmeleri büyüten web siteleri, mobil uygulamalar ve özel dijital ürünler tasarlıyor ve geliştiriyoruz.",
+    "ogAlt": "Northline dijital ürün stüdyosu"
+  },
+  "nav": {
+    "work": "Çalışmalar",
+    "services": "Hizmetler",
+    "process": "Süreç",
+    "about": "Hakkımızda",
+    "insights": "İçgörüler",
+    "start": "Proje Başlat",
+    "contact": "İletişim",
+    "faq": "SSS",
+    "packages": "Paketler",
+    "menu": "Menü",
+    "close": "Kapat",
+    "skip": "İçeriğe geç"
+  },
+  "hero": {
+    "title": "İşletmeleri büyüten dijital ürünler tasarlıyor ve geliştiriyoruz.",
+    "subtitle": "Strateji, tasarım ve yazılımı tek stüdyoda birleştirerek web, mobil ve ölçeklenebilir ürün deneyimleri kuruyoruz.",
+    "ctaPrimary": "Projenizi Anlatın",
+    "ctaSecondary": "Çalışmaları İnceleyin",
+    "capabilities": [
+      "Web",
+      "Mobil",
+      "SaaS",
+      "E-Ticaret",
+      "UI/UX",
+      "AI ve Otomasyon"
+    ]
+  },
+  "work": {
+    "title": "Seçilmiş dijital ürünler",
+    "subtitle": "Demo vaka çalışmaları — gerçek müşteri verisi eklendikçe güncellenir.",
+    "viewProject": "Projeyi Gör",
+    "all": "Tüm çalışmalar",
+    "comingSoon": "Yakında",
+    "demoLabel": "Demo Case Study",
+    "sector": "Sektör",
+    "services": "Hizmetler",
+    "platforms": "Platformlar",
+    "problem": "Problem",
+    "next": "Sonraki proje",
+    "eyebrow": "Portföy",
+    "viewCase": "Vaka çalışmasını incele",
+    "solution": "Çözüm"
+  },
+  "services": {
+    "title": "Bir fikrin yayına çıkması için gereken tüm yetkinlikler.",
+    "subtitle": "Web, mobil, ürün tasarımı ve yazılım — tek stüdyoda, net süreçle.",
+    "viewAll": "Tüm hizmetler",
+    "cta": "Bu hizmet için teklif al",
+    "items": {
+      "web": {
+        "title": "Kurumsal Web Siteleri",
+        "desc": "Markayı net anlatan, SEO uyumlu ve yönetilebilir web deneyimleri."
+      },
+      "mobile": {
+        "title": "Mobil Uygulamalar",
+        "desc": "iOS ve Android için ölçeklenebilir ürünler — üyelik, ödeme ve yayın desteğiyle."
+      },
+      "saas": {
+        "title": "Özel Yazılım ve SaaS",
+        "desc": "CRM, rezervasyon, panel ve iş akışı uygulamaları."
+      },
+      "uiux": {
+        "title": "UI/UX ve Ürün Tasarımı",
+        "desc": "Araştırmadan tasarım sistemine — kullanılabilir, tutarlı arayüzler."
+      },
+      "ecommerce": {
+        "title": "E-Ticaret",
+        "desc": "Ürün, ödeme, stok ve sipariş yönetimini dönüşüme odaklı kuruyoruz."
+      },
+      "ai": {
+        "title": "Yapay Zekâ ve Otomasyon",
+        "desc": "Chatbot, doküman işleme ve iş akışı otomasyonları — insan kontrolüyle."
+      },
+      "support": {
+        "title": "Bakım ve Büyüme",
+        "desc": "Yayın sonrası güvenlik, performans, SEO ve özellik geliştirmeleri."
+      }
+    },
+    "eyebrow": "Hizmetler",
+    "subtitleStrong": "Strateji, tasarım ve yazılımı tek ekipte birleştirerek web, mobil ve ölçeklenebilir dijital ürünler geliştiriyoruz.",
+    "forWhom": "Kimler için",
+    "tech": "Teknoloji",
+    "processHint": "Süreç"
+  },
+  "why": {
+    "title": "Nasıl çalışıyoruz",
+    "subtitle": "Soyut övgüler değil; proje boyunca güvene dayanan prensipler.",
+    "items": [
+      {
+        "title": "Tasarım ve geliştirme tek ekipte",
+        "desc": "Elden ele teslim yok; kararlar hızlanır, tutarlılık artar."
+      },
+      {
+        "title": "Ölçeklenebilir mimari",
+        "desc": "Web ve mobil ürünler büyümeye uygun yapıda planlanır."
+      },
+      {
+        "title": "Şeffaf iletişim",
+        "desc": "Haftalık ilerleme, açık kapsam ve görünür backlog."
+      },
+      {
+        "title": "Test ve kalite",
+        "desc": "Yayından önce işlevsel, görsel ve cihaz kontrolleri."
+      },
+      {
+        "title": "Yayın sonrası destek",
+        "desc": "Bakım, güvenlik ve ölçülebilir iyileştirmeler."
+      },
+      {
+        "title": "Kod sahipliği",
+        "desc": "Kaynak kod ve proje varlıkları için net süreç."
+      },
+      {
+        "title": "TR / EN iletişim",
+        "desc": "İhtiyaca göre Türkçe veya İngilizce çalışma modeli."
+      },
+      {
+        "title": "Öncelik: iş sonucu",
+        "desc": "Görsel gösteriş değil; kullanılabilir, dönüşüm odaklı ürün."
+      }
+    ]
+  },
+  "process": {
+    "title": "Çalışma sürecimiz",
+    "subtitle": "Her aşamada beklenenler, teslimler ve onay noktaları net.",
+    "client": "Sizden",
+    "team": "Bizden",
+    "output": "Çıktı",
+    "gate": "Onay",
+    "steps": [
+      {
+        "n": "01",
+        "title": "Tanışma ve ihtiyaç analizi",
+        "client": "Hedefler, kısıtlar, mevcut varlıklar",
+        "team": "Keşif görüşmesi, notlar",
+        "output": "İhtiyaç özeti",
+        "gate": "Kapsam yönü onayı"
+      },
+      {
+        "n": "02",
+        "title": "Kapsam ve teklif",
+        "client": "Öncelikler ve bütçe çerçevesi",
+        "team": "Kapsam, zaman çizelgesi, teklif",
+        "output": "Teklif dokümanı",
+        "gate": "Sözleşme / kickoff"
+      },
+      {
+        "n": "03",
+        "title": "Araştırma ve ürün stratejisi",
+        "client": "Kullanıcı ve iş bilgisi",
+        "team": "Rakip ve kullanıcı analizi",
+        "output": "Ürün brief’i",
+        "gate": "Strateji onayı"
+      },
+      {
+        "n": "04",
+        "title": "Wireframe ve akışlar",
+        "client": "Akış geri bildirimi",
+        "team": "Bilgi mimarisi, wireframe",
+        "output": "Akış haritası",
+        "gate": "Yapı onayı"
+      },
+      {
+        "n": "05",
+        "title": "UI ve prototip",
+        "client": "Marka varlıkları, geri bildirim",
+        "team": "UI, tasarım sistemi, prototip",
+        "output": "Tasarım seti",
+        "gate": "Tasarım onayı"
+      },
+      {
+        "n": "06",
+        "title": "Yazılım geliştirme",
+        "client": "İçerik ve erişimler",
+        "team": "Frontend/backend geliştirme",
+        "output": "Çalışan build",
+        "gate": "Sprint demoları"
+      },
+      {
+        "n": "07",
+        "title": "Test ve kalite",
+        "client": "UAT geri bildirimi",
+        "team": "QA, düzeltmeler",
+        "output": "Test raporu",
+        "gate": "Yayın onayı"
+      },
+      {
+        "n": "08",
+        "title": "Yayınlama",
+        "client": "Domain / store hesapları",
+        "team": "Deploy, store süreci",
+        "output": "Canlı ürün",
+        "gate": "Go-live"
+      },
+      {
+        "n": "09",
+        "title": "Bakım ve geliştirme",
+        "client": "Öncelikler",
+        "team": "Destek ve yeni özellikler",
+        "output": "Yol haritası",
+        "gate": "Retainer / devam"
+      }
+    ],
+    "eyebrow": "Süreç"
+  },
+  "sectors": {
+    "title": "Çalıştığımız sektörler",
+    "subtitle": "Genel demo arayüzleriyle anlatılan ürün tipleri — sahte marka yok.",
+    "items": [
+      "Otel ve turizm",
+      "Eğitim",
+      "E-ticaret",
+      "Restoran",
+      "Sağlık",
+      "Gayrimenkul",
+      "Finans",
+      "Lojistik",
+      "Profesyonel hizmetler",
+      "SaaS ve girişimler"
+    ]
+  },
+  "about": {
+    "title": "Ürün üreten bir stüdyo",
+    "subtitle": "Northline; marka hikâyesi anlatmak için değil, işletmeleri büyüten dijital ürünler kurmak için var.",
+    "why": "Neden kuruldu?",
+    "whyBody": "Birçok işletme ya yalnızca tasarım ya yalnızca yazılım buluyor. İkisini aynı dilde konuşan tek bir partner arıyordu. Northline bu boşluğu doldurmak için kuruldu.",
+    "how": "Nasıl çalışıyoruz?",
+    "howBody": "Uzaktan-first, haftalık demolar, yazılı kararlar. Müşteri ile aynı tarafta duran küçük, disiplinli bir ekip modeli.",
+    "approach": "Tasarım ve teknoloji",
+    "approachBody": "Önce iş problemi, sonra arayüz, sonra kod. Animasyon ve 3D yalnızca ürünü anlatmaya yardımcı olduğunda kullanılır.",
+    "quality": "Kalite",
+    "qualityBody": "Erişilebilirlik, performans ve bakım edilebilirlik teslim kriterinin parçasıdır — sonradan eklenen süs değil."
+  },
+  "packages": {
+    "title": "Başlangıç kapsamları",
+    "subtitle": "Sabit fiyat listesi değil; ihtiyaca göre teklif hazırlanır. Fiyatlar yönetim panelinden yayınlandığında burada görünür.",
+    "forWhom": "Kimler için",
+    "includes": "Neleri içeriyor",
+    "excludes": "Neleri içermiyor",
+    "timeline": "Tahmini süre",
+    "cta": "Teklif Al",
+    "note": "Projenin kapsamına göre teklif hazırlanır."
+  },
+  "faq": {
+    "title": "Sık sorulan sorular",
+    "subtitle": "Süre, fiyat, sahiplik ve destek — net cevaplar."
+  },
+  "start": {
+    "title": "Projenizi başlatalım",
+    "subtitle": "Birkaç adımda ihtiyacınızı netleştirin. Teklif için yeterli bağlamı toplayalım.",
+    "back": "Geri",
+    "next": "Devam",
+    "submit": "Gönder",
+    "step": "Adım",
+    "of": "/",
+    "successTitle": "Başvurunuz alındı",
+    "successBody": "Ekibimiz en kısa sürede dönüş yapacak. İsterseniz bir görüşme rezervasyonu bırakabilirsiniz.",
+    "bookMeeting": "Toplantı rezerve et",
+    "consent": "KVKK aydınlatma metnini okudum; başvurumun değerlendirilmesi için kişisel verilerimin işlenmesine açık rıza veriyorum.",
+    "consentError": "Devam etmek için açık rıza gereklidir.",
+    "steps": {
+      "type": "Ne yaptırmak istiyorsunuz?",
+      "status": "Projenin mevcut durumu",
+      "features": "Gerekli özellikler",
+      "budget": "Yaklaşık bütçe",
+      "timeline": "Hedef tarih",
+      "contact": "İletişim bilgileri"
+    },
+    "types": {
+      "web": "Web sitesi",
+      "mobile": "Mobil uygulama",
+      "saas": "Web uygulaması / SaaS",
+      "ecommerce": "E-ticaret",
+      "uiux": "UI/UX tasarımı",
+      "ai": "AI / otomasyon",
+      "unsure": "Henüz emin değilim"
+    },
+    "statuses": {
+      "idea": "Yalnızca fikir",
+      "design": "Tasarım hazır",
+      "redesign": "Mevcut sistem yenilenecek",
+      "legacy": "Yarım kalan proje",
+      "active": "Aktif ürün geliştirilecek"
+    },
+    "budgets": {
+      "unknown": "Bütçem net değil",
+      "starter": "Başlangıç seviyesi",
+      "mid": "Orta ölçek",
+      "enterprise": "Kurumsal",
+      "custom": "Özel kapsam"
+    },
+    "timelines": {
+      "asap": "En kısa zamanda",
+      "1_2": "1–2 ay",
+      "3_4": "3–4 ay",
+      "5plus": "5 ay ve üzeri",
+      "flexible": "Esnek"
+    },
+    "fields": {
+      "name": "Ad soyad",
+      "company": "Şirket",
+      "email": "E-posta",
+      "phone": "Telefon",
+      "channel": "Tercih edilen kanal",
+      "message": "Proje açıklaması",
+      "file": "Dosya (opsiyonel)"
+    },
+    "channels": {
+      "email": "E-posta",
+      "phone": "Telefon",
+      "whatsapp": "WhatsApp"
+    }
+  },
+  "contact": {
+    "title": "İletişim",
+    "subtitle": "Kısa bir not bırakın veya proje sihirbazını kullanın.",
+    "email": "E-posta",
+    "phone": "Telefon",
+    "whatsapp": "WhatsApp",
+    "meeting": "Toplantı",
+    "formCta": "Mesaj gönder",
+    "startCta": "Proje sihirbazına git"
+  },
+  "blog": {
+    "title": "İçgörüler",
+    "subtitle": "Web, mobil, ürün ve strateji üzerine pratik yazılar.",
+    "read": "Okuma süresi",
+    "min": "dk",
+    "updated": "Güncellendi",
+    "related": "İlgili hizmet",
+    "toc": "İçindekiler"
+  },
+  "legal": {
+    "privacy": "Gizlilik Politikası",
+    "kvkk": "KVKK Aydınlatma Metni",
+    "cookies": "Çerez Politikası",
+    "terms": "Kullanım Koşulları",
+    "placeholder": "Bu metin yasal danışmanlıkla güncellenmelidir. Aşağıdaki içerik başlangıç taslağıdır."
+  },
+  "cookies": {
+    "title": "Çerez tercihleri",
+    "body": "Deneyimi iyileştirmek ve (onayınızla) analitik ölçümlemek için çerez kullanırız.",
+    "necessary": "Zorunlu",
+    "analytics": "Analitik",
+    "accept": "Kabul et",
+    "reject": "Yalnızca zorunlu",
+    "save": "Kaydet",
+    "settings": "Ayarlar"
+  },
+  "footer": {
+    "tagline": "İşletmeleri büyüten dijital ürünler.",
+    "services": "Hizmetler",
+    "company": "Şirket",
+    "legal": "Yasal",
+    "rights": "Tüm hakları saklıdır."
+  },
+  "ctaBand": {
+    "title": "Bir fikriniz mi var? Birlikte ürüne dönüştürelim.",
+    "subtitle": "Projenizi birkaç adımda anlatın, kapsamı birlikte netleştirelim.",
+    "primary": "Proje Başlat",
+    "secondary": "İletişime geç",
+    "eyebrow": "Sonraki adım",
+    "meeting": "Toplantı Planla"
+  },
+  "ai": {
+    "title": "Proje asistanı",
+    "subtitle": "Fikrinizi özetleyin; tür ve özellik önerisi alıp formu önceden dolduralım. Kesin fiyat veya teslim tarihi vermez.",
+    "placeholder": "Örn: Oteller için rezervasyonlu mobil uygulama düşünüyorum…",
+    "ask": "Analiz et",
+    "disclaimer": "Bu asistan ön keşif içindir. Kesin teklif için ekibimizle görüşün.",
+    "human": "İnsanla konuş"
+  },
+  "notFound": {
+    "title": "Sayfa bulunamadı",
+    "body": "Aradığınız adres taşınmış veya hiç var olmamış olabilir.",
+    "home": "Ana sayfaya dön"
+  },
+  "common": {
+    "learnServices": "Hizmetleri incele",
+    "startProject": "Proje Başlat",
+    "demo": "Örnek Proje",
+    "loading": "Yükleniyor…"
+  },
+  "principles": {
+    "eyebrow": "Güven",
+    "title": "Görsel kalitenin arkasında sağlam bir ürün süreci.",
+    "subtitle": "Sahte logolar yerine doğrulanabilir çalışma ilkeleri.",
+    "items": {
+      "designDev": {
+        "title": "Tasarım ve yazılım tek ekipte",
+        "desc": "Elden ele teslim yok; kararlar hızlanır, tutarlılık artar."
+      },
+      "weekly": {
+        "title": "Haftalık ilerleme paylaşımı",
+        "desc": "Şeffaf backlog ve düzenli demo."
+      },
+      "responsive": {
+        "title": "Responsive ve erişilebilir geliştirme",
+        "desc": "Cihazlar ve klavye kullanımı teslim kriterinin parçası."
+      },
+      "qa": {
+        "title": "Test ve kalite kontrol",
+        "desc": "Yayından önce işlevsel ve görsel kontroller."
+      },
+      "ownership": {
+        "title": "Kaynak kod teslimi",
+        "desc": "Proje varlıkları için net sahiplik süreci."
+      },
+      "support": {
+        "title": "Yayın sonrası destek",
+        "desc": "Bakım, güvenlik ve ölçülebilir iyileştirmeler."
+      }
+    }
+  },
+  "processCinema": {
+    "eyebrow": "Müşteri yolculuğu",
+    "title": "Fikirden yayına, net bir süreç.",
+    "subtitle": "Keşiften yayına ve büyümeye kadar her aşamada beklentiler, teslimler ve onay noktaları net.",
+    "client": "Sizden",
+    "team": "Bizden",
+    "cta": "Süreci detaylı incele",
+    "steps": [
+      {
+        "n": "01",
+        "title": "Discovery",
+        "body": "İhtiyaç, hedefler ve kısıtları birlikte netleştiririz.",
+        "client": "Kısa brief ve mevcut varlıklar",
+        "team": "Keşif notları ve yön özeti"
+      },
+      {
+        "n": "02",
+        "title": "Research",
+        "body": "Kullanıcı, rakip ve ürün bağlamını inceleriz.",
+        "client": "İş bilgisi ve erişimler",
+        "team": "İçgörüler ve ürün brief’i"
+      },
+      {
+        "n": "03",
+        "title": "Wireframe",
+        "body": "Bilgi mimarisi ve kritik akışları çizeriz.",
+        "client": "Akış geri bildirimi",
+        "team": "Wireframe seti"
+      },
+      {
+        "n": "04",
+        "title": "UI Design",
+        "body": "Görsel dil, bileşenler ve prototip.",
+        "client": "Marka varlıkları",
+        "team": "UI + tasarım sistemi"
+      },
+      {
+        "n": "05",
+        "title": "Development",
+        "body": "Ölçeklenebilir, test edilebilir kod.",
+        "client": "İçerik ve hesaplar",
+        "team": "Çalışan build’ler"
+      },
+      {
+        "n": "06",
+        "title": "QA",
+        "body": "İşlevsel, görsel ve cihaz kontrolleri.",
+        "client": "UAT geri bildirimi",
+        "team": "Test raporu ve düzeltmeler"
+      },
+      {
+        "n": "07",
+        "title": "Launch",
+        "body": "Yayın, store veya domain süreci.",
+        "client": "Canlı hesaplar",
+        "team": "Go-live desteği"
+      },
+      {
+        "n": "08",
+        "title": "Growth",
+        "body": "Bakım, ölçüm ve yeni özellikler.",
+        "client": "Öncelikler",
+        "team": "Yol haritası"
+      }
+    ]
+  },
+  "homeExtras": {
+    "industriesEyebrow": "Sektörler",
+    "industriesTitle": "Farklı sektörler, aynı kalite barı.",
+    "industriesBody": "Sahte markalar yerine, her sektöre uygun ürün tipolojileriyle çalışıyoruz.",
+    "stackEyebrow": "Teknoloji",
+    "stackTitle": "Ürünü taşıyan stack.",
+    "stackBody": "Seçimler moda değil; bakım, performans ve ölçek için.",
+    "insightsEyebrow": "İçgörüler",
+    "insightsTitle": "Son yazılar",
+    "insightsAll": "Tüm yazılar",
+    "faqEyebrow": "SSS",
+    "faqTitle": "Sık sorulanlar",
+    "faqAll": "Tüm SSS",
+    "discoveryTitle": "Keşif görüşmesi planlayın",
+    "discoveryBody": "Kapsamı netleştirmek için kısa bir görüşme yeterli.",
+    "discoveryCta": "Keşfe başla",
+    "journeyEyebrow": "Nasıl ilerler?",
+    "journeyTitle": "Dört net eşik.",
+    "journey": [
+      {
+        "title": "Anlatın",
+        "body": "Fikir veya mevcut ürününüzü paylaşın."
+      },
+      {
+        "title": "Netleştirin",
+        "body": "Kapsam, öncelik ve zaman çerçevesi."
+      },
+      {
+        "title": "Üretin",
+        "body": "Haftalık demolarla ilerleme."
+      },
+      {
+        "title": "Yayınlayın",
+        "body": "Kalite kontrol sonrası go-live."
+      }
+    ]
+  },
+  "processPage": {
+    "metaTitle": "Çalışma sürecimiz",
+    "metaDesc": "Tanışmadan büyümeye — şeffaf, öngörülebilir dokuz aşamalı ürün geliştirme süreci.",
+    "hero": {
+      "eyebrow": "Müşteri yolculuğu",
+      "title": "Fikirden yayına,\nnet ve görünür bir süreç.",
+      "body": "Her aşamada ne yapacağımızı, sizden ne beklediğimizi ve hangi çıktıyı teslim edeceğimizi açıkça görürsünüz.",
+      "cta": "Projenizi Anlatın",
+      "ctaSecondary": "Süreci İnceleyin",
+      "openStep": "Detaya git",
+      "fromYou": "Sizden",
+      "fromUs": "Bizden",
+      "output": "Çıktı",
+      "approval": "Onay",
+      "trust": [
+        "Haftalık ilerleme",
+        "Onaylı kilometre taşları",
+        "Yayın sonrası destek"
+      ]
+    },
+    "stages": [
+      {
+        "n": "01",
+        "title": "Tanışma ve ihtiyaç analizi",
+        "purpose": "Hedefleri, kısıtları ve başarı kriterlerini birlikte netleştiririz — keşif notları gerçek bir çalışma alanında görünür.",
+        "fromYou": "Hedefler, ihtiyaçlar, mevcut materyaller",
+        "fromUs": "Keşif görüşmesi, kapsam analizi",
+        "output": "Proje ihtiyaç özeti",
+        "approval": "Kapsam yönü",
+        "duration": "3–5 gün",
+        "art": "brief",
+        "deliverables": [
+          "Keşif notları",
+          "İhtiyaç özeti",
+          "Paydaş haritası",
+          "Başarı kriterleri"
+        ],
+        "tools": ["Görüşme", "Brief canvas", "Notlar"],
+        "cta": "Keşif görüşmesi planla"
+      },
+      {
+        "n": "02",
+        "title": "Kapsam ve teklif",
+        "purpose": "İş paketlerini, zaman çizelgesini ve yatırım çerçevesini yazılı, onaylanabilir bir teklife dönüştürürüz.",
+        "fromYou": "Öncelikler, bütçe bandı, karar vericiler",
+        "fromUs": "Kapsam dokümanı, faz planı, teklif",
+        "output": "Onaylanabilir teklif",
+        "approval": "Sözleşme / kickoff",
+        "duration": "3–7 gün",
+        "art": "proposal",
+        "deliverables": [
+          "Kapsam tablosu",
+          "Faz planı",
+          "Yatırım özeti",
+          "Kickoff checklist"
+        ],
+        "tools": ["Scope sheet", "Proposal", "Timeline"],
+        "cta": "Teklif sürecini konuşalım"
+      },
+      {
+        "n": "03",
+        "title": "Araştırma ve strateji",
+        "purpose": "Kullanıcı, rakip ve ürün bağlamını inceler; riskleri ve fırsatları görünür kılarız.",
+        "fromYou": "İş bilgisi, erişimler, örnek veriler",
+        "fromUs": "İçgörü özeti, fırsat haritası",
+        "output": "Ürün brief’i",
+        "approval": "Strateji yönü",
+        "duration": "1–2 hafta",
+        "art": "research",
+        "deliverables": [
+          "İçgörü panosu",
+          "Rakip analizi",
+          "Risk listesi",
+          "Ürün brief’i"
+        ],
+        "tools": ["Research board", "Analytics", "FigJam"],
+        "cta": "Araştırma yaklaşımını inceleyin"
+      },
+      {
+        "n": "04",
+        "title": "Wireframe ve akışlar",
+        "purpose": "Bilgi mimarisi, sitemap ve kritik kullanıcı akışlarını düşük sadakatle planlarız — bitmiş UI değil, gerçek bir UX çalışma alanı.",
+        "fromYou": "Akış geri bildirimi, öncelikler",
+        "fromUs": "Wireframe seti, akış diyagramı",
+        "output": "Onaylı yapı",
+        "approval": "IA onayı",
+        "duration": "1–2 hafta",
+        "art": "wireframe",
+        "deliverables": [
+          "Bilgi mimarisi",
+          "User flows",
+          "Wireframe seti",
+          "Ekran haritası"
+        ],
+        "infoCards": [
+          {
+            "icon": "architecture",
+            "title": "Bilgi mimarisi",
+            "body": "İçerik hiyerarşisi ve navigasyon iskeleti.",
+            "status": "Onaylandı",
+            "badge": "Teslim"
+          },
+          {
+            "icon": "flows",
+            "title": "User flows",
+            "body": "Happy path ve kenar durum akış diyagramları.",
+            "status": "İncelemede",
+            "badge": "Teslim"
+          },
+          {
+            "icon": "wireframes",
+            "title": "Low-fi wireframes",
+            "body": "Masaüstü ve mobil gri kutu ekranlar.",
+            "status": "Taslak",
+            "badge": "Teslim"
+          },
+          {
+            "icon": "sitemap",
+            "title": "Sitemap & nav map",
+            "body": "Sayfa haritası ve menü derinliği.",
+            "status": "Onaylandı",
+            "badge": "Teslim"
+          },
+          {
+            "icon": "notes",
+            "title": "Sticky notes",
+            "body": "Karar ve açık sorular — FigJam üzerinde.",
+            "status": "Aktif",
+            "badge": "Çalışma"
+          },
+          {
+            "icon": "review",
+            "title": "Review comments",
+            "body": "Paydaş notları ve hizalama yorumları.",
+            "status": "İncelemede",
+            "badge": "Çalışma"
+          }
+        ],
+        "tools": ["Figma", "FigJam", "Miro", "Whimsical", "Notion"],
+        "cta": "Akışları birlikte netleştirelim"
+      },
+      {
+        "n": "05",
+        "title": "UI Design",
+        "purpose": "Görsel dil, bileşenler, responsive ekranlar ve tıklanabilir prototipi tek bir tasarım sisteminde birleştiririz — tıpkı açık bir Figma projesi gibi.",
+        "fromYou": "Marka varlıkları, geri bildirim turları",
+        "fromUs": "UI kit, prototip, tasarım sistemi",
+        "output": "Tasarım paketi",
+        "approval": "Tasarım onayı",
+        "duration": "2–4 hafta",
+        "art": "design",
+        "deliverables": [
+          "Design System",
+          "Component Library",
+          "Responsive Screens",
+          "Interactive Prototype",
+          "Motion Specification",
+          "Accessibility Review",
+          "Developer Handoff"
+        ],
+        "tools": ["Figma", "FigJam", "Notion"],
+        "cta": "Tasarım sürecini konuşalım"
+      },
+      {
+        "n": "06",
+        "title": "Yazılım geliştirme",
+        "purpose": "Ölçeklenebilir, test edilebilir kod; haftalık çalışan build ve staging demoları.",
+        "fromYou": "İçerik, hesaplar, entegrasyon erişimleri",
+        "fromUs": "Sprint demoları, staging ortamı",
+        "output": "Çalışan ürün",
+        "approval": "Sprint kabulü",
+        "duration": "Kapsama göre",
+        "art": "development",
+        "deliverables": [
+          "Çalışan build",
+          "API / entegrasyonlar",
+          "Staging ortamı",
+          "Sprint demo"
+        ],
+        "tools": ["Next.js", "TypeScript", "CI", "Staging"],
+        "cta": "Geliştirme modelini konuşalım"
+      },
+      {
+        "n": "07",
+        "title": "Test ve kalite",
+        "purpose": "İşlevsel, görsel, cihaz ve erişilebilirlik kontrolleriyle yayın kalitesini güvence altına alırız.",
+        "fromYou": "UAT senaryoları ve geri bildirim",
+        "fromUs": "Test raporu, düzeltme listesi",
+        "output": "Kalite paketi",
+        "approval": "Yayın onayı",
+        "duration": "3–10 gün",
+        "art": "qa",
+        "deliverables": [
+          "Test raporu",
+          "Cihaz matrisi",
+          "A11y kontrolü",
+          "UAT özeti"
+        ],
+        "tools": ["QA matrix", "Device lab", "A11y audit"],
+        "cta": "Kalite sürecini inceleyin"
+      },
+      {
+        "n": "08",
+        "title": "Yayınlama",
+        "purpose": "Deploy, domain/store süreci ve go-live kontrol listesiyle ürünü canlıya alırız.",
+        "fromYou": "Canlı hesaplar, DNS, store erişimi",
+        "fromUs": "Canlı yayın, el değiştirme notları",
+        "output": "Go-live",
+        "approval": "Canlıya geçiş",
+        "duration": "2–5 gün",
+        "art": "launch",
+        "deliverables": [
+          "Production deploy",
+          "Go-live checklist",
+          "Handoff notları",
+          "Monitoring"
+        ],
+        "tools": ["CI/CD", "DNS", "Observability"],
+        "cta": "Yayın planını konuşalım"
+      },
+      {
+        "n": "09",
+        "title": "Bakım ve büyüme",
+        "purpose": "Ölçüm, bakım ve öncelikli yeni özelliklerle ürünü sürekli ileri taşırız.",
+        "fromYou": "Metrik öncelikleri, backlog",
+        "fromUs": "Yol haritası, bakım planı",
+        "output": "Büyüme planı",
+        "approval": "Retainer / sprintler",
+        "duration": "Sürekli",
+        "art": "growth",
+        "deliverables": [
+          "Analytics panosu",
+          "Yol haritası",
+          "Bakım planı",
+          "İyileştirme sprintleri"
+        ],
+        "tools": ["Analytics", "Roadmap", "Retainer"],
+        "cta": "Büyüme planını başlatalım"
+      }
+    ],
+    "timeline": {
+      "eyebrow": "Adım adım",
+      "title": "Dokuz aşamalı üretim süreci.",
+      "navLabel": "Süreç adımları",
+      "fromYou": "Sizden beklenenler",
+      "fromUs": "Bizim yaptıklarımız",
+      "deliverables": "Teslimler",
+      "decisions": "Karar noktaları",
+      "approval": "Müşteri onay noktası",
+      "duration": "Tahmini süre",
+      "tools": "Araçlar ve işbirliği",
+      "previous": "Önceki adım",
+      "current": "Güncel adım",
+      "next": "Sonraki adım",
+      "nextPreview": "Sonraki adım",
+      "trustItems": [
+        "Ücretsiz keşif görüşmesi",
+        "1 iş günü içinde yanıt",
+        "Bağlayıcı olmayan teklif"
+      ]
+    },
+    "trust": {
+      "eyebrow": "Güven",
+      "title": "Projeleri nasıl öngörülebilir tutuyoruz.",
+      "items": [
+        {
+          "title": "Haftalık güncellemeler",
+          "body": "Demo, backlog ve net sonraki adımlar."
+        },
+        {
+          "title": "Şeffaf planlama",
+          "body": "Kapsam, risk ve öncelikler yazılı."
+        },
+        {
+          "title": "Milestone onayları",
+          "body": "Her kritik kapıda bilinçli geçiş."
+        },
+        {
+          "title": "Kalite güvence",
+          "body": "QA, cihaz ve erişilebilirlik kontrolleri."
+        },
+        {
+          "title": "Responsive geliştirme",
+          "body": "Mobil ve masaüstü teslim kriterinin parçası."
+        },
+        {
+          "title": "Yayın sonrası destek",
+          "body": "Bakım, güvenlik ve büyüme seçenekleri."
+        }
+      ]
+    },
+    "lifecycle": {
+      "eyebrow": "Yaşam döngüsü",
+      "title": "Ürünün yolculuğu tek bakışta.",
+      "stages": [
+        "Fikir",
+        "Strateji",
+        "Tasarım",
+        "Geliştirme",
+        "Yayın",
+        "Optimizasyon"
+      ]
+    },
+    "deliverables": {
+      "eyebrow": "Proje teslimatları",
+      "title": "Her fazda somut çıktılar.",
+      "subtitle": "Fikirden yayına kadar her aşamayı görünür, ölçülebilir ve teslim edilebilir çıktılara dönüştürüyoruz.",
+      "handoff": "Teslim edilir",
+      "items": [
+        {
+          "title": "Dokümanlar",
+          "body": "Brief, kapsam ve karar kayıtları"
+        },
+        {
+          "title": "Wireframe’ler",
+          "body": "Akışlar ve bilgi mimarisi"
+        },
+        {
+          "title": "UI Kit",
+          "body": "Bileşenler ve tasarım tokenları"
+        },
+        {
+          "title": "Prototip",
+          "body": "Tıklanabilir kullanıcı akışları"
+        },
+        {
+          "title": "Kaynak kod",
+          "body": "Sahiplik ve el değiştirme net"
+        },
+        {
+          "title": "Test raporları",
+          "body": "QA bulguları ve düzeltmeler"
+        }
+      ]
+    },
+    "tech": {
+      "eyebrow": "Teknoloji",
+      "title": "Ürünü taşıyan ekosistem.",
+      "body": "Seçimler moda değil; performans, bakım ve ölçek için."
+    },
+    "cta": {
+      "title": "Ürününüzü inşa etmeye hazır mısınız?",
+      "body": "Kısa bir keşif görüşmesiyle kapsamı netleştirip teklif hazırlayalım.",
+      "primary": "Proje Başlat",
+      "secondary": "Keşif Görüşmesi Planla"
+    }
+  }
+}

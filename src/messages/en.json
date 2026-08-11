@@ -1,0 +1,872 @@
+{
+  "meta": {
+    "title": "Northline — Digital product studio",
+    "description": "We design and build websites, mobile apps, and custom digital products that move businesses forward.",
+    "ogAlt": "Northline digital product studio"
+  },
+  "nav": {
+    "work": "Work",
+    "services": "Services",
+    "process": "Process",
+    "about": "About",
+    "insights": "Insights",
+    "start": "Start a project",
+    "contact": "Contact",
+    "faq": "FAQ",
+    "packages": "Packages",
+    "menu": "Menu",
+    "close": "Close",
+    "skip": "Skip to content"
+  },
+  "hero": {
+    "title": "We design and build digital products that move businesses forward.",
+    "subtitle": "Strategy, design, and engineering in one studio — shipping web, mobile, and scalable product experiences.",
+    "ctaPrimary": "Tell us about your project",
+    "ctaSecondary": "Browse selected work",
+    "capabilities": [
+      "Web",
+      "Mobile",
+      "SaaS",
+      "E-commerce",
+      "UI/UX",
+      "AI & Automation"
+    ]
+  },
+  "work": {
+    "title": "Selected digital products",
+    "subtitle": "Demo case studies — updated as verified project data becomes available.",
+    "viewProject": "View project",
+    "all": "All work",
+    "comingSoon": "Coming soon",
+    "demoLabel": "Demo Case Study",
+    "sector": "Sector",
+    "services": "Services",
+    "platforms": "Platforms",
+    "problem": "Problem",
+    "next": "Next project",
+    "eyebrow": "Work",
+    "viewCase": "View case study",
+    "solution": "Solution"
+  },
+  "services": {
+    "title": "Everything required to ship an idea.",
+    "subtitle": "Web, mobile, product design, and software — one studio, clear process.",
+    "viewAll": "All services",
+    "cta": "Request a proposal",
+    "items": {
+      "web": {
+        "title": "Corporate websites",
+        "desc": "Clear brand storytelling with SEO-ready, CMS-friendly builds."
+      },
+      "mobile": {
+        "title": "Mobile apps",
+        "desc": "iOS and Android products with auth, payments, and store launch support."
+      },
+      "saas": {
+        "title": "Custom software & SaaS",
+        "desc": "CRM, booking, admin panels, and workflow applications."
+      },
+      "uiux": {
+        "title": "UI/UX & product design",
+        "desc": "From research to design systems — usable, consistent interfaces."
+      },
+      "ecommerce": {
+        "title": "E-commerce",
+        "desc": "Catalog, checkout, inventory, and order flows built for conversion."
+      },
+      "ai": {
+        "title": "AI & automation",
+        "desc": "Assistants, document workflows, and ops automation — with human control."
+      },
+      "support": {
+        "title": "Care & growth",
+        "desc": "Post-launch security, performance, SEO, and feature iteration."
+      }
+    },
+    "eyebrow": "Services",
+    "subtitleStrong": "Strategy, design, and engineering as one practice — for web, mobile, and products that scale.",
+    "forWhom": "Best for",
+    "tech": "Technology",
+    "processHint": "Process"
+  },
+  "why": {
+    "title": "How we work",
+    "subtitle": "Principles you can verify on every engagement — not abstract praise.",
+    "items": [
+      {
+        "title": "Design and engineering together",
+        "desc": "No handoff theater — faster decisions, stronger consistency."
+      },
+      {
+        "title": "Scalable architecture",
+        "desc": "Web and mobile systems planned for growth from day one."
+      },
+      {
+        "title": "Transparent communication",
+        "desc": "Weekly progress, clear scope, visible backlog."
+      },
+      {
+        "title": "Quality assurance",
+        "desc": "Functional, visual, and device checks before release."
+      },
+      {
+        "title": "Post-launch support",
+        "desc": "Maintenance, security, and measurable improvements."
+      },
+      {
+        "title": "Code ownership",
+        "desc": "Clear process for source code and project assets."
+      },
+      {
+        "title": "TR / EN collaboration",
+        "desc": "Turkish or English communication as needed."
+      },
+      {
+        "title": "Business outcomes first",
+        "desc": "Usability and conversion over visual theatrics."
+      }
+    ]
+  },
+  "process": {
+    "title": "Our process",
+    "subtitle": "Clear expectations, deliverables, and approval gates at every stage.",
+    "client": "From you",
+    "team": "From us",
+    "output": "Output",
+    "gate": "Gate",
+    "steps": [
+      {
+        "n": "01",
+        "title": "Discovery",
+        "client": "Goals, constraints, existing assets",
+        "team": "Discovery call, notes",
+        "output": "Needs summary",
+        "gate": "Direction approval"
+      },
+      {
+        "n": "02",
+        "title": "Scope & proposal",
+        "client": "Priorities and budget frame",
+        "team": "Scope, timeline, proposal",
+        "output": "Proposal",
+        "gate": "Contract / kickoff"
+      },
+      {
+        "n": "03",
+        "title": "Research & strategy",
+        "client": "User & business context",
+        "team": "Competitive / user analysis",
+        "output": "Product brief",
+        "gate": "Strategy approval"
+      },
+      {
+        "n": "04",
+        "title": "Wireframes & flows",
+        "client": "Flow feedback",
+        "team": "IA and wireframes",
+        "output": "Flow map",
+        "gate": "Structure approval"
+      },
+      {
+        "n": "05",
+        "title": "UI & prototype",
+        "client": "Brand assets, feedback",
+        "team": "UI, design system, prototype",
+        "output": "Design set",
+        "gate": "Design approval"
+      },
+      {
+        "n": "06",
+        "title": "Engineering",
+        "client": "Content and access",
+        "team": "Frontend / backend build",
+        "output": "Working build",
+        "gate": "Sprint demos"
+      },
+      {
+        "n": "07",
+        "title": "QA",
+        "client": "UAT feedback",
+        "team": "QA and fixes",
+        "output": "Test report",
+        "gate": "Release approval"
+      },
+      {
+        "n": "08",
+        "title": "Launch",
+        "client": "Domain / store accounts",
+        "team": "Deploy & store process",
+        "output": "Live product",
+        "gate": "Go-live"
+      },
+      {
+        "n": "09",
+        "title": "Care & growth",
+        "client": "Priorities",
+        "team": "Support and new features",
+        "output": "Roadmap",
+        "gate": "Retainer / continue"
+      }
+    ],
+    "eyebrow": "Process"
+  },
+  "sectors": {
+    "title": "Sectors we build for",
+    "subtitle": "Product types explained with original demo interfaces — no fake brands.",
+    "items": [
+      "Hospitality",
+      "Education",
+      "E-commerce",
+      "Restaurants",
+      "Healthcare",
+      "Real estate",
+      "Finance",
+      "Logistics",
+      "Professional services",
+      "SaaS & startups"
+    ]
+  },
+  "about": {
+    "title": "A studio that ships products",
+    "subtitle": "Northline exists to build digital products that grow businesses — not to decorate decks.",
+    "why": "Why we exist",
+    "whyBody": "Too many companies get either design or engineering. They need one partner speaking both languages. That is why Northline exists.",
+    "how": "How we operate",
+    "howBody": "Remote-first, weekly demos, written decisions. A small, disciplined team on the same side as the client.",
+    "approach": "Design & technology",
+    "approachBody": "Business problem first, interface second, code third. Motion and 3D only when they clarify the product.",
+    "quality": "Quality bar",
+    "qualityBody": "Accessibility, performance, and maintainability are part of delivery — not afterthought polish."
+  },
+  "packages": {
+    "title": "Starting scopes",
+    "subtitle": "Not a fixed price sheet — proposals match the need. Prices appear here when published from the CMS.",
+    "forWhom": "Best for",
+    "includes": "Includes",
+    "excludes": "Does not include",
+    "timeline": "Typical timeline",
+    "cta": "Get a proposal",
+    "note": "Proposals are prepared based on project scope."
+  },
+  "faq": {
+    "title": "Frequently asked questions",
+    "subtitle": "Timeline, pricing, ownership, and support — clear answers."
+  },
+  "start": {
+    "title": "Start your project",
+    "subtitle": "Clarify what you need in a few steps so we can prepare a useful proposal.",
+    "back": "Back",
+    "next": "Continue",
+    "submit": "Submit",
+    "step": "Step",
+    "of": "/",
+    "successTitle": "We received your request",
+    "successBody": "Our team will follow up shortly. You can also book a meeting if a calendar link is configured.",
+    "bookMeeting": "Book a meeting",
+    "consent": "I have read the privacy notice and consent to processing my personal data for evaluating this inquiry.",
+    "consentError": "Consent is required to continue.",
+    "steps": {
+      "type": "What do you want to build?",
+      "status": "Current project status",
+      "features": "Required features",
+      "budget": "Approximate budget",
+      "timeline": "Target timing",
+      "contact": "Contact details"
+    },
+    "types": {
+      "web": "Website",
+      "mobile": "Mobile app",
+      "saas": "Web app / SaaS",
+      "ecommerce": "E-commerce",
+      "uiux": "UI/UX design",
+      "ai": "AI / automation",
+      "unsure": "Not sure yet"
+    },
+    "statuses": {
+      "idea": "Idea only",
+      "design": "Design ready",
+      "redesign": "Rebuild existing system",
+      "legacy": "Incomplete project",
+      "active": "Evolve a live product"
+    },
+    "budgets": {
+      "unknown": "Budget unclear",
+      "starter": "Starter",
+      "mid": "Mid-market",
+      "enterprise": "Enterprise",
+      "custom": "Custom scope"
+    },
+    "timelines": {
+      "asap": "As soon as possible",
+      "1_2": "1–2 months",
+      "3_4": "3–4 months",
+      "5plus": "5+ months",
+      "flexible": "Flexible"
+    },
+    "fields": {
+      "name": "Full name",
+      "company": "Company",
+      "email": "Email",
+      "phone": "Phone",
+      "channel": "Preferred channel",
+      "message": "Project description",
+      "file": "File (optional)"
+    },
+    "channels": {
+      "email": "Email",
+      "phone": "Phone",
+      "whatsapp": "WhatsApp"
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Send a short note or use the project wizard.",
+    "email": "Email",
+    "phone": "Phone",
+    "whatsapp": "WhatsApp",
+    "meeting": "Meeting",
+    "formCta": "Send message",
+    "startCta": "Go to project wizard"
+  },
+  "blog": {
+    "title": "Insights",
+    "subtitle": "Practical writing on web, mobile, product, and strategy.",
+    "read": "Reading time",
+    "min": "min",
+    "updated": "Updated",
+    "related": "Related service",
+    "toc": "Contents"
+  },
+  "legal": {
+    "privacy": "Privacy Policy",
+    "kvkk": "KVKK Notice",
+    "cookies": "Cookie Policy",
+    "terms": "Terms of Use",
+    "placeholder": "This text should be finalized with legal counsel. Below is an initial draft."
+  },
+  "cookies": {
+    "title": "Cookie preferences",
+    "body": "We use cookies to improve the experience and, with your consent, for analytics.",
+    "necessary": "Necessary",
+    "analytics": "Analytics",
+    "accept": "Accept",
+    "reject": "Necessary only",
+    "save": "Save",
+    "settings": "Settings"
+  },
+  "footer": {
+    "tagline": "Digital products that move businesses forward.",
+    "services": "Services",
+    "company": "Company",
+    "legal": "Legal",
+    "rights": "All rights reserved."
+  },
+  "ctaBand": {
+    "title": "Have an idea? Let’s turn it into a product.",
+    "subtitle": "Tell us about your project in a few steps — we’ll clarify scope together.",
+    "primary": "Start a project",
+    "secondary": "Contact us",
+    "eyebrow": "Next step",
+    "meeting": "Book a meeting"
+  },
+  "ai": {
+    "title": "Project assistant",
+    "subtitle": "Summarize your idea — we'll suggest type and features and prefill the form. No hard prices or deadlines.",
+    "placeholder": "e.g. I’m considering a hotel booking mobile app…",
+    "ask": "Analyze",
+    "disclaimer": "This assistant is for early discovery. Talk to our team for a firm proposal.",
+    "human": "Talk to a human"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "body": "The address may have moved or never existed.",
+    "home": "Back to home"
+  },
+  "common": {
+    "learnServices": "Explore services",
+    "startProject": "Start a project",
+    "demo": "Sample project",
+    "loading": "Loading…"
+  },
+  "principles": {
+    "eyebrow": "Trust",
+    "title": "Behind the craft: a solid product process.",
+    "subtitle": "Verifiable working principles — not fake logos.",
+    "items": {
+      "designDev": {
+        "title": "Design and engineering together",
+        "desc": "No handoff theater — faster decisions, stronger consistency."
+      },
+      "weekly": {
+        "title": "Weekly progress sharing",
+        "desc": "Transparent backlog and regular demos."
+      },
+      "responsive": {
+        "title": "Responsive and accessible builds",
+        "desc": "Devices and keyboard use are part of the bar."
+      },
+      "qa": {
+        "title": "QA and quality control",
+        "desc": "Functional and visual checks before release."
+      },
+      "ownership": {
+        "title": "Source code ownership",
+        "desc": "Clear ownership process for project assets."
+      },
+      "support": {
+        "title": "Post-launch support",
+        "desc": "Care, security, and measurable improvements."
+      }
+    }
+  },
+  "processCinema": {
+    "eyebrow": "Client journey",
+    "title": "From idea to launch — a clear path.",
+    "subtitle": "From discovery to launch and growth, expectations, deliverables, and approval points stay clear at every stage.",
+    "client": "From you",
+    "team": "From us",
+    "cta": "Explore the full process",
+    "steps": [
+      {
+        "n": "01",
+        "title": "Discovery",
+        "body": "We clarify needs, goals, and constraints together.",
+        "client": "Short brief and assets",
+        "team": "Discovery notes and direction"
+      },
+      {
+        "n": "02",
+        "title": "Research",
+        "body": "We study users, competitors, and product context.",
+        "client": "Business context and access",
+        "team": "Insights and product brief"
+      },
+      {
+        "n": "03",
+        "title": "Wireframe",
+        "body": "We map information architecture and critical flows.",
+        "client": "Flow feedback",
+        "team": "Wireframe set"
+      },
+      {
+        "n": "04",
+        "title": "UI Design",
+        "body": "Visual language, components, and prototype.",
+        "client": "Brand assets",
+        "team": "UI + design system"
+      },
+      {
+        "n": "05",
+        "title": "Development",
+        "body": "Scalable, testable engineering.",
+        "client": "Content and accounts",
+        "team": "Working builds"
+      },
+      {
+        "n": "06",
+        "title": "QA",
+        "body": "Functional, visual, and device checks.",
+        "client": "UAT feedback",
+        "team": "Test report and fixes"
+      },
+      {
+        "n": "07",
+        "title": "Launch",
+        "body": "Release, store, or domain process.",
+        "client": "Live accounts",
+        "team": "Go-live support"
+      },
+      {
+        "n": "08",
+        "title": "Growth",
+        "body": "Care, measurement, and new features.",
+        "client": "Priorities",
+        "team": "Roadmap"
+      }
+    ]
+  },
+  "homeExtras": {
+    "industriesEyebrow": "Industries",
+    "industriesTitle": "Different industries. The same quality bar.",
+    "industriesBody": "We work through product typologies for each sector — not fake brand lists.",
+    "stackEyebrow": "Technology",
+    "stackTitle": "The stack that carries the product.",
+    "stackBody": "Choices for maintainability, performance, and scale — not fashion.",
+    "insightsEyebrow": "Insights",
+    "insightsTitle": "Latest articles",
+    "insightsAll": "All articles",
+    "faqEyebrow": "FAQ",
+    "faqTitle": "Common questions",
+    "faqAll": "Full FAQ",
+    "discoveryTitle": "Book a discovery call",
+    "discoveryBody": "A short conversation is enough to clarify scope.",
+    "discoveryCta": "Start discovery",
+    "journeyEyebrow": "How it moves",
+    "journeyTitle": "Four clear gates.",
+    "journey": [
+      {
+        "title": "Tell us",
+        "body": "Share the idea or the live product."
+      },
+      {
+        "title": "Clarify",
+        "body": "Scope, priorities, and timeline."
+      },
+      {
+        "title": "Build",
+        "body": "Progress with weekly demos."
+      },
+      {
+        "title": "Launch",
+        "body": "Go live after quality gates."
+      }
+    ]
+  },
+  "processPage": {
+    "metaTitle": "Our process",
+    "metaDesc": "From first conversation to growth — a transparent, predictable nine-stage product process.",
+    "hero": {
+      "eyebrow": "Customer journey",
+      "title": "From idea to launch,\na clear and visible process.",
+      "body": "At every stage you see what we will do, what we need from you, and which output we will deliver.",
+      "cta": "Tell us about your project",
+      "ctaSecondary": "Explore the process",
+      "openStep": "Open step",
+      "fromYou": "From you",
+      "fromUs": "From us",
+      "output": "Output",
+      "approval": "Approval",
+      "trust": [
+        "Weekly progress",
+        "Approved milestones",
+        "Post-launch support"
+      ]
+    },
+    "stages": [
+      {
+        "n": "01",
+        "title": "Discovery & needs analysis",
+        "purpose": "We clarify goals, constraints, and success criteria together — discovery work visible in a real workspace.",
+        "fromYou": "Goals, needs, existing materials",
+        "fromUs": "Discovery call, scope analysis",
+        "output": "Project needs summary",
+        "approval": "Scope direction",
+        "duration": "3–5 days",
+        "art": "brief",
+        "deliverables": [
+          "Discovery notes",
+          "Needs summary",
+          "Stakeholder map",
+          "Success criteria"
+        ],
+        "tools": ["Interview", "Brief canvas", "Notes"],
+        "cta": "Book a discovery call"
+      },
+      {
+        "n": "02",
+        "title": "Scope & proposal",
+        "purpose": "We turn work packages, timeline, and investment into a written, reviewable proposal.",
+        "fromYou": "Priorities, budget band, decision makers",
+        "fromUs": "Scope document, phase plan, proposal",
+        "output": "Reviewable proposal",
+        "approval": "Contract / kickoff",
+        "duration": "3–7 days",
+        "art": "proposal",
+        "deliverables": [
+          "Scope table",
+          "Phase plan",
+          "Investment summary",
+          "Kickoff checklist"
+        ],
+        "tools": ["Scope sheet", "Proposal", "Timeline"],
+        "cta": "Talk through the proposal"
+      },
+      {
+        "n": "03",
+        "title": "Research & strategy",
+        "purpose": "We study users, competitors, and product context — making risks and opportunities visible.",
+        "fromYou": "Business context, access, sample data",
+        "fromUs": "Insight summary, opportunity map",
+        "output": "Product brief",
+        "approval": "Strategy direction",
+        "duration": "1–2 weeks",
+        "art": "research",
+        "deliverables": [
+          "Insight board",
+          "Competitor analysis",
+          "Risk list",
+          "Product brief"
+        ],
+        "tools": ["Research board", "Analytics", "FigJam"],
+        "cta": "See our research approach"
+      },
+      {
+        "n": "04",
+        "title": "Wireframes & flows",
+        "purpose": "We plan information architecture, sitemaps, and critical user flows at low fidelity — a real UX workspace, not finished UI.",
+        "fromYou": "Flow feedback, priorities",
+        "fromUs": "Wireframe set, flow diagram",
+        "output": "Approved structure",
+        "approval": "IA approval",
+        "duration": "1–2 weeks",
+        "art": "wireframe",
+        "deliverables": [
+          "Information architecture",
+          "User flows",
+          "Wireframe set",
+          "Screen map"
+        ],
+        "infoCards": [
+          {
+            "icon": "architecture",
+            "title": "Information architecture",
+            "body": "Content hierarchy and navigation skeleton.",
+            "status": "Approved",
+            "badge": "Deliverable"
+          },
+          {
+            "icon": "flows",
+            "title": "User flows",
+            "body": "Happy-path and edge-case flow diagrams.",
+            "status": "In review",
+            "badge": "Deliverable"
+          },
+          {
+            "icon": "wireframes",
+            "title": "Low-fi wireframes",
+            "body": "Desktop and mobile gray-box screens.",
+            "status": "Draft",
+            "badge": "Deliverable"
+          },
+          {
+            "icon": "sitemap",
+            "title": "Sitemap & nav map",
+            "body": "Page map and menu depth.",
+            "status": "Approved",
+            "badge": "Deliverable"
+          },
+          {
+            "icon": "notes",
+            "title": "Sticky notes",
+            "body": "Decisions and open questions on FigJam.",
+            "status": "Active",
+            "badge": "Workspace"
+          },
+          {
+            "icon": "review",
+            "title": "Review comments",
+            "body": "Stakeholder notes and alignment threads.",
+            "status": "In review",
+            "badge": "Workspace"
+          }
+        ],
+        "tools": ["Figma", "FigJam", "Miro", "Whimsical", "Notion"],
+        "cta": "Align on flows together"
+      },
+      {
+        "n": "05",
+        "title": "UI Design",
+        "purpose": "We unify visual language, components, responsive screens, and a clickable prototype into one design system — like opening a premium Figma project.",
+        "fromYou": "Brand assets, feedback rounds",
+        "fromUs": "UI kit, prototype, design system",
+        "output": "Design package",
+        "approval": "Design approval",
+        "duration": "2–4 weeks",
+        "art": "design",
+        "deliverables": [
+          "Design System",
+          "Component Library",
+          "Responsive Screens",
+          "Interactive Prototype",
+          "Motion Specification",
+          "Accessibility Review",
+          "Developer Handoff"
+        ],
+        "tools": ["Figma", "FigJam", "Notion"],
+        "cta": "Talk through the design process"
+      },
+      {
+        "n": "06",
+        "title": "Software development",
+        "purpose": "Scalable, testable code with weekly working builds and staging demos.",
+        "fromYou": "Content, accounts, integration access",
+        "fromUs": "Sprint demos, staging environment",
+        "output": "Working product",
+        "approval": "Sprint acceptance",
+        "duration": "Scope-based",
+        "art": "development",
+        "deliverables": [
+          "Working build",
+          "API / integrations",
+          "Staging environment",
+          "Sprint demo"
+        ],
+        "tools": ["Next.js", "TypeScript", "CI", "Staging"],
+        "cta": "Discuss the build model"
+      },
+      {
+        "n": "07",
+        "title": "Testing & quality",
+        "purpose": "Functional, visual, device, and accessibility checks that protect release quality.",
+        "fromYou": "UAT scenarios and feedback",
+        "fromUs": "Test report, fix list",
+        "output": "Quality package",
+        "approval": "Release approval",
+        "duration": "3–10 days",
+        "art": "qa",
+        "deliverables": [
+          "Test report",
+          "Device matrix",
+          "A11y review",
+          "UAT summary"
+        ],
+        "tools": ["QA matrix", "Device lab", "A11y audit"],
+        "cta": "Review the quality process"
+      },
+      {
+        "n": "08",
+        "title": "Launch",
+        "purpose": "Deploy, domain/store process, and go-live checklist — taking the product live.",
+        "fromYou": "Live accounts, DNS, store access",
+        "fromUs": "Live release, handoff notes",
+        "output": "Go-live",
+        "approval": "Production cutover",
+        "duration": "2–5 days",
+        "art": "launch",
+        "deliverables": [
+          "Production deploy",
+          "Go-live checklist",
+          "Handoff notes",
+          "Monitoring"
+        ],
+        "tools": ["CI/CD", "DNS", "Observability"],
+        "cta": "Plan the launch"
+      },
+      {
+        "n": "09",
+        "title": "Care & growth",
+        "purpose": "Measurement, care, and prioritized features that keep moving the product forward.",
+        "fromYou": "Metric priorities, backlog",
+        "fromUs": "Roadmap, care plan",
+        "output": "Growth plan",
+        "approval": "Retainer / sprints",
+        "duration": "Ongoing",
+        "art": "growth",
+        "deliverables": [
+          "Analytics board",
+          "Roadmap",
+          "Care plan",
+          "Improvement sprints"
+        ],
+        "tools": ["Analytics", "Roadmap", "Retainer"],
+        "cta": "Start a growth plan"
+      }
+    ],
+    "timeline": {
+      "eyebrow": "Step by step",
+      "title": "A nine-stage production process.",
+      "navLabel": "Process steps",
+      "fromYou": "What we need from you",
+      "fromUs": "What we do",
+      "deliverables": "Deliverables",
+      "decisions": "Decision points",
+      "approval": "Client approval point",
+      "duration": "Estimated duration",
+      "tools": "Tools & collaboration",
+      "previous": "Previous step",
+      "current": "Current step",
+      "next": "Next step",
+      "nextPreview": "Next step",
+      "trustItems": [
+        "Free discovery call",
+        "Response within one business day",
+        "No obligation quote"
+      ]
+    },
+    "trust": {
+      "eyebrow": "Trust",
+      "title": "How we keep projects predictable.",
+      "items": [
+        {
+          "title": "Weekly updates",
+          "body": "Demos, backlog, and clear next steps."
+        },
+        {
+          "title": "Transparent planning",
+          "body": "Scope, risks, and priorities in writing."
+        },
+        {
+          "title": "Milestone approvals",
+          "body": "Conscious gates at every critical step."
+        },
+        {
+          "title": "Quality assurance",
+          "body": "QA, device, and accessibility checks."
+        },
+        {
+          "title": "Responsive development",
+          "body": "Mobile and desktop as delivery criteria."
+        },
+        {
+          "title": "Post-launch support",
+          "body": "Care, security, and growth options."
+        }
+      ]
+    },
+    "lifecycle": {
+      "eyebrow": "Lifecycle",
+      "title": "The product journey at a glance.",
+      "stages": [
+        "Idea",
+        "Strategy",
+        "Design",
+        "Development",
+        "Launch",
+        "Optimization"
+      ]
+    },
+    "deliverables": {
+      "eyebrow": "Project deliverables",
+      "title": "Concrete outputs in every phase.",
+      "subtitle": "From idea to launch, every stage becomes visible, measurable, and shippable output.",
+      "handoff": "Delivered",
+      "items": [
+        {
+          "title": "Documents",
+          "body": "Brief, scope, and decision log"
+        },
+        {
+          "title": "Wireframes",
+          "body": "Flows and information architecture"
+        },
+        {
+          "title": "UI Kit",
+          "body": "Components and design tokens"
+        },
+        {
+          "title": "Prototype",
+          "body": "Clickable user journeys"
+        },
+        {
+          "title": "Source code",
+          "body": "Clear ownership and handoff"
+        },
+        {
+          "title": "Test reports",
+          "body": "QA findings and fixes"
+        }
+      ]
+    },
+    "tech": {
+      "eyebrow": "Technology",
+      "title": "The ecosystem that carries the product.",
+      "body": "Choices for performance, maintainability, and scale — not fashion."
+    },
+    "cta": {
+      "title": "Ready to build your product?",
+      "body": "A short discovery call to clarify scope and prepare a proposal.",
+      "primary": "Start Project",
+      "secondary": "Book Discovery Call"
+    }
+  }
+}
