@@ -3,10 +3,10 @@ import { notFound } from "next/navigation";
 import { Link } from "@/i18n/navigation";
 import { getServiceById } from "@/content/services";
 import type { ServiceId } from "@/content/types";
-import { ServiceVisual } from "@/components/shared/premium-visual";
 import { CtaBand } from "@/components/shared/cta-band";
 import { Reveal } from "@/components/motion/reveal";
 import { Button } from "@/components/ui/button";
+import { ServiceVisual } from "@/components/shared/premium-visual";
 
 const ID_MAP: Record<string, ServiceId> = {
   web: "web",
@@ -39,7 +39,7 @@ export async function ServiceDetailContent({ segment }: { segment: string }) {
   return (
     <>
       <section className="border-b border-border bg-bg-secondary py-14 md:py-20">
-        <div className="container-page grid gap-10 lg:grid-cols-[1fr_1.05fr] lg:items-center">
+        <div className="container-page grid items-center gap-10 overflow-hidden lg:grid-cols-[minmax(0,0.38fr)_minmax(0,0.62fr)] lg:gap-12">
           <div>
             <p className="mb-3 text-xs tracking-[0.2em] text-accent uppercase">
               {t("eyebrow")}
@@ -54,12 +54,8 @@ export async function ServiceDetailContent({ segment }: { segment: string }) {
               <Link href="/proje-baslat">{t("cta")}</Link>
             </Button>
           </div>
-          <div className="group overflow-hidden rounded-[var(--radius-media)] border border-border shadow-[var(--shadow-depth)]">
-              <ServiceVisual
-                id={serviceId}
-                alt={service.title[locale]}
-                className="w-full"
-              />
+          <div className="relative h-[340px] min-w-0 overflow-hidden md:h-[440px]">
+            <ServiceVisual id={serviceId} alt={service.title[locale]} className="h-full" />
           </div>
         </div>
       </section>

@@ -10,6 +10,7 @@ import { serviceHrefForId } from "@/components/pages/service-detail-content";
 import { readingTime } from "@/lib/utils";
 import { pageMetadata } from "@/lib/metadata";
 import { siteConfig } from "@/lib/site";
+import { ArticleCover } from "@/components/visuals/article-cover";
 
 export function generateStaticParams() {
   return blogPosts.map((p) => ({ slug: p.slug }));
@@ -107,6 +108,10 @@ export default async function ArticlePage({
                 </p>
               )}
             </header>
+
+            <div className="mt-10 h-[280px] overflow-visible md:h-[360px]">
+              <ArticleCover slug={post.slug} title={post.title[loc]} density="featured" />
+            </div>
 
             {headings.length > 1 && (
               <nav aria-label={t("toc")} className="mt-10 rounded-xl border border-border bg-surface/40 p-5">

@@ -4,7 +4,6 @@ import { notFound } from "next/navigation";
 import { getProjectBySlug, projects } from "@/content/projects";
 import { Link } from "@/i18n/navigation";
 import { CaseStudyEditorialHero } from "@/components/case/editorial-hero";
-import { CaseVisual } from "@/components/shared/premium-visual";
 import { CtaBand } from "@/components/shared/cta-band";
 import { pageMetadata } from "@/lib/metadata";
 import { Button } from "@/components/ui/button";
@@ -44,7 +43,6 @@ export default async function CaseStudyPage({
   const loc = (await getLocale()) as "tr" | "en";
   const idx = projects.findIndex((p) => p.slug === slug);
   const nextProject = projects[(idx + 1) % projects.length];
-  const isRestaurant = slug === "table-reserve";
 
   const stages = [
     { id: "problem", title: t("problem"), body: project.problem[loc] },
@@ -86,51 +84,34 @@ export default async function CaseStudyPage({
 
       <div id="case-story" className="scroll-mt-24">
         {stages.map((stage, i) => {
-          const warm = isRestaurant;
           const even = i % 2 === 0;
           return (
             <section
               key={stage.id}
               className={cn(
-                "border-b py-14 md:py-20",
-                warm
-                  ? even
-                    ? "border-[#c4a574]/10 bg-[#120e0c]"
-                    : "border-[#c4a574]/10 bg-[#1a1410]"
-                  : even
-                    ? "border-white/5 bg-bg"
-                    : "border-white/5 bg-bg-secondary",
+                "border-b border-[#eef2f7] py-14 md:py-20",
+                even ? "bg-white" : "bg-[#f8faff]",
               )}
             >
               <div className="container-page grid gap-8 lg:grid-cols-[0.75fr_1.25fr] lg:gap-14 lg:items-start">
                 <div className="lg:sticky lg:top-28">
-                  <p
-                    className={cn(
-                      "font-mono text-xs",
-                      warm ? "text-[#c4a574]" : "text-accent",
-                    )}
-                  >
+                  <p className="font-mono text-xs text-indigo-400">
                     {String(i + 1).padStart(2, "0")}
                   </p>
-                  <h2 className="mt-3 font-display text-[clamp(1.5rem,2.6vw,2.25rem)] font-semibold tracking-tight text-[#f4efe8]">
+                  <h2 className="mt-3 font-display text-[clamp(1.5rem,2.6vw,2.25rem)] font-semibold tracking-tight text-[#111827]">
                     {stage.title}
                   </h2>
                 </div>
                 <div>
-                  <p
-                    className={cn(
-                      "max-w-2xl text-base leading-relaxed md:text-lg",
-                      warm ? "text-[#b5a698]" : "text-muted",
-                    )}
-                  >
+                  <p className="max-w-2xl text-base leading-relaxed text-[#475569] md:text-lg">
                     {stage.body}
                   </p>
 
                   {stage.id === "problem" && (
-                    <ul className="mt-6 space-y-2.5 text-[15px] text-[#efe6da]">
+                    <ul className="mt-6 space-y-2.5 text-[15px] text-[#334155]">
                       {project.goals[loc].map((g) => (
                         <li key={g} className="flex gap-3">
-                          <span className={warm ? "text-[#c4a574]" : "text-accent"}>▸</span>
+                          <span className="text-indigo-500">▸</span>
                           {g}
                         </li>
                       ))}
@@ -138,36 +119,15 @@ export default async function CaseStudyPage({
                   )}
 
                   {stage.id === "ui" && (
-                    <div className="mt-8 grid gap-4 sm:grid-cols-2">
-                      <div className="overflow-hidden rounded-2xl border border-border">
-                        <CaseVisual
-                          slug={project.slug}
-                          alt={project.shortTitle[loc]}
-                          className="w-full"
-                        />
-                      </div>
-                      <ul
-                        className={cn(
-                          "space-y-2 self-center text-sm",
-                          warm ? "text-[#b5a698]" : "text-muted",
-                        )}
-                      >
-                        {project.screens[loc].map((s) => (
-                          <li key={s}>· {s}</li>
-                        ))}
-                      </ul>
-                    </div>
+                    <ul className="mt-6 space-y-2 text-sm text-[#475569]">
+                      {project.screens[loc].map((s) => (
+                        <li key={s}>· {s}</li>
+                      ))}
+                    </ul>
                   )}
 
                   {stage.id === "results" && (
-                    <p
-                      className={cn(
-                        "mt-6 rounded-2xl border p-5 text-sm leading-relaxed",
-                        warm
-                          ? "border-[#c4a574]/20 bg-[#1a1410] text-[#b5a698]"
-                          : "border-border bg-surface/50 text-muted",
-                      )}
-                    >
+                    <p className="mt-6 rounded-2xl border border-indigo-100 bg-white p-5 text-sm leading-relaxed text-[#475569]">
                       {project.results[loc]}
                     </p>
                   )}
@@ -178,78 +138,37 @@ export default async function CaseStudyPage({
         })}
       </div>
 
-      {/* Gallery — multi-panel, not one empty rectangle */}
-      <section
-        className={cn(
-          "border-b py-14 md:py-20",
-          isRestaurant
-            ? "border-[#c4a574]/10 bg-[#1a1612]"
-            : "border-white/10 bg-bg",
-        )}
-      >
+      <section className="border-b border-[#eef2f7] bg-[#f8faff] py-14 md:py-20">
         <div className="container-page">
-          <h2 className="font-display text-2xl font-semibold text-[#f4efe8] md:text-3xl">
-            {loc === "tr" ? "Galeri" : "Gallery"}
+          <h2 className="font-display text-2xl font-semibold text-[#111827] md:text-3xl">
+            {loc === "tr" ? "Teknoloji" : "Technology"}
           </h2>
-          <div className="mt-8 grid gap-4 md:grid-cols-12 md:gap-5">
-            <div className="overflow-hidden rounded-2xl border border-border md:col-span-7">
-              <CaseVisual
-                slug={project.slug}
-                alt={project.shortTitle[loc]}
-                className="w-full"
-              />
-            </div>
-            <div className="flex flex-col gap-4 md:col-span-5">
-              <div className="overflow-hidden rounded-2xl border border-border">
-                <CaseVisual
-                  slug={project.slug}
-                  alt=""
-                  className="w-full"
-                />
-              </div>
-              <div>
-                <h3 className="font-display text-lg font-semibold text-[#f4efe8]">
-                  {loc === "tr" ? "Teknoloji" : "Technology"}
-                </h3>
-                <ul className="mt-3 flex flex-wrap gap-2">
-                  {project.tech[loc].map((tech) => (
-                    <li
-                      key={tech}
-                      className={cn(
-                        "rounded-full px-3 py-1.5 text-xs",
-                        isRestaurant
-                          ? "border border-[#c4a574]/25 bg-[#c4a574]/10 text-[#e8c9a0]"
-                          : "border border-white/15 bg-white/5 text-muted",
-                      )}
-                    >
-                      {tech}
-                    </li>
-                  ))}
-                </ul>
-                <p
-                  className={cn(
-                    "mt-5 text-sm leading-relaxed",
-                    isRestaurant ? "text-[#b5a698]" : "text-muted",
-                  )}
+          <ul className="mt-6 flex flex-wrap gap-2">
+              {project.tech[loc].map((tech) => (
+                <li
+                  key={tech}
+                  className="rounded-full border border-indigo-100 bg-white px-3 py-1.5 text-xs text-[#475569]"
                 >
-                  {project.testing[loc]}
-                </p>
-              </div>
-            </div>
-          </div>
+                  {tech}
+                </li>
+              ))}
+            </ul>
+            <p className="mt-5 max-w-2xl text-sm leading-relaxed text-[#64748b]">
+              {project.testing[loc]}
+            </p>
         </div>
       </section>
 
-      <section className="border-b border-white/10 bg-bg py-12 md:py-14">
+      <section className="border-b border-[#eef2f7] bg-white py-12 md:py-14">
         <div className="container-page flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
           <div>
-            <p className="text-xs tracking-wider text-muted uppercase">{t("next")}</p>
+            <p className="text-xs tracking-wider text-[#94a3b8] uppercase">{t("next")}</p>
             <Link
               href={{
                 pathname: "/calismalar/[slug]",
                 params: { slug: nextProject.slug },
               }}
-              className="mt-2 block font-display text-2xl font-semibold hover:text-accent md:text-3xl"
+              className="mt-2 block font-display text-2xl font-semibold text-[#111827] hover:text-indigo-600 md:text-3xl"
             >
               {nextProject.shortTitle[loc]} →
             </Link>

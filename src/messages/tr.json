@@ -5,12 +5,14 @@
     "ogAlt": "Northline dijital ürün stüdyosu"
   },
   "nav": {
-    "work": "Çalışmalar",
-    "services": "Hizmetler",
+    "home": "Ana Sayfa",
+    "work": "Projelerimiz",
+    "services": "Hizmetlerimiz",
     "process": "Süreç",
     "about": "Hakkımızda",
-    "insights": "İçgörüler",
-    "start": "Proje Başlat",
+    "insights": "Blog",
+    "start": "Teklif Al",
+    "studio": "Dijital Stüdyo",
     "contact": "İletişim",
     "faq": "SSS",
     "packages": "Paketler",
@@ -19,22 +21,204 @@
     "skip": "İçeriğe geç"
   },
   "hero": {
-    "title": "İşletmeleri büyüten dijital ürünler tasarlıyor ve geliştiriyoruz.",
-    "subtitle": "Strateji, tasarım ve yazılımı tek stüdyoda birleştirerek web, mobil ve ölçeklenebilir ürün deneyimleri kuruyoruz.",
-    "ctaPrimary": "Projenizi Anlatın",
-    "ctaSecondary": "Çalışmaları İnceleyin",
-    "capabilities": [
-      "Web",
-      "Mobil",
-      "SaaS",
-      "E-Ticaret",
-      "UI/UX",
-      "AI ve Otomasyon"
+    "eyebrow": "Yaratıcı fikirler, dijital çözümler",
+    "titleBefore": "Markanızı dijitalde ",
+    "titleHighlight": "zirveye",
+    "titleAfter": " taşıyoruz.",
+    "subtitle": "Northline olarak markaların dijital dünyada öne çıkmasını sağlayan strateji, tasarım ve yazılım çözümleri sunuyoruz.",
+    "ctaPrimary": "Hizmetlerimizi İncele",
+    "ctaSecondary": "Tanıtım Videosu",
+    "stats": [
+      { "value": "120+", "label": "Proje" },
+      { "value": "8+", "label": "Yıl Deneyim" },
+      { "value": "98%", "label": "Memnuniyet" }
     ]
+  },
+  "homeServices": {
+    "eyebrow": "Hizmetlerimiz",
+    "title": "Beş disiplinde dijital üretim",
+    "subtitle": "Web, pazarlama, SEO, marka ve yazılım — tek stüdyoda.",
+    "cta": "Ücretsiz Teklif Alın",
+    "ctaSecondary": "İletişime Geçin",
+    "ctaTitle": "Projenizi birlikte planlayalım",
+    "ctaBody": "İhtiyaç analizi ve yol haritası için 30 dakikalık ücretsiz keşif görüşmesi planlayın.",
+    "explore": "Detaylı incele",
+    "deliverables": "Kapsam",
+    "approachLabel": "Yaklaşımımız",
+    "approachSteps": ["Keşif & Analiz", "Strateji", "Tasarım & Üretim", "Yayın & Optimizasyon", "Sürekli Destek"],
+    "pillars": [
+      { "value": "5", "label": "Uzmanlık alanı" },
+      { "value": "30+", "label": "Hizmet kalemi" },
+      { "value": "360°", "label": "Entegre çözüm" }
+    ],
+    "categories": [
+      {
+        "id": "web",
+        "title": "Web Tasarım & Geliştirme",
+        "description": "Kurumsal standartlarda, performans odaklı ve ölçeklenebilir web platformları tasarlıyor ve geliştiriyoruz.",
+        "highlight": "Hız, güvenlik ve dönüşüm odaklı altyapı",
+        "metric": { "value": "95+", "label": "Performans hedefi" },
+        "items": [
+          { "title": "Kurumsal web sitesi", "desc": "Marka güvenini güçlendiren profesyonel dijital vitrin" },
+          { "title": "E-ticaret", "desc": "Satış odaklı, güvenli ödeme entegrasyonlu mağazalar" },
+          { "title": "Landing page", "desc": "Kampanya ve lead toplama için yüksek dönüşümlü sayfalar" },
+          { "title": "Özel web uygulamaları", "desc": "İş süreçlerinize özel panel ve portal çözümleri" },
+          { "title": "UI/UX", "desc": "Kullanıcı araştırması ve prototipleme ile sezgisel deneyim" }
+        ]
+      },
+      {
+        "id": "marketing",
+        "title": "Dijital Pazarlama",
+        "description": "Veriye dayalı medya planlaması ve optimizasyon ile reklam bütçenizden maksimum geri dönüş elde edin.",
+        "highlight": "ROI odaklı kampanya yönetimi",
+        "metric": { "value": "3.2x", "label": "Ort. ROAS hedefi" },
+        "items": [
+          { "title": "Google Ads", "desc": "Arama, display ve YouTube reklam yönetimi" },
+          { "title": "Meta Ads", "desc": "Instagram ve Facebook performans kampanyaları" },
+          { "title": "Reklam stratejisi", "desc": "Hedef kitle, bütçe ve kanal planlaması" },
+          { "title": "Remarketing", "desc": "Ziyaretçileri müşteriye dönüştüren yeniden hedefleme" },
+          { "title": "Dönüşüm optimizasyonu", "desc": "A/B test ve huni analizi ile sürekli iyileştirme" },
+          { "title": "Reklam raporlama", "desc": "Şeffaf, anlaşılır performans dashboard'ları" }
+        ]
+      },
+      {
+        "id": "seo",
+        "title": "SEO & Google",
+        "description": "Teknik altyapıdan içerik stratejisine kadar sürdürülebilir organik büyüme sağlıyoruz.",
+        "highlight": "Uzun vadeli görünürlük ve trafik",
+        "metric": { "value": "6–12", "label": "Ay büyüme planı" },
+        "items": [
+          { "title": "Teknik SEO", "desc": "Site hızı, indeksleme ve yapısal optimizasyon" },
+          { "title": "Anahtar kelime çalışmaları", "desc": "Rekabet analizi ve içerik haritası" },
+          { "title": "Yerel SEO", "desc": "Bölgesel aramalarda üst sıra görünürlük" },
+          { "title": "Google İşletme Profili", "desc": "Profil optimizasyonu ve yorum yönetimi" },
+          { "title": "SEO optimizasyonu", "desc": "On-page ve off-page sürekli iyileştirme" },
+          { "title": "Performans takibi", "desc": "Sıralama, trafik ve dönüşüm raporlaması" }
+        ]
+      },
+      {
+        "id": "brand",
+        "title": "Marka & Kurumsal Kimlik",
+        "description": "Tutarlı görsel dil ve stratejik konumlandırma ile markanızı pazarda öne çıkarıyoruz.",
+        "highlight": "Akılda kalıcı kurumsal imaj",
+        "metric": { "value": "360°", "label": "Marka sistemi" },
+        "items": [
+          { "title": "Logo", "desc": "Özgün, ölçeklenebilir logo ve sembol tasarımı" },
+          { "title": "Kurumsal kimlik", "desc": "Renk, tipografi ve uygulama kılavuzu" },
+          { "title": "Marka stratejisi", "desc": "Konumlandırma, ton ve mesaj çerçevesi" },
+          { "title": "Reklam görselleri", "desc": "Kampanya ve sosyal medya kreatifleri" },
+          { "title": "Katalog / sunum tasarımı", "desc": "Satış ve kurumsal iletişim materyalleri" }
+        ]
+      },
+      {
+        "id": "software",
+        "title": "Yazılım & Yapay Zekâ",
+        "description": "İşletmenize özel yazılım, otomasyon ve AI çözümleri ile operasyonel verimliliği artırıyoruz.",
+        "highlight": "Ölçeklenebilir otomasyon altyapısı",
+        "metric": { "value": "7/24", "label": "Sistem erişilebilirliği" },
+        "items": [
+          { "title": "Özel yazılım", "desc": "İhtiyaca özel web ve mobil uygulama geliştirme" },
+          { "title": "CRM", "desc": "Müşteri ilişkileri ve satış süreç yönetimi" },
+          { "title": "WhatsApp otomasyonları", "desc": "Toplu mesaj, chatbot ve bildirim akışları" },
+          { "title": "AI chatbot", "desc": "7/24 müşteri desteği ve lead qualification" },
+          { "title": "Randevu sistemleri", "desc": "Online rezervasyon ve takvim entegrasyonu" },
+          { "title": "İşletme otomasyonları", "desc": "Tekrarlayan süreçlerin akıllı otomasyonu" }
+        ]
+      }
+    ]
+  },
+  "homeStories": {
+    "eyebrow": "Seçili projeler",
+    "title": "Ürettiğimiz dijital deneyimler",
+    "body": "Aşağıdaki çalışmalar stüdyo demo ve konseptlerdir; gerçek müşteri sonuçları değildir. Her kart, farklı bir sektör ve ürün dilini temsil eder.",
+    "demo": "Demo",
+    "prev": "Önceki",
+    "next": "Sonraki",
+    "cards": [
+      {
+        "slug": "campus-learn",
+        "category": "Sağlık teknolojisi",
+        "title": "CarePath",
+        "f1": "Koordinasyon",
+        "f1l": "Klinik akış",
+        "f2": "Erişim",
+        "f2l": "Dijital kanal"
+      },
+      {
+        "slug": "table-reserve",
+        "category": "Hospitality",
+        "title": "Reserve",
+        "f1": "Masa",
+        "f1l": "Rezervasyon",
+        "f2": "Menü",
+        "f2l": "Tasting"
+      },
+      {
+        "slug": "pulse-flow",
+        "category": "Yapay zekâ",
+        "title": "Orbit AI",
+        "f1": "Otomasyon",
+        "f1l": "İş akışı",
+        "f2": "CRM",
+        "f2l": "Güncelleme"
+      },
+      {
+        "slug": "atelier-shop",
+        "category": "E-ticaret",
+        "title": "Atelier",
+        "f1": "Mağaza",
+        "f1l": "Ürün deneyimi",
+        "f2": "Mobil",
+        "f2l": "Satın alma"
+      },
+      {
+        "slug": "harbor-stay",
+        "category": "Konaklama",
+        "title": "Harbor Stay",
+        "f1": "Direkt",
+        "f1l": "Rezervasyon",
+        "f2": "Oda",
+        "f2l": "Harbor Suite"
+      },
+      {
+        "slug": "ledger-flow",
+        "category": "Finans",
+        "title": "Ledger",
+        "f1": "Panel",
+        "f1l": "Nakit akışı",
+        "f2": "Faturalar",
+        "f2l": "Durum"
+      }
+    ]
+  },
+  "homePitch": {
+    "whyEyebrow": "Neden Northline",
+    "whyTitle": "Tek stüdyo, dört yetkinlik.",
+    "whyItems": [
+      { "title": "Strateji", "hint": "Kapsam, öncelik ve ölçüt netleşir." },
+      { "title": "Tasarım", "hint": "Markayı taşıyan arayüz ve sistem." },
+      { "title": "Yazılım", "hint": "Ölçeklenebilir ürün altyapısı." },
+      { "title": "AI", "hint": "Tekrarlayan işi otomasyona bağlarız." }
+    ],
+    "processEyebrow": "Süreç",
+    "processTitle": "Kısa ve net üretim.",
+    "processSteps": [
+      { "title": "Discover" },
+      { "title": "Design" },
+      { "title": "Build" },
+      { "title": "Launch" }
+    ],
+    "processLink": "Süreci incele",
+    "ctaTitle": "Projenizi konuşalım.",
+    "ctaBody": "Sonraki adımı netleştirmek için kısa bir keşif görüşmesi yeterli.",
+    "ctaPrimary": "Proje başlat",
+    "ctaSecondary": "İletişim"
   },
   "work": {
     "title": "Seçilmiş dijital ürünler",
     "subtitle": "Demo vaka çalışmaları — gerçek müşteri verisi eklendikçe güncellenir.",
+    "metaTitle": "Projelerimiz",
+    "metaDesc": "Northline’ın ürettiği dijital ürünler ve vaka çalışmaları — web, ürün ve yazılım.",
     "viewProject": "Projeyi Gör",
     "all": "Tüm çalışmalar",
     "comingSoon": "Yakında",
@@ -44,13 +228,71 @@
     "platforms": "Platformlar",
     "problem": "Problem",
     "next": "Sonraki proje",
-    "eyebrow": "Portföy",
+    "eyebrow": "Projelerimiz",
     "viewCase": "Vaka çalışmasını incele",
-    "solution": "Çözüm"
+    "solution": "Çözüm",
+    "heroTitleBefore": "Ürettiğimiz işler\n",
+    "heroTitleHighlight": "kendini",
+    "heroTitleAfter": " anlatıyor.",
+    "heroBody": "Her proje bir problem, bir karar dizisi ve net bir ürün çıktısı. Aşağıdaki çalışmalar, Northline’ın nasıl düşündüğünü gösterir.",
+    "heroCta": "Proje başlat",
+    "heroSecondary": "Hizmetlerimiz",
+    "projectLabel": "Proje",
+    "client": "Müşteri",
+    "demoClient": "Studio demo",
+    "year": "Yıl",
+    "ctaTitle": "Sıradaki ürün sizinle başlasın.",
+    "ctaBody": "Kapsamı birlikte netleştirelim. 30 dakikalık keşif, doğru başlangıç için yeter.",
+    "ctaSecondary": "İletişime geç"
   },
   "services": {
     "title": "Bir fikrin yayına çıkması için gereken tüm yetkinlikler.",
     "subtitle": "Web, mobil, ürün tasarımı ve yazılım — tek stüdyoda, net süreçle.",
+    "metaTitle": "Hizmetlerimiz",
+    "metaDesc": "Web tasarım, dijital pazarlama, SEO, marka ve yapay zekâ — dijital büyümenin tüm katmanları tek çatı altında.",
+    "heroEyebrow": "Hizmetlerimiz",
+    "heroTitleBefore": "Dijital büyümenin\n",
+    "heroTitleHighlight": "tüm katmanları",
+    "heroTitleAfter": ".",
+    "heroBody": "Stratejiden tasarıma, yazılımdan yapay zekâya kadar markaların dijital dünyadaki ihtiyaçlarını tek partnerle çözüyoruz.",
+    "heroCta": "Teklif al",
+    "heroSecondary": "Projelerimiz",
+    "ctaTitle": "Hangi katmandan başlayacağınızı birlikte seçelim.",
+    "ctaBody": "Keşif görüşmesinde ihtiyacı, önceliği ve ilk teslim dilimini netleştiririz.",
+    "pageCta": "Ücretsiz keşif planla",
+    "cardExplore": "Detayları İncele",
+    "showcase": [
+      {
+        "id": "web",
+        "label": "WEB",
+        "title": "Web Geliştirme",
+        "body": "Hızlı, ölçeklenebilir ve dönüşüm odaklı kurumsal siteler ile dijital platformlar tasarlıyor ve geliştiriyoruz."
+      },
+      {
+        "id": "mobile",
+        "label": "MOBİL",
+        "title": "Mobil Uygulama Geliştirme",
+        "body": "iOS ve Android için ölçülebilir, net ürün akışına sahip premium mobil uygulamalar üretiyoruz."
+      },
+      {
+        "id": "ai",
+        "label": "YAPAY ZEKA",
+        "title": "Yapay Zeka Çözümleri",
+        "body": "Asistan, otomasyon ve analitik katmanlarını ürününüze bağlayan AI arayüzleri tasarlıyoruz."
+      },
+      {
+        "id": "uiux",
+        "label": "UI / UX TASARIM",
+        "title": "UI / UX Tasarım",
+        "body": "Tasarım sistemi, prototip ve ürün arayüzünü aynı dilde, kullanılabilir şekilde kuruyoruz."
+      },
+      {
+        "id": "ecommerce",
+        "label": "E-TİCARET",
+        "title": "E-Ticaret Çözümleri",
+        "body": "Vitrin, sepet ve ödeme deneyimini satışa dönük e-ticaret ürünleri olarak tasarlıyoruz."
+      }
+    ],
     "viewAll": "Tüm hizmetler",
     "cta": "Bu hizmet için teklif al",
     "items": {
@@ -229,12 +471,59 @@
   "about": {
     "title": "Ürün üreten bir stüdyo",
     "subtitle": "Northline; marka hikâyesi anlatmak için değil, işletmeleri büyüten dijital ürünler kurmak için var.",
+    "metaTitle": "Hakkımızda",
+    "metaDesc": "Northline, tasarım, yazılım, teknoloji ve dijital büyümeyi bir araya getiren modern bir ürün partneridir.",
+    "eyebrow": "Hakkımızda",
+    "heroTitleBefore": "Fikirleri dijital\n",
+    "heroTitleHighlight": "ürünlere",
+    "heroTitleAfter": " dönüştürüyoruz.",
+    "heroBody": "Tasarım, yazılım, teknoloji, yapay zekâ ve dijital büyümeyi tek dilde birleştiriyoruz. Northline, markaların dijital ürün partneridir.",
+    "heroCta": "Birlikte başlayalım",
+    "heroSecondary": "Hizmetlerimiz",
+    "whoEyebrow": "Biz kimiz",
+    "whoTitle": "Modern dijital ürün ve teknoloji partneri.",
+    "whoBody": "Northline; arayüzü koddan, stratejiyi teslimattan ayırmayan bir stüdyo. Küçük, disiplinli bir ekiple uzaktan çalışır; haftalık demolar ve yazılı kararlarla ilerleriz.",
+    "whoQuote": "Önce iş problemi. Sonra deneyim. Sonra yazılım.",
+    "whoStats": [
+      { "value": "5", "label": "Disiplin" },
+      { "value": "360°", "label": "Ürün bakışı" },
+      { "value": "TR/EN", "label": "Teslim dili" }
+    ],
+    "approachEyebrow": "Yaklaşımımız",
+    "approachTitle": "Fikirden çalışan ürüne.",
+    "approachBody": "Stratejiden tasarıma, geliştirmeden büyümeye kadar tüm süreci tek ekipte yönetiyoruz.",
+    "approachSteps": [
+      { "num": "01", "title": "Strategy", "body": "Hedefi, kullanıcıyı ve kısıtları netleştirir; ilk teslim dilimini birlikte kilitleriz." },
+      { "num": "02", "title": "Design", "body": "Akış, arayüz ve sistem. Kullanılabilir, tutarlı, geliştirilebilir bir deneyim kurarız." },
+      { "num": "03", "title": "Build", "body": "Performans ve bakım öncelikli yazılım. Haftalık demo, ölçülebilir ilerleme." },
+      { "num": "04", "title": "Grow", "body": "Yayın sonrası ölçüm, SEO, otomasyon ve ürün iterasyonu — ürün canlı kaldığı sürece." }
+    ],
+    "valuesEyebrow": "Değerlerimiz",
+    "valuesTitle": "Kalite teslimin parçasıdır.",
+    "values": [
+      { "title": "Netlik", "body": "Kapsam, karar ve sonraki adım yazılıdır. Sürpriz süreç değil, görünür ilerleme." },
+      { "title": "Craft", "body": "Tipografi, boşluk ve etkileşim tesadüf değildir. Arayüz, ürünün düşünme biçimini taşır." },
+      { "title": "Sahiplik", "body": "Kod, içerik ve hesaplar müşterinindir. El değiştirme, teslimin parçasıdır." },
+      { "title": "Ölçülebilirlik", "body": "Animasyon ve 3D yalnızca ürünü netleştirdiğinde kullanılır. Performans bir süs değildir." }
+    ],
+    "whyEyebrow": "Neden Northline",
+    "whyTitle": "Tek dilde tasarım ve mühendislik.",
+    "whyLead": "Birçok ekip ya görsel ya teknik partner bulur. Biz ikisini aynı masada tutarız.",
+    "whyItems": [
+      { "title": "Ürün odaklı stüdyo", "body": "Sunum için değil, yayına çıkan sistemler için çalışırız." },
+      { "title": "Entegre disiplinler", "body": "Web, marka, büyüme ve AI aynı karar çerçevesinde ilerler." },
+      { "title": "Dürüst kapsam", "body": "Ne dahil, ne değil, ne sonra — keşifte netleşir. Abartılı iddia yok." },
+      { "title": "Sürdürülebilir teslim", "body": "Erişilebilirlik, hız ve bakım; teslim kriterinin parçasıdır." }
+    ],
+    "ctaTitle": "Birlikte dijitalde iz bırakalım.",
+    "ctaBody": "Fikrinizi birkaç dakikada anlatın. İlk adımı birlikte kuralım.",
+    "ctaPrimary": "Proje başlat",
+    "ctaSecondary": "İletişime geç",
     "why": "Neden kuruldu?",
     "whyBody": "Birçok işletme ya yalnızca tasarım ya yalnızca yazılım buluyor. İkisini aynı dilde konuşan tek bir partner arıyordu. Northline bu boşluğu doldurmak için kuruldu.",
     "how": "Nasıl çalışıyoruz?",
     "howBody": "Uzaktan-first, haftalık demolar, yazılı kararlar. Müşteri ile aynı tarafta duran küçük, disiplinli bir ekip modeli.",
     "approach": "Tasarım ve teknoloji",
-    "approachBody": "Önce iş problemi, sonra arayüz, sonra kod. Animasyon ve 3D yalnızca ürünü anlatmaya yardımcı olduğunda kullanılır.",
     "quality": "Kalite",
     "qualityBody": "Erişilebilirlik, performans ve bakım edilebilirlik teslim kriterinin parçasıdır — sonradan eklenen süs değil."
   },
@@ -321,21 +610,77 @@
   "contact": {
     "title": "İletişim",
     "subtitle": "Kısa bir not bırakın veya proje sihirbazını kullanın.",
+    "metaTitle": "İletişim",
+    "metaDesc": "Northline ile bir sonraki ürününüzü konuşun. Keşif görüşmesi ve proje formu.",
+    "eyebrow": "İletişim",
+    "heroTitleBefore": "Bir sonraki büyük\n",
+    "heroTitleHighlight": "fikri",
+    "heroTitleAfter": " konuşalım.",
+    "heroBody": "Kısa bir brief yeter. Kapsamı netleştirir, ilk adımı birlikte planlarız.",
+    "infoEyebrow": "Stüdyo",
+    "infoTitle": "Doğrudan, sakin ve net bir başlangıç.",
+    "infoBody": "Formu doldurun veya e-posta bırakın. Uygun olduğumuz ilk pencerede dönüş yaparız.",
     "email": "E-posta",
     "phone": "Telefon",
     "whatsapp": "WhatsApp",
     "meeting": "Toplantı",
-    "formCta": "Mesaj gönder",
-    "startCta": "Proje sihirbazına git"
+    "location": "Konum",
+    "locationValue": "İstanbul · Uzaktan-first",
+    "formTitle": "Proje formu",
+    "formLead": "Ne yapmak istediğinizi birkaç satırda anlatın.",
+    "formCta": "Projeyi Başlatalım",
+    "startCta": "Proje sihirbazına git",
+    "serviceLabel": "İlgilendiğiniz hizmet",
+    "budgetLabel": "Bütçe aralığı",
+    "selectPlaceholder": "Seçin",
+    "error": "Gönderilemedi. Lütfen tekrar deneyin.",
+    "serviceOptions": [
+      { "value": "web", "label": "Web tasarım & geliştirme" },
+      { "value": "marketing", "label": "Dijital pazarlama" },
+      { "value": "seo", "label": "SEO & Google" },
+      { "value": "brand", "label": "Marka & kurumsal kimlik" },
+      { "value": "software", "label": "Yazılım & yapay zekâ" },
+      { "value": "unsure", "label": "Henüz emin değilim" }
+    ],
+    "budgetOptions": [
+      { "value": "unknown", "label": "Bütçem net değil" },
+      { "value": "starter", "label": "Başlangıç seviyesi" },
+      { "value": "mid", "label": "Orta ölçek" },
+      { "value": "enterprise", "label": "Kurumsal" },
+      { "value": "custom", "label": "Özel kapsam" }
+    ]
   },
   "blog": {
-    "title": "İçgörüler",
+    "title": "Blog",
     "subtitle": "Web, mobil, ürün ve strateji üzerine pratik yazılar.",
+    "metaTitle": "Blog",
+    "metaDesc": "Dijital ürün, tasarım, yapay zekâ ve büyüme üzerine Northline içgörüleri.",
+    "eyebrow": "Blog",
+    "heroTitleBefore": "Fikirler, içgörüler\nve ",
+    "heroTitleHighlight": "dijital dünya",
+    "heroTitleAfter": ".",
+    "heroBody": "Ürün kararları, arayüz, büyüme ve mühendislik üzerine saha notları — süs istatistik yok.",
+    "featured": "Öne çıkan",
+    "readStory": "Yazıyı oku",
+    "empty": "Bu kategoride henüz yazı yok.",
+    "ctaTitle": "Ürün kararlarını birlikte netleştirelim.",
+    "ctaBody": "Bir yazıdan öteye geçmek isterseniz, keşif görüşmesi yeterli bir başlangıçtır.",
+    "ctaPrimary": "Proje başlat",
+    "ctaSecondary": "İletişime geç",
     "read": "Okuma süresi",
     "min": "dk",
     "updated": "Güncellendi",
     "related": "İlgili hizmet",
-    "toc": "İçindekiler"
+    "toc": "İçindekiler",
+    "topics": {
+      "all": "Tümü",
+      "web": "Web",
+      "design": "Tasarım",
+      "ai": "Yapay Zekâ",
+      "marketing": "Pazarlama",
+      "seo": "SEO",
+      "tech": "Teknoloji"
+    }
   },
   "legal": {
     "privacy": "Gizlilik Politikası",

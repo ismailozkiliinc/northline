@@ -12,47 +12,37 @@ export function Logo({ className, onClick }: LogoProps) {
       href="/"
       onClick={onClick}
       className={cn(
-        "group inline-flex items-center gap-2.5 text-fg transition-opacity hover:opacity-90",
+        "group inline-flex items-center gap-2.5 transition-opacity hover:opacity-90",
         className,
       )}
       aria-label="Northline — Ana sayfa"
     >
       <svg
-        width="28"
-        height="28"
-        viewBox="0 0 28 28"
+        width="34"
+        height="34"
+        viewBox="0 0 34 34"
         fill="none"
         aria-hidden
         className="shrink-0"
       >
-        <rect
-          x="1"
-          y="1"
-          width="26"
-          height="26"
-          rx="6"
-          className="stroke-border fill-surface"
-          strokeWidth="1"
-        />
-        <line
-          x1="8"
-          y1="18"
-          x2="20"
-          y2="10"
-          className="stroke-accent"
-          strokeWidth="1.5"
+        <defs>
+          <linearGradient id="logo-grad" x1="0" y1="0" x2="34" y2="34">
+            <stop offset="0%" stopColor="#6366f1" />
+            <stop offset="50%" stopColor="#3b82f6" />
+            <stop offset="100%" stopColor="#8b5cf6" />
+          </linearGradient>
+        </defs>
+        <rect x="2" y="2" width="30" height="30" rx="8" fill="url(#logo-grad)" />
+        <path
+          d="M11 23 V11 L17 17 L23 11 V23"
+          stroke="white"
+          strokeWidth="2.2"
           strokeLinecap="round"
-        />
-        <circle cx="20" cy="10" r="2.5" className="fill-accent" />
-        <circle
-          cx="8"
-          cy="18"
-          r="1.75"
-          className="fill-muted"
-          opacity="0.6"
+          strokeLinejoin="round"
+          fill="none"
         />
       </svg>
-      <span className="font-display text-lg font-semibold tracking-tight">
+      <span className="font-display text-[0.95rem] font-bold tracking-[0.06em] text-[#111827] uppercase">
         Northline
       </span>
     </Link>

@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { ServicesShowcase } from "@/components/home/services-showcase";
-import { CtaBand } from "@/components/shared/cta-band";
+import { ServicesContent } from "@/components/pages/services-content";
 import { pageMetadata } from "@/lib/metadata";
 
 export async function generateMetadata({
@@ -12,8 +11,8 @@ export async function generateMetadata({
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "services" });
   return pageMetadata({
-    title: t("title"),
-    description: t("subtitle"),
+    title: t("metaTitle"),
+    description: t("metaDesc"),
     locale,
   });
 }
@@ -25,11 +24,5 @@ export default async function ServicesPage({
 }) {
   const { locale } = await params;
   setRequestLocale(locale);
-
-  return (
-    <>
-      <ServicesShowcase />
-      <CtaBand />
-    </>
-  );
+  return <ServicesContent />;
 }

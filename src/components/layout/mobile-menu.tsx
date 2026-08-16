@@ -3,20 +3,22 @@
 import { useEffect, useRef } from "react";
 import { useTranslations } from "next-intl";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
-import { X } from "lucide-react";
-import { Link } from "@/i18n/navigation";
-import { Button } from "@/components/ui/button";
+import { ArrowRight, X } from "lucide-react";
+import { Link, usePathname } from "@/i18n/navigation";
 import { LocaleSwitcher } from "@/components/layout/locale-switcher";
 import { Logo } from "@/components/layout/logo";
 import { cn } from "@/lib/utils";
 
 const navItems = [
+  { href: "/", labelKey: "home", exact: true },
   { href: "/calismalar", labelKey: "work" },
-  { href: "/hizmetler", labelKey: "services" },
-  { href: "/surec", labelKey: "process" },
-  { href: "/hakkimizda", labelKey: "about" },
-  { href: "/icgoruler", labelKey: "insights" },
+  { href: "/iletisim", labelKey: "contact" },
 ] as const;
+
+function isActive(pathname: string, href: string, exact?: boolean) {
+  if (exact) return pathname === href || pathname === "";
+  return pathname === href || pathname.startsWith(`${href}/`);
+}
 
 type MobileMenuProps = {
   open: boolean;
@@ -25,6 +27,7 @@ type MobileMenuProps = {
 
 export function MobileMenu({ open, onClose }: MobileMenuProps) {
   const t = useTranslations("nav");
+  const pathname = usePathname();
   const reduce = useReducedMotion();
   const panelRef = useRef<HTMLDivElement>(null);
   const closeBtnRef = useRef<HTMLButtonElement>(null);
@@ -70,7 +73,7 @@ export function MobileMenu({ open, onClose }: MobileMenuProps) {
     <AnimatePresence>
       {open && (
         <motion.div
-          className="fixed inset-0 z-50 flex flex-col bg-bg/95 backdrop-blur-xl"
+          className="fixed inset-0 z-50 flex flex-col bg-white"
           initial={reduce ? false : { opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={reduce ? undefined : { opacity: 0 }}
@@ -79,17 +82,14 @@ export function MobileMenu({ open, onClose }: MobileMenuProps) {
           aria-modal="true"
           aria-label={t("menu")}
         >
-          <div
-            ref={panelRef}
-            className="flex h-full flex-col"
-          >
-            <div className="container-page flex h-[var(--nav-h)] items-center justify-between">
+          <div ref={panelRef} className="flex h-full flex-col">
+            <div className="container-page flex h-[var(--nav-h)] items-center justify-between border-b border-[#f1f5f9]">
               <Logo onClick={onClose} />
               <button
                 ref={closeBtnRef}
                 type="button"
                 onClick={onClose}
-                className="inline-flex h-10 w-10 items-center justify-center rounded-full text-muted transition-colors hover:bg-white/5 hover:text-fg"
+                className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-[#e2e8f0] text-[#64748b]"
                 aria-label={t("close")}
               >
                 <X className="h-5 w-5" aria-hidden />
@@ -97,36 +97,47 @@ export function MobileMenu({ open, onClose }: MobileMenuProps) {
             </div>
 
             <nav
-              className="container-page flex flex-1 flex-col justify-center gap-2 py-8"
+              className="container-page flex flex-1 flex-col justify-center gap-1 py-8"
               aria-label="Ana menü"
             >
-              {navItems.map((item, i) => (
-                <motion.div
-                  key={item.href}
-                  initial={reduce ? false : { opacity: 0, x: -12 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ delay: reduce ? 0 : 0.05 + i * 0.04, duration: 0.35 }}
-                >
-                  <Link
-                    href={item.href}
-                    onClick={onClose}
-                    className={cn(
-                      "font-display block py-3 text-3xl font-semibold tracking-tight text-fg",
-                      "link-underline w-fit",
-                    )}
+              {navItems.map((item, i) => {
+                const active = isActive(pathname, item.href, "exact" in item ? item.exact : false);
+                return (
+                  <motion.div
+                    key={item.href}
+                    initial={reduce ? false : { opacity: 0, x: -16 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ delay: reduce ? 0 : 0.04 + i * 0.05, duration: 0.35 }}
                   >
-                    {t(item.labelKey)}
-                  </Link>
-                </motion.div>
-              ))}
+                    <Link
+                      href={item.href}
+                      onClick={onClose}
+                      className={cn(
+                        "font-display flex items-center gap-3 rounded-xl px-3 py-3.5 text-2xl font-semibold tracking-tight",
+                        active ? "text-brand-gradient" : "text-[#111827]",
+                      )}
+                    >
+                      {t(item.labelKey)}
+                      {active && (
+                        <span className="h-1.5 w-1.5 rounded-full bg-brand-gradient" aria-hidden />
+                      )}
+                    </Link>
+                  </motion.div>
+                );
+              })}
             </nav>
 
-            <div className="container-page flex flex-col gap-6 border-t border-border pb-10 pt-8">
-              <Button asChild size="lg" className="w-full">
-                <Link href="/proje-baslat" onClick={onClose}>
+            <div className="container-page flex flex-col gap-5 border-t border-[#f1f5f9] pb-10 pt-8">
+              <div className="rounded-full p-[1.5px] bg-brand-gradient">
+                <Link
+                  href="/proje-baslat"
+                  onClick={onClose}
+                  className="group flex h-12 w-full items-center justify-center gap-2 rounded-full bg-white text-sm font-semibold text-[#111827]"
+                >
                   {t("start")}
+                  <ArrowRight className="h-4 w-4 text-[#6366f1]" aria-hidden />
                 </Link>
-              </Button>
+              </div>
               <LocaleSwitcher variant="stacked" className="self-start" />
             </div>
           </div>

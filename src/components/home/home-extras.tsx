@@ -1,24 +1,23 @@
 "use client";
 
 import { useLocale, useTranslations } from "next-intl";
+import { motion, useReducedMotion } from "framer-motion";
 import { Link } from "@/i18n/navigation";
 import { blogPosts } from "@/content/blog";
 import { faqItems } from "@/content/faq";
 import { FaqAccordion } from "@/components/shared/faq-accordion";
 import { Button } from "@/components/ui/button";
-import { PremiumVisual } from "@/components/shared/premium-visual";
-import { media } from "@/lib/media";
 import type { Locale } from "@/content/types";
 
 const industries = [
-  { tr: "Otel & turizm", en: "Hospitality", tone: "bg-surface text-[#9fe0d2]" },
-  { tr: "Finans & SaaS", en: "Finance & SaaS", tone: "bg-surface text-[#a8b8ff]" },
-  { tr: "E-ticaret", en: "E-commerce", tone: "bg-surface text-[#f0b896]" },
-  { tr: "Eğitim", en: "Education", tone: "bg-[#e8f2ec] text-[#1f5c40]" },
-  { tr: "Sağlık", en: "Healthcare", tone: "bg-[#f4f7fa] text-[#2a4a6a]" },
-  { tr: "Gayrimenkul", en: "Real estate", tone: "bg-surface text-[#d0d4dc]" },
-  { tr: "Lojistik", en: "Logistics", tone: "bg-surface text-[#c5d4a8]" },
-  { tr: "Profesyonel hizmetler", en: "Professional services", tone: "bg-surface text-[#cbb8f0]" },
+  { tr: "Otel & turizm", en: "Hospitality", tone: "bg-accent-soft text-accent-teal border border-accent-teal/15" },
+  { tr: "Finans & SaaS", en: "Finance & SaaS", tone: "bg-accent-soft text-accent border border-accent/15" },
+  { tr: "E-ticaret", en: "E-commerce", tone: "bg-orange-50 text-orange-700 border border-orange-200/60" },
+  { tr: "Eğitim", en: "Education", tone: "bg-emerald-50 text-emerald-700 border border-emerald-200/60" },
+  { tr: "Sağlık", en: "Healthcare", tone: "bg-sky-50 text-sky-700 border border-sky-200/60" },
+  { tr: "Gayrimenkul", en: "Real estate", tone: "bg-slate-100 text-slate-700 border border-slate-200/60" },
+  { tr: "Lojistik", en: "Logistics", tone: "bg-lime-50 text-lime-700 border border-lime-200/60" },
+  { tr: "Profesyonel hizmetler", en: "Professional services", tone: "bg-violet-50 text-violet-700 border border-violet-200/60" },
 ];
 
 const stack = [
@@ -47,13 +46,17 @@ export function IndustriesStrip() {
         </h2>
         <p className="mt-5 max-w-lg text-base text-ink-muted">{t("industriesBody")}</p>
         <ul className="mt-14 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-          {industries.map((item) => (
-            <li
+          {industries.map((item, i) => (
+            <motion.li
               key={item.en}
-              className={`rounded-[var(--radius-card)] px-5 py-8 text-sm font-medium tracking-wide ${item.tone}`}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-5%" }}
+              transition={{ duration: 0.5, delay: i * 0.05, ease: [0.22, 1, 0.36, 1] }}
+              className={`rounded-[var(--radius-card)] px-5 py-8 text-sm font-medium tracking-wide transition-transform hover:-translate-y-1 ${item.tone}`}
             >
               {item[locale]}
-            </li>
+            </motion.li>
           ))}
         </ul>
       </div>
@@ -93,11 +96,6 @@ export function InsightsTeaser() {
   const t = useTranslations("homeExtras");
   const locale = useLocale() as Locale;
   const posts = blogPosts.slice(0, 3);
-  const covers = [
-    media.studio.materials,
-    media.studio.lounge,
-    media.studio.strategy,
-  ];
 
   return (
     <section className="section-mist border-t border-border-ink py-24 md:py-32">
@@ -114,20 +112,12 @@ export function InsightsTeaser() {
           </Link>
         </div>
         <ul className="grid gap-8 md:grid-cols-3">
-          {posts.map((post, i) => (
+          {posts.map((post) => (
             <li key={post.slug}>
               <Link
                 href={{ pathname: "/icgoruler/[slug]", params: { slug: post.slug } }}
                 className="group block"
               >
-                <div className="mb-5 overflow-hidden rounded-[var(--radius-card)] border border-border-ink shadow-[var(--shadow-soft)]">
-                  <PremiumVisual
-                    src={covers[i] ?? media.studio.materials}
-                    alt=""
-                    className="w-full"
-                    sizes="(max-width: 768px) 100vw, 33vw"
-                  />
-                </div>
                 <p className="text-xs tracking-wider text-ink-muted uppercase">{post.category}</p>
                 <h3 className="mt-3 font-display text-xl font-semibold tracking-tight text-ink group-hover:text-accent">
                   {post.title[locale]}
@@ -175,13 +165,13 @@ export function DiscoveryBand() {
   const t = useTranslations("homeExtras");
 
   return (
-    <section className="section-dark border-t border-white/10 py-20 md:py-24">
+    <section className="section-dark border-t border-border-ink py-20 md:py-24">
       <div className="container-page flex flex-col items-start justify-between gap-8 md:flex-row md:items-center">
         <div>
-          <h2 className="font-display text-[clamp(1.75rem,3vw,2.5rem)] font-semibold tracking-tight">
+          <h2 className="font-display text-[clamp(1.75rem,3vw,2.5rem)] font-semibold tracking-tight text-white">
             {t("discoveryTitle")}
           </h2>
-          <p className="mt-3 max-w-md text-muted">{t("discoveryBody")}</p>
+          <p className="mt-3 max-w-md text-[#94a3b8]">{t("discoveryBody")}</p>
         </div>
         <Button asChild size="lg">
           <Link href="/proje-baslat">{t("discoveryCta")}</Link>
@@ -204,11 +194,18 @@ export function JourneyStrip() {
         </h2>
         <ol className="grid gap-8 md:grid-cols-4">
           {steps.map((step, i) => (
-            <li key={step.title} className="border-t border-border-ink pt-6">
+            <motion.li
+              key={step.title}
+              initial={{ opacity: 0, y: 24 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-8%" }}
+              transition={{ duration: 0.6, delay: i * 0.08, ease: [0.22, 1, 0.36, 1] }}
+              className="border-t border-border-ink pt-6"
+            >
               <span className="font-mono text-xs text-accent">{String(i + 1).padStart(2, "0")}</span>
               <h3 className="mt-3 font-display text-lg font-semibold text-ink">{step.title}</h3>
               <p className="mt-2 text-sm text-ink-muted">{step.body}</p>
-            </li>
+            </motion.li>
           ))}
         </ol>
       </div>

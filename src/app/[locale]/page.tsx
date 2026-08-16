@@ -1,19 +1,11 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { CtaBand } from "@/components/shared/cta-band";
 import { Hero } from "@/components/home/hero";
-import { FeaturedWork } from "@/components/home/featured-work";
-import { ServicesShowcase } from "@/components/home/services-showcase";
-import { Principles } from "@/components/home/principles";
-import { ProcessCinema } from "@/components/home/process-cinema";
-import {
-  IndustriesStrip,
-  TechStack,
-  InsightsTeaser,
-  HomeFaq,
-  DiscoveryBand,
-  JourneyStrip,
-} from "@/components/home/home-extras";
+import { HomeServices } from "@/components/home/home-services";
+import { ExperienceStories } from "@/components/home/experience-stories";
+import { HomeWhy } from "@/components/home/home-why";
+import { HomeProcess } from "@/components/home/home-process";
+import { PageCta } from "@/components/system/page-cta";
 import { siteConfig } from "@/lib/site";
 
 export async function generateMetadata({
@@ -51,21 +43,21 @@ export default async function HomePage({
 }) {
   const { locale } = await params;
   setRequestLocale(locale);
+  const pitch = await getTranslations("homePitch");
 
   return (
     <>
       <Hero />
-      <FeaturedWork />
-      <ServicesShowcase />
-      <Principles />
-      <ProcessCinema />
-      <IndustriesStrip />
-      <JourneyStrip />
-      <TechStack />
-      <InsightsTeaser />
-      <HomeFaq />
-      <DiscoveryBand />
-      <CtaBand />
+      <HomeServices />
+      <ExperienceStories />
+      <HomeWhy />
+      <HomeProcess />
+      <PageCta
+        title={pitch("ctaTitle")}
+        body={pitch("ctaBody")}
+        primary={{ href: "/proje-baslat", label: pitch("ctaPrimary") }}
+        secondary={{ href: "/iletisim", label: pitch("ctaSecondary") }}
+      />
     </>
   );
 }

@@ -4,20 +4,9 @@ import { Logo } from "@/components/layout/logo";
 import { siteConfig } from "@/lib/site";
 import { cn } from "@/lib/utils";
 
-const serviceLinks = [
-  { href: "/hizmetler/web" as const, key: "web" as const },
-  { href: "/hizmetler/mobil" as const, key: "mobile" as const },
-  { href: "/hizmetler/saas" as const, key: "saas" as const },
-  { href: "/hizmetler/ui-ux" as const, key: "uiux" as const },
-  { href: "/hizmetler/e-ticaret" as const, key: "ecommerce" as const },
-  { href: "/hizmetler/ai" as const, key: "ai" as const },
-] as const;
-
 const companyLinks = [
-  { href: "/hakkimizda" as const, labelKey: "about" as const },
   { href: "/surec" as const, labelKey: "process" as const },
   { href: "/calismalar" as const, labelKey: "work" as const },
-  { href: "/icgoruler" as const, labelKey: "insights" as const },
   { href: "/sss" as const, labelKey: "faq" as const },
   { href: "/iletisim" as const, labelKey: "contact" as const },
 ] as const;
@@ -36,41 +25,22 @@ type FooterProps = {
 export async function Footer({ className }: FooterProps) {
   const t = await getTranslations("footer");
   const tNav = await getTranslations("nav");
-  const tServices = await getTranslations("services.items");
   const tLegal = await getTranslations("legal");
   const year = new Date().getFullYear();
 
   return (
-    <footer className={cn("border-t border-border bg-bg-footer", className)}>
+    <footer className={cn("border-t border-border bg-bg-footer text-[#f8fafc]", className)}>
       <div className="container-page py-16 md:py-20">
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-12 lg:gap-8">
           <div className="lg:col-span-4">
-            <Logo />
-            <p className="mt-4 max-w-xs text-sm leading-relaxed text-muted">
+            <Logo className="[&_span]:text-white" />
+            <p className="mt-4 max-w-xs text-sm leading-relaxed text-[#94a3b8]">
               {t("tagline")}
             </p>
           </div>
 
-          <div className="lg:col-span-2 lg:col-start-6">
-            <h2 className="text-xs font-semibold uppercase tracking-wider text-muted">
-              {t("services")}
-            </h2>
-            <ul className="mt-4 space-y-2.5">
-              {serviceLinks.map((item) => (
-                <li key={item.href}>
-                  <Link
-                    href={item.href}
-                    className="text-sm text-fg/80 transition-colors hover:text-fg link-underline"
-                  >
-                    {tServices(`${item.key}.title`)}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div className="lg:col-span-2">
-            <h2 className="text-xs font-semibold uppercase tracking-wider text-muted">
+          <div className="lg:col-span-3 lg:col-start-7">
+            <h2 className="text-xs font-semibold uppercase tracking-wider text-[#94a3b8]">
               {t("company")}
             </h2>
             <ul className="mt-4 space-y-2.5">
@@ -78,7 +48,7 @@ export async function Footer({ className }: FooterProps) {
                 <li key={item.href}>
                   <Link
                     href={item.href}
-                    className="text-sm text-fg/80 transition-colors hover:text-fg link-underline"
+                    className="text-sm text-[#cbd5e1] transition-colors hover:text-white link-underline"
                   >
                     {tNav(item.labelKey)}
                   </Link>
@@ -88,7 +58,7 @@ export async function Footer({ className }: FooterProps) {
           </div>
 
           <div className="lg:col-span-2">
-            <h2 className="text-xs font-semibold uppercase tracking-wider text-muted">
+            <h2 className="text-xs font-semibold uppercase tracking-wider text-[#94a3b8]">
               {t("legal")}
             </h2>
             <ul className="mt-4 space-y-2.5">
@@ -96,7 +66,7 @@ export async function Footer({ className }: FooterProps) {
                 <li key={item.href}>
                   <Link
                     href={item.href}
-                    className="text-sm text-fg/80 transition-colors hover:text-fg link-underline"
+                    className="text-sm text-[#cbd5e1] transition-colors hover:text-white link-underline"
                   >
                     {tLegal(item.key)}
                   </Link>
@@ -106,7 +76,7 @@ export async function Footer({ className }: FooterProps) {
           </div>
         </div>
 
-        <div className="mt-14 flex flex-col gap-2 border-t border-border pt-8 text-xs text-muted sm:flex-row sm:items-center sm:justify-between">
+        <div className="mt-14 flex flex-col gap-2 border-t border-white/10 pt-8 text-xs text-[#64748b] sm:flex-row sm:items-center sm:justify-between">
           <p>
             © {year} {siteConfig.name}. {t("rights")}
           </p>

@@ -21,7 +21,6 @@ import {
 } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { Button } from "@/components/ui/button";
-import { ProcessWorkspace } from "@/components/process/process-workspaces";
 import {
   MetaPremiumCard,
   ToolBrandChips,
@@ -374,10 +373,7 @@ export function ProcessTimeline() {
                 >
                   <div
                     className={cn(
-                      "grid items-start gap-8 transition-opacity duration-300 lg:gap-10",
-                      isDesign || isWireframe
-                        ? "lg:grid-cols-[0.9fr_1.2fr]"
-                        : "lg:grid-cols-[0.95fr_1.15fr]",
+                      "grid items-start gap-8 transition-opacity duration-300",
                       isActive ? "opacity-100" : reduce ? "opacity-80" : "opacity-70",
                     )}
                   >
@@ -389,16 +385,6 @@ export function ProcessTimeline() {
                       isDesign={isDesign}
                       isWireframe={isWireframe}
                     />
-
-                    <div
-                      className={cn(
-                        "relative",
-                        (isDesign || isWireframe) &&
-                          "-mx-2 overflow-visible sm:mx-0 lg:-mr-4 xl:-mr-8",
-                      )}
-                    >
-                      <ProcessWorkspace art={stage.art} />
-                    </div>
                   </div>
                 </li>
               );

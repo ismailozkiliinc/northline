@@ -20,6 +20,8 @@ const REQUIRED_NAMESPACES = [
   "meta",
   "nav",
   "hero",
+  "homeStories",
+  "homePitch",
   "work",
   "services",
   "process",

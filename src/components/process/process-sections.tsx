@@ -5,9 +5,6 @@ import { motion, useReducedMotion } from "framer-motion";
 import { Reveal } from "@/components/motion/reveal";
 import { Link } from "@/i18n/navigation";
 import { Button } from "@/components/ui/button";
-import { DELIVERABLE_PREVIEWS } from "@/components/process/deliverable-artifacts";
-import { PremiumVisual } from "@/components/shared/premium-visual";
-import { media } from "@/lib/media";
 import { siteConfig } from "@/lib/site";
 import { cn } from "@/lib/utils";
 
@@ -123,8 +120,6 @@ export function ProcessDeliverables() {
 
         <ul className="mt-12 grid gap-4 sm:grid-cols-2 sm:gap-5 lg:grid-cols-3 lg:gap-6">
           {items.map((item, i) => {
-            const Preview = DELIVERABLE_PREVIEWS[i];
-            if (!Preview) return null;
             return (
               <Reveal key={item.title} as="li" delay={i * 0.05} y={18}>
                 <article
@@ -138,14 +133,6 @@ export function ProcessDeliverables() {
                       "hover:-translate-y-1.5 hover:border-white/18 hover:shadow-[0_20px_48px_rgba(0,0,0,0.32),inset_0_1px_0_rgba(255,255,255,0.08)]",
                   )}
                 >
-                  <div className="relative overflow-hidden border-b border-white/[0.08]">
-                    <Preview />
-                    <div
-                      className="pointer-events-none absolute inset-x-0 bottom-0 h-8 bg-linear-to-t from-[#2a3b52]/40 to-transparent"
-                      aria-hidden
-                    />
-                  </div>
-
                   <div className="flex flex-col px-4 pt-3.5 pb-4 md:px-5 md:pt-4 md:pb-5">
                     <span className="font-mono text-[10px] tracking-[0.18em] text-accent">
                       {String(i + 1).padStart(2, "0")}
@@ -186,7 +173,7 @@ export function ProcessTech() {
 
   return (
     <section className="border-b border-white/10 bg-bg-secondary py-16 md:py-24">
-      <div className="container-page grid gap-12 lg:grid-cols-[0.85fr_1.15fr] lg:items-center">
+      <div className="container-page">
         <div>
           <p className="text-[11px] tracking-[0.24em] text-accent uppercase">{t("eyebrow")}</p>
           <h2 className="mt-3 font-display text-[clamp(1.9rem,3.5vw,3rem)] font-semibold tracking-tight">
@@ -204,15 +191,6 @@ export function ProcessTech() {
             ))}
           </ul>
         </div>
-
-        <div className="overflow-hidden rounded-[var(--radius-media)] border border-border shadow-[var(--shadow-depth)]">
-          <PremiumVisual
-            src={media.studio.development}
-            alt="Northline development workstation"
-            className="w-full"
-            sizes="(max-width: 1024px) 100vw, 55vw"
-          />
-        </div>
       </div>
     </section>
   );
@@ -224,7 +202,7 @@ export function ProcessFinalCta() {
 
   return (
     <section className="border-t border-white/10 bg-bg-primary">
-      <div className="container-page grid items-center gap-10 py-16 md:py-24 lg:grid-cols-[0.95fr_1.05fr] lg:gap-14 lg:py-28">
+      <div className="container-page py-16 md:py-24 lg:py-28">
         <div className="max-w-xl">
           <h2 className="max-w-[12ch] font-display text-[clamp(2.2rem,5vw,4.25rem)] font-semibold tracking-tight text-balance">
             {t("title")}
@@ -246,15 +224,6 @@ export function ProcessFinalCta() {
               </Button>
             )}
           </div>
-        </div>
-
-        <div className="overflow-hidden rounded-[var(--radius-media)] border border-border shadow-[var(--shadow-depth)]">
-          <PremiumVisual
-            src={media.studio.launch}
-            alt=""
-            className="w-full"
-            sizes="(max-width: 1024px) 100vw, 50vw"
-          />
         </div>
       </div>
     </section>

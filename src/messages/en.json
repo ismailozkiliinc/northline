@@ -5,12 +5,14 @@
     "ogAlt": "Northline digital product studio"
   },
   "nav": {
-    "work": "Work",
+    "home": "Home",
+    "work": "Projects",
     "services": "Services",
     "process": "Process",
     "about": "About",
-    "insights": "Insights",
-    "start": "Start a project",
+    "insights": "Blog",
+    "start": "Get a quote",
+    "studio": "Digital Studio",
     "contact": "Contact",
     "faq": "FAQ",
     "packages": "Packages",
@@ -19,22 +21,204 @@
     "skip": "Skip to content"
   },
   "hero": {
-    "title": "We design and build digital products that move businesses forward.",
-    "subtitle": "Strategy, design, and engineering in one studio — shipping web, mobile, and scalable product experiences.",
-    "ctaPrimary": "Tell us about your project",
-    "ctaSecondary": "Browse selected work",
-    "capabilities": [
-      "Web",
-      "Mobile",
-      "SaaS",
-      "E-commerce",
-      "UI/UX",
-      "AI & Automation"
+    "eyebrow": "Creative ideas, digital solutions",
+    "titleBefore": "We take your brand to the ",
+    "titleHighlight": "summit",
+    "titleAfter": " digitally.",
+    "subtitle": "At Northline we deliver strategy, design, and engineering so brands stand out in the digital world.",
+    "ctaPrimary": "Explore our services",
+    "ctaSecondary": "Watch intro",
+    "stats": [
+      { "value": "120+", "label": "Projects" },
+      { "value": "8+", "label": "Years" },
+      { "value": "98%", "label": "Satisfaction" }
     ]
+  },
+  "homeServices": {
+    "eyebrow": "Our services",
+    "title": "Five disciplines. One studio.",
+    "subtitle": "Web, marketing, SEO, brand, and software — one studio.",
+    "cta": "Get a free quote",
+    "ctaSecondary": "Contact us",
+    "ctaTitle": "Let's plan your project together",
+    "ctaBody": "Book a free 30-minute discovery call for needs analysis and a tailored roadmap.",
+    "explore": "Learn more",
+    "deliverables": "Scope",
+    "approachLabel": "Our approach",
+    "approachSteps": ["Discovery", "Strategy", "Design & Build", "Launch & Optimize", "Ongoing support"],
+    "pillars": [
+      { "value": "5", "label": "Expertise areas" },
+      { "value": "30+", "label": "Service lines" },
+      { "value": "360°", "label": "Integrated solution" }
+    ],
+    "categories": [
+      {
+        "id": "web",
+        "title": "Web Design & Development",
+        "description": "We design and build corporate-grade, performance-first, scalable web platforms.",
+        "highlight": "Speed, security, and conversion-focused infrastructure",
+        "metric": { "value": "95+", "label": "Performance target" },
+        "items": [
+          { "title": "Corporate websites", "desc": "Professional digital storefronts that build brand trust" },
+          { "title": "E-commerce", "desc": "Sales-focused stores with secure payment integration" },
+          { "title": "Landing pages", "desc": "High-converting pages for campaigns and lead capture" },
+          { "title": "Custom web apps", "desc": "Tailored panels and portals for your workflows" },
+          { "title": "UI/UX", "desc": "Research-driven prototyping and intuitive experiences" }
+        ]
+      },
+      {
+        "id": "marketing",
+        "title": "Digital Marketing",
+        "description": "Data-driven media planning and optimization to maximize return on ad spend.",
+        "highlight": "ROI-focused campaign management",
+        "metric": { "value": "3.2x", "label": "Avg. ROAS target" },
+        "items": [
+          { "title": "Google Ads", "desc": "Search, display, and YouTube campaign management" },
+          { "title": "Meta Ads", "desc": "Performance campaigns on Instagram and Facebook" },
+          { "title": "Ad strategy", "desc": "Audience, budget, and channel planning" },
+          { "title": "Remarketing", "desc": "Retargeting that turns visitors into customers" },
+          { "title": "Conversion optimization", "desc": "Continuous improvement via A/B tests and funnel analysis" },
+          { "title": "Ad reporting", "desc": "Transparent, actionable performance dashboards" }
+        ]
+      },
+      {
+        "id": "seo",
+        "title": "SEO & Google",
+        "description": "Sustainable organic growth from technical foundation to content strategy.",
+        "highlight": "Long-term visibility and traffic",
+        "metric": { "value": "6–12", "label": "Month growth plan" },
+        "items": [
+          { "title": "Technical SEO", "desc": "Site speed, indexing, and structural optimization" },
+          { "title": "Keyword research", "desc": "Competitive analysis and content mapping" },
+          { "title": "Local SEO", "desc": "Top rankings in regional search results" },
+          { "title": "Google Business Profile", "desc": "Profile optimization and review management" },
+          { "title": "SEO optimization", "desc": "Continuous on-page and off-page improvement" },
+          { "title": "Performance tracking", "desc": "Ranking, traffic, and conversion reporting" }
+        ]
+      },
+      {
+        "id": "brand",
+        "title": "Brand & Identity",
+        "description": "We elevate your brand with consistent visual language and strategic positioning.",
+        "highlight": "Memorable corporate presence",
+        "metric": { "value": "360°", "label": "Brand system" },
+        "items": [
+          { "title": "Logo design", "desc": "Distinct, scalable logo and symbol systems" },
+          { "title": "Brand identity", "desc": "Color, typography, and application guidelines" },
+          { "title": "Brand strategy", "desc": "Positioning, tone, and messaging framework" },
+          { "title": "Ad creatives", "desc": "Campaign and social media creative assets" },
+          { "title": "Catalog & decks", "desc": "Sales and corporate communication materials" }
+        ]
+      },
+      {
+        "id": "software",
+        "title": "Software & AI",
+        "description": "Custom software, automation, and AI solutions that boost operational efficiency.",
+        "highlight": "Scalable automation infrastructure",
+        "metric": { "value": "24/7", "label": "System availability" },
+        "items": [
+          { "title": "Custom software", "desc": "Tailored web and mobile application development" },
+          { "title": "CRM", "desc": "Customer relationship and sales pipeline management" },
+          { "title": "WhatsApp automation", "desc": "Bulk messaging, chatbots, and notification flows" },
+          { "title": "AI chatbot", "desc": "24/7 customer support and lead qualification" },
+          { "title": "Booking systems", "desc": "Online reservation and calendar integration" },
+          { "title": "Business automation", "desc": "Smart automation for repetitive workflows" }
+        ]
+      }
+    ]
+  },
+  "homeStories": {
+    "eyebrow": "Selected work",
+    "title": "Digital experiences we ship",
+    "body": "The studies below are studio demos and concepts — not verified client results. Each card represents a different sector and product language.",
+    "demo": "Demo",
+    "prev": "Previous",
+    "next": "Next",
+    "cards": [
+      {
+        "slug": "campus-learn",
+        "category": "Health technology",
+        "title": "CarePath",
+        "f1": "Coordination",
+        "f1l": "Clinic flow",
+        "f2": "Access",
+        "f2l": "Digital channel"
+      },
+      {
+        "slug": "table-reserve",
+        "category": "Hospitality",
+        "title": "Reserve",
+        "f1": "Table",
+        "f1l": "Booking",
+        "f2": "Menu",
+        "f2l": "Tasting"
+      },
+      {
+        "slug": "pulse-flow",
+        "category": "Artificial intelligence",
+        "title": "Orbit AI",
+        "f1": "Automation",
+        "f1l": "Workflow",
+        "f2": "CRM",
+        "f2l": "Updates"
+      },
+      {
+        "slug": "atelier-shop",
+        "category": "E-commerce",
+        "title": "Atelier",
+        "f1": "Storefront",
+        "f1l": "Product experience",
+        "f2": "Mobile",
+        "f2l": "Checkout"
+      },
+      {
+        "slug": "harbor-stay",
+        "category": "Hospitality",
+        "title": "Harbor Stay",
+        "f1": "Direct",
+        "f1l": "Booking",
+        "f2": "Suite",
+        "f2l": "Harbor Suite"
+      },
+      {
+        "slug": "ledger-flow",
+        "category": "Finance",
+        "title": "Ledger",
+        "f1": "Panel",
+        "f1l": "Cash flow",
+        "f2": "Invoices",
+        "f2l": "Status"
+      }
+    ]
+  },
+  "homePitch": {
+    "whyEyebrow": "Why Northline",
+    "whyTitle": "One studio. Four capabilities.",
+    "whyItems": [
+      { "title": "Strategy", "hint": "Scope, priority, and measures — clear." },
+      { "title": "Design", "hint": "Interfaces and systems that carry the brand." },
+      { "title": "Software", "hint": "Product infrastructure built to scale." },
+      { "title": "AI", "hint": "Repetitive work connected to automation." }
+    ],
+    "processEyebrow": "Process",
+    "processTitle": "A short path to launch.",
+    "processSteps": [
+      { "title": "Discover" },
+      { "title": "Design" },
+      { "title": "Build" },
+      { "title": "Launch" }
+    ],
+    "processLink": "See the process",
+    "ctaTitle": "Let’s talk about your project.",
+    "ctaBody": "A short discovery call is enough to map the next step.",
+    "ctaPrimary": "Start a project",
+    "ctaSecondary": "Contact"
   },
   "work": {
     "title": "Selected digital products",
     "subtitle": "Demo case studies — updated as verified project data becomes available.",
+    "metaTitle": "Work",
+    "metaDesc": "Digital products and case studies by Northline — web, product, and software.",
     "viewProject": "View project",
     "all": "All work",
     "comingSoon": "Coming soon",
@@ -46,11 +230,69 @@
     "next": "Next project",
     "eyebrow": "Work",
     "viewCase": "View case study",
-    "solution": "Solution"
+    "solution": "Solution",
+    "heroTitleBefore": "The work\n",
+    "heroTitleHighlight": "speaks",
+    "heroTitleAfter": " for itself.",
+    "heroBody": "Each project is a problem, a sequence of decisions, and a clear product. The studies below show how Northline thinks.",
+    "heroCta": "Start a project",
+    "heroSecondary": "Services",
+    "projectLabel": "Project",
+    "client": "Client",
+    "demoClient": "Studio demo",
+    "year": "Year",
+    "ctaTitle": "The next product can start with yours.",
+    "ctaBody": "Let’s clarify the scope together. Thirty minutes of discovery is enough to begin well.",
+    "ctaSecondary": "Contact us"
   },
   "services": {
     "title": "Everything required to ship an idea.",
     "subtitle": "Web, mobile, product design, and software — one studio, clear process.",
+    "metaTitle": "Services",
+    "metaDesc": "Web design, digital marketing, SEO, brand, and AI — every layer of digital growth under one roof.",
+    "heroEyebrow": "Services",
+    "heroTitleBefore": "Every layer of\n",
+    "heroTitleHighlight": "digital growth",
+    "heroTitleAfter": ".",
+    "heroBody": "From strategy and design to engineering and AI, we cover a brand’s digital needs with one partner.",
+    "heroCta": "Request a quote",
+    "heroSecondary": "See the work",
+    "ctaTitle": "Let’s choose the right layer to start with.",
+    "ctaBody": "A discovery call clarifies the need, the priority, and the first delivery slice.",
+    "pageCta": "Book a free discovery",
+    "cardExplore": "View details",
+    "showcase": [
+      {
+        "id": "web",
+        "label": "WEB",
+        "title": "Web Development",
+        "body": "We design and build fast, scalable corporate sites and digital platforms with conversion in mind."
+      },
+      {
+        "id": "mobile",
+        "label": "MOBILE",
+        "title": "Mobile App Development",
+        "body": "We ship premium iOS and Android products with clear flows and measurable outcomes."
+      },
+      {
+        "id": "ai",
+        "label": "ARTIFICIAL INTELLIGENCE",
+        "title": "AI Solutions",
+        "body": "We design assistant, automation, and analytics interfaces that plug into the product."
+      },
+      {
+        "id": "uiux",
+        "label": "UI / UX DESIGN",
+        "title": "UI / UX Design",
+        "body": "We build the design system, prototype, and product UI as one usable language."
+      },
+      {
+        "id": "ecommerce",
+        "label": "E-COMMERCE",
+        "title": "E-Commerce Solutions",
+        "body": "We design storefront, cart, and checkout as a conversion-focused retail product."
+      }
+    ],
     "viewAll": "All services",
     "cta": "Request a proposal",
     "items": {
@@ -229,12 +471,59 @@
   "about": {
     "title": "A studio that ships products",
     "subtitle": "Northline exists to build digital products that grow businesses — not to decorate decks.",
+    "metaTitle": "About",
+    "metaDesc": "Northline is a modern product partner combining design, software, technology, and digital growth.",
+    "eyebrow": "About",
+    "heroTitleBefore": "We turn ideas into\n",
+    "heroTitleHighlight": "digital products",
+    "heroTitleAfter": ".",
+    "heroBody": "We unite design, engineering, technology, AI, and digital growth in one language. Northline is a brand’s digital product partner.",
+    "heroCta": "Start together",
+    "heroSecondary": "Services",
+    "whoEyebrow": "Who we are",
+    "whoTitle": "A modern digital product and technology partner.",
+    "whoBody": "Northline does not split interface from code, or strategy from delivery. A small, disciplined team works remote-first — with weekly demos and written decisions.",
+    "whoQuote": "Business problem first. Experience second. Software third.",
+    "whoStats": [
+      { "value": "5", "label": "Disciplines" },
+      { "value": "360°", "label": "Product view" },
+      { "value": "TR/EN", "label": "Delivery" }
+    ],
+    "approachEyebrow": "Our approach",
+    "approachTitle": "From idea to a working product.",
+    "approachBody": "We run strategy, design, engineering, and growth as one team — from the brief to the live product.",
+    "approachSteps": [
+      { "num": "01", "title": "Strategy", "body": "We lock the goal, the user, the constraints, and the first delivery slice together." },
+      { "num": "02", "title": "Design", "body": "Flows, interface, and system. Usable, consistent, and ready to engineer." },
+      { "num": "03", "title": "Build", "body": "Engineering with performance and maintainability first. Weekly demos, visible progress." },
+      { "num": "04", "title": "Grow", "body": "After launch: measurement, SEO, automation, and product iteration — for as long as the product is live." }
+    ],
+    "valuesEyebrow": "Values",
+    "valuesTitle": "Quality is part of delivery.",
+    "values": [
+      { "title": "Clarity", "body": "Scope, decisions, and next steps are written. Visible progress — not surprise process." },
+      { "title": "Craft", "body": "Typography, space, and interaction are not accidents. The interface carries how the product thinks." },
+      { "title": "Ownership", "body": "Code, content, and accounts belong to the client. Handoff is part of delivery." },
+      { "title": "Measurability", "body": "Motion and 3D appear only when they clarify the product. Performance is not decoration." }
+    ],
+    "whyEyebrow": "Why Northline",
+    "whyTitle": "Design and engineering in one language.",
+    "whyLead": "Most teams find either a visual or a technical partner. We keep both at the same table.",
+    "whyItems": [
+      { "title": "Product studio", "body": "We build systems that ship — not presentations that stall." },
+      { "title": "Integrated disciplines", "body": "Web, brand, growth, and AI move inside one decision frame." },
+      { "title": "Honest scope", "body": "What is in, out, and later is locked in discovery. No inflated claims." },
+      { "title": "Durable delivery", "body": "Accessibility, speed, and care are delivery criteria — not later polish." }
+    ],
+    "ctaTitle": "Let’s leave a mark in digital — together.",
+    "ctaBody": "Tell us the idea in a few minutes. We’ll set the first step together.",
+    "ctaPrimary": "Start a project",
+    "ctaSecondary": "Contact us",
     "why": "Why we exist",
     "whyBody": "Too many companies get either design or engineering. They need one partner speaking both languages. That is why Northline exists.",
     "how": "How we operate",
     "howBody": "Remote-first, weekly demos, written decisions. A small, disciplined team on the same side as the client.",
     "approach": "Design & technology",
-    "approachBody": "Business problem first, interface second, code third. Motion and 3D only when they clarify the product.",
     "quality": "Quality bar",
     "qualityBody": "Accessibility, performance, and maintainability are part of delivery — not afterthought polish."
   },
@@ -321,21 +610,77 @@
   "contact": {
     "title": "Contact",
     "subtitle": "Send a short note or use the project wizard.",
+    "metaTitle": "Contact",
+    "metaDesc": "Talk with Northline about your next product. Discovery call and project form.",
+    "eyebrow": "Contact",
+    "heroTitleBefore": "Let’s talk about the\nnext ",
+    "heroTitleHighlight": "big idea",
+    "heroTitleAfter": ".",
+    "heroBody": "A short brief is enough. We clarify the scope and plan the first step together.",
+    "infoEyebrow": "Studio",
+    "infoTitle": "A direct, calm start.",
+    "infoBody": "Send the form or an email. We’ll reply in the next available window.",
     "email": "Email",
     "phone": "Phone",
     "whatsapp": "WhatsApp",
     "meeting": "Meeting",
-    "formCta": "Send message",
-    "startCta": "Go to project wizard"
+    "location": "Location",
+    "locationValue": "Istanbul · Remote-first",
+    "formTitle": "Project form",
+    "formLead": "Describe what you want to build in a few lines.",
+    "formCta": "Start the project",
+    "startCta": "Go to project wizard",
+    "serviceLabel": "Service of interest",
+    "budgetLabel": "Budget range",
+    "selectPlaceholder": "Select",
+    "error": "Could not send. Please try again.",
+    "serviceOptions": [
+      { "value": "web", "label": "Web design & development" },
+      { "value": "marketing", "label": "Digital marketing" },
+      { "value": "seo", "label": "SEO & Google" },
+      { "value": "brand", "label": "Brand & identity" },
+      { "value": "software", "label": "Software & AI" },
+      { "value": "unsure", "label": "Not sure yet" }
+    ],
+    "budgetOptions": [
+      { "value": "unknown", "label": "Budget unclear" },
+      { "value": "starter", "label": "Starter" },
+      { "value": "mid", "label": "Mid-market" },
+      { "value": "enterprise", "label": "Enterprise" },
+      { "value": "custom", "label": "Custom scope" }
+    ]
   },
   "blog": {
     "title": "Insights",
     "subtitle": "Practical writing on web, mobile, product, and strategy.",
+    "metaTitle": "Blog",
+    "metaDesc": "Northline notes on digital product, design, AI, and growth.",
+    "eyebrow": "Blog",
+    "heroTitleBefore": "Ideas, insight,\nand the ",
+    "heroTitleHighlight": "digital world",
+    "heroTitleAfter": ".",
+    "heroBody": "Field notes on product decisions, interface, growth, and engineering — without decorative statistics.",
+    "featured": "Featured",
+    "readStory": "Read the story",
+    "empty": "No articles in this category yet.",
+    "ctaTitle": "Let’s make the product decisions together.",
+    "ctaBody": "If a post is not enough, a discovery call is a solid first step.",
+    "ctaPrimary": "Start a project",
+    "ctaSecondary": "Contact us",
     "read": "Reading time",
     "min": "min",
     "updated": "Updated",
     "related": "Related service",
-    "toc": "Contents"
+    "toc": "Contents",
+    "topics": {
+      "all": "All",
+      "web": "Web",
+      "design": "Design",
+      "ai": "AI",
+      "marketing": "Marketing",
+      "seo": "SEO",
+      "tech": "Technology"
+    }
   },
   "legal": {
     "privacy": "Privacy Policy",

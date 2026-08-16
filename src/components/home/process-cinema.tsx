@@ -72,31 +72,23 @@ export function ProcessCinema() {
     <section
       id="process"
       ref={sectionRef}
-      className="relative isolate overflow-hidden border-t border-border border-b border-b-white/[0.06]"
-      style={{
-        background:
-          "radial-gradient(ellipse 55% 70% at 85% 40%, rgba(85,123,255,0.1), transparent 55%), radial-gradient(ellipse 40% 50% at 10% 80%, rgba(85,123,255,0.05), transparent 50%), var(--bg-secondary)",
-      }}
+      className="section-mist relative isolate overflow-hidden border-t border-border-ink"
     >
-      <div className="pointer-events-none absolute inset-0 grid-faint opacity-40" aria-hidden />
+      <div className="pointer-events-none absolute inset-0 grid-ink opacity-30" aria-hidden />
       <div
-        className="pointer-events-none absolute inset-x-0 bottom-0 h-24"
-        style={{
-          background: "linear-gradient(to bottom, transparent, var(--bg-primary))",
-        }}
+        className="pointer-events-none absolute top-0 right-0 h-[60%] w-[50%] rounded-full bg-accent/5 blur-[100px] orb-drift"
         aria-hidden
       />
 
       <div className="container-page relative z-[1] grid items-center gap-10 py-16 md:min-h-[700px] md:gap-12 md:py-20 lg:grid-cols-[0.4fr_0.6fr] lg:gap-14">
-        {/* LEFT */}
         <div className="max-w-[36rem] lg:self-center">
           <p className="mb-5 text-[11px] tracking-[0.24em] text-accent uppercase">
             {t("eyebrow")}
           </p>
-          <h2 className="font-display text-[clamp(2.5rem,5vw,4.75rem)] font-semibold leading-[0.98] tracking-[-0.04em] text-balance">
+          <h2 className="font-display text-[clamp(2.5rem,5vw,4.75rem)] font-semibold leading-[0.98] tracking-[-0.04em] text-balance text-ink">
             {t("title")}
           </h2>
-          <p className="mt-6 max-w-[32rem] text-base leading-relaxed text-muted md:text-lg">
+          <p className="mt-6 max-w-[32rem] text-base leading-relaxed text-ink-muted md:text-lg">
             {t("subtitle")}
           </p>
 
@@ -105,20 +97,20 @@ export function ProcessCinema() {
             initial={reduce ? false : { opacity: 0, y: 8 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.35 }}
-            className="mt-8 rounded-2xl border border-border bg-surface/60 p-5 backdrop-blur-sm"
+            className="mt-8 rounded-2xl border border-border-ink bg-white p-5 shadow-[var(--shadow-card)]"
           >
             <p className="font-mono text-xs text-accent">
               {activeStep.n} · {activeStep.title}
             </p>
-            <p className="mt-2 text-sm leading-relaxed text-fg/90">{activeStep.body}</p>
+            <p className="mt-2 text-sm leading-relaxed text-ink/90">{activeStep.body}</p>
             <dl className="mt-4 grid gap-3 text-xs sm:grid-cols-2">
               <div>
-                <dt className="text-faint">{t("client")}</dt>
-                <dd className="mt-1 text-muted">{activeStep.client}</dd>
+                <dt className="text-ink-muted">{t("client")}</dt>
+                <dd className="mt-1 text-ink">{activeStep.client}</dd>
               </div>
               <div>
-                <dt className="text-faint">{t("team")}</dt>
-                <dd className="mt-1 text-muted">{activeStep.team}</dd>
+                <dt className="text-ink-muted">{t("team")}</dt>
+                <dd className="mt-1 text-ink">{activeStep.team}</dd>
               </div>
             </dl>
           </motion.div>
@@ -130,17 +122,21 @@ export function ProcessCinema() {
           </div>
         </div>
 
-        {/* RIGHT — cinematic workspace + timeline */}
         <div className="relative flex flex-col gap-5 lg:pl-2">
-          <div className="group overflow-hidden rounded-[var(--radius-media)] border border-border shadow-[var(--shadow-depth)]">
+          <motion.div
+            key={activeVisual}
+            initial={reduce ? false : { opacity: 0, scale: 0.98 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
+            className="group overflow-hidden rounded-[var(--radius-media)] border border-border-ink bg-white shadow-[var(--shadow-depth)]"
+          >
             <PremiumVisual
-              key={activeVisual}
               src={activeVisual}
               alt={activeStep.title}
-              className="w-full"
+              className="w-full transition-transform duration-700 group-hover:scale-[1.02]"
               sizes="(max-width: 1024px) 100vw, 55vw"
             />
-          </div>
+          </motion.div>
 
           <ol className="relative grid grid-cols-2 gap-1.5 sm:grid-cols-4" aria-label={t("eyebrow")}>
             {steps.map((step, i) => {
@@ -157,15 +153,15 @@ export function ProcessCinema() {
                       "flex w-full flex-col rounded-xl border px-2.5 py-2.5 text-left transition-all duration-300",
                       "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/40",
                       isActive
-                        ? "border-accent/40 bg-accent/10 shadow-[0_0_24px_rgba(85,123,255,0.12)]"
-                        : "border-border bg-surface/40 hover:border-white/14 hover:bg-surface/70",
+                        ? "border-accent/30 bg-accent-soft shadow-[var(--shadow-card)]"
+                        : "border-border-ink bg-white hover:border-accent/20 hover:shadow-[var(--shadow-card)]",
                     )}
                     aria-current={isActive ? "step" : undefined}
                   >
                     <span
                       className={cn(
                         "font-mono text-[10px] tracking-wider",
-                        isActive ? "text-accent" : "text-faint",
+                        isActive ? "text-accent" : "text-ink-muted",
                       )}
                     >
                       {step.n}
@@ -173,7 +169,7 @@ export function ProcessCinema() {
                     <span
                       className={cn(
                         "mt-1 font-display text-[12px] font-semibold tracking-tight md:text-[13px]",
-                        isActive ? "text-fg" : "text-fg/60",
+                        isActive ? "text-ink" : "text-ink-muted",
                       )}
                     >
                       {step.title}
