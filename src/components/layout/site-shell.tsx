@@ -1,5 +1,5 @@
 import { Header } from "@/components/layout/header";
-import { Footer } from "@/components/layout/footer";
+import { SiteFooter } from "@/components/layout/site-footer";
 import { CookieConsent } from "@/components/shared/cookie-consent";
 import { cn } from "@/lib/utils";
 
@@ -21,7 +21,7 @@ export function SiteShell({ children, className }: SiteShellProps) {
       <main id="content" className={cn("min-h-screen pt-[var(--nav-h)]", className)}>
         {children}
       </main>
-      <Footer />
+      <SiteFooter />
       <CookieConsent />
     </>
   );

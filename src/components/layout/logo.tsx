@@ -34,7 +34,7 @@ export function Logo({ className, onClick }: LogoProps) {
         </defs>
         <rect x="2" y="2" width="30" height="30" rx="8" fill="url(#logo-grad)" />
         <path
-          d="M11 23 V11 L17 17 L23 11 V23"
+          d="M9.5 23.5 V10.5 L22.5 23.5 V10.5"
           stroke="white"
           strokeWidth="2.2"
           strokeLinecap="round"

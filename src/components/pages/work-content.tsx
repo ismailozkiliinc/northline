@@ -7,6 +7,7 @@ import { PageHero } from "@/components/system/page-hero";
 import { PageCta } from "@/components/system/page-cta";
 import { VisualSlot } from "@/components/demos/campaign-scene";
 import { ProjectStoryCover } from "@/components/visuals/project-story-cover";
+import { WorkHeroVisual } from "@/components/pages/work-hero-visual";
 import { Reveal } from "@/components/motion/reveal";
 import type { Locale } from "@/content/types";
 
@@ -24,6 +25,7 @@ export function WorkContent() {
         subtitle={t("heroBody")}
         primary={{ href: "/proje-baslat", label: t("heroCta") }}
         secondary={{ href: "/hizmetler", label: t("heroSecondary") }}
+        visual={<WorkHeroVisual />}
       />
 
       <section className="overflow-x-clip bg-[#f8faff] py-16 md:py-24">

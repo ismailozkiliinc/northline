@@ -9,6 +9,7 @@ export const siteConfig = {
     linkedin: process.env.NEXT_PUBLIC_LINKEDIN ?? "",
     x: process.env.NEXT_PUBLIC_X ?? "",
     instagram: process.env.NEXT_PUBLIC_INSTAGRAM ?? "",
+    behance: process.env.NEXT_PUBLIC_BEHANCE ?? "",
   },
   locales: ["tr", "en"] as const,
   defaultLocale: "tr" as const,

@@ -22,9 +22,11 @@ type PageHeroProps = {
   titleHighlight?: string;
   titleAfter?: string;
   subtitle: string;
+  capabilityLine?: string;
   primary?: CtaLink;
   secondary?: CtaLink;
   visual?: React.ReactNode;
+  visualClassName?: string;
   className?: string;
 };
 
@@ -34,9 +36,11 @@ export function PageHero({
   titleHighlight,
   titleAfter,
   subtitle,
+  capabilityLine,
   primary,
   secondary,
   visual,
+  visualClassName,
   className,
 }: PageHeroProps) {
   const reduce = useReducedMotion();
@@ -87,6 +91,17 @@ export function PageHero({
             {subtitle}
           </motion.p>
 
+          {capabilityLine ? (
+            <motion.p
+              initial={reduce ? false : { opacity: 0, y: 12 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.55, delay: 0.28 }}
+              className="mt-5 text-[0.68rem] font-medium tracking-[0.22em] text-[#94a3b8] uppercase sm:text-[0.72rem]"
+            >
+              {capabilityLine}
+            </motion.p>
+          ) : null}
+
           {(primary || secondary) && (
             <motion.div
               initial={reduce ? false : { opacity: 0, y: 14 }}
@@ -123,7 +138,10 @@ export function PageHero({
             initial={reduce ? false : { opacity: 0, scale: 0.96 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.9, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
-            className="relative z-10 h-[400px] w-full overflow-visible md:h-[520px]"
+            className={cn(
+              "relative z-10 h-[300px] w-full overflow-hidden sm:h-[380px] md:h-[460px] lg:h-[min(520px,calc(100svh-var(--nav-h)-7rem))]",
+              visualClassName,
+            )}
           >
             {visual}
           </motion.div>

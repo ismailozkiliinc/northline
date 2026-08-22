@@ -497,6 +497,10 @@
     }
   }
 
+  /*
+   * Contact display texture — full-frame PNG with baked alpha matching
+   * the original phone screen. Opacity fade only; no extra clip box.
+   */
   .browser-frame {
     display: flex;
     flex-direction: column;
@@ -683,6 +687,22 @@
     height: 100%;
     overflow: hidden;
     transform-origin: center;
+  }
+
+  .contact-status-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 9999px;
+    background: #22c55e;
+    box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.2);
+    flex-shrink: 0;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .contact-chip:hover,
+    .contact-submit:hover {
+      transform: none !important;
+    }
   }
 
   @media (prefers-reduced-motion: reduce) {

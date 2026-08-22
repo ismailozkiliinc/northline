@@ -1,102 +1,94 @@
 "use client";
 
-import { Mail, MapPin, ArrowUpRight } from "lucide-react";
+import { Mail, MapPin, ArrowRight } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { PageHero } from "@/components/system/page-hero";
-import { SectionLabel } from "@/components/system/section-label";
 import { Reveal } from "@/components/motion/reveal";
 import { ContactForm } from "@/components/forms/contact-form";
+import { ContactHeroVisual } from "@/components/pages/contact-hero-visual";
+import { ContactProcess } from "@/components/pages/contact-process";
+import { ContactClosingCta } from "@/components/pages/contact-closing-cta";
 import { siteConfig } from "@/lib/site";
 
 export function ContactContent() {
   const t = useTranslations("contact");
 
-  const socials = [
-    siteConfig.social.linkedin && { href: siteConfig.social.linkedin, label: "LinkedIn" },
-    siteConfig.social.x && { href: siteConfig.social.x, label: "X" },
-    siteConfig.social.instagram && { href: siteConfig.social.instagram, label: "Instagram" },
-  ].filter(Boolean) as { href: string; label: string }[];
-
   return (
     <>
       <PageHero
+        visualClassName="!h-[min(400px,88vw)] sm:!h-[440px] md:!h-[480px] lg:!h-[560px] xl:!h-[580px] !overflow-visible"
         eyebrow={t("eyebrow")}
         titleBefore={t("heroTitleBefore")}
         titleHighlight={t("heroTitleHighlight")}
         titleAfter={t("heroTitleAfter")}
         subtitle={t("heroBody")}
+        capabilityLine={t("heroCapabilities")}
+        visual={<ContactHeroVisual />}
       />
 
-      <section className="border-t border-[#eef2f7] bg-[#f8faff] py-16 md:py-24">
-        <div className="container-page grid gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
+      <section id="contact-form" className="border-t border-[#eef2f7] bg-[#f8faff] py-16 md:py-24 lg:py-28">
+        <div className="container-page grid gap-14 lg:grid-cols-[0.85fr_1.15fr] lg:gap-20 xl:gap-24">
           <Reveal>
-            <SectionLabel>{t("infoEyebrow")}</SectionLabel>
-            <h2 className="max-w-[14ch] font-display text-[clamp(1.75rem,3vw,2.4rem)] font-bold leading-[1.12] tracking-tight text-[#111827]">
-              {t("infoTitle")}
-            </h2>
-            <p className="mt-5 max-w-sm text-sm leading-relaxed text-[#475569]">{t("infoBody")}</p>
-
-            <ul className="mt-10 space-y-5">
-              <li className="flex items-start gap-3">
-                <span className="mt-0.5 flex h-9 w-9 items-center justify-center rounded-full border border-indigo-100 bg-white text-indigo-500">
-                  <Mail className="h-4 w-4" aria-hidden />
-                </span>
-                <div>
-                  <p className="text-xs font-semibold tracking-wider text-[#94a3b8] uppercase">
-                    {t("email")}
-                  </p>
-                  <a
-                    href={`mailto:${siteConfig.email}`}
-                    className="mt-1 inline-flex text-sm font-medium text-[#111827] hover:text-[#6366f1]"
-                  >
-                    {siteConfig.email}
-                  </a>
-                </div>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="mt-0.5 flex h-9 w-9 items-center justify-center rounded-full border border-indigo-100 bg-white text-indigo-500">
-                  <MapPin className="h-4 w-4" aria-hidden />
-                </span>
-                <div>
-                  <p className="text-xs font-semibold tracking-wider text-[#94a3b8] uppercase">
-                    {t("location")}
-                  </p>
-                  <p className="mt-1 text-sm font-medium text-[#111827]">{t("locationValue")}</p>
-                </div>
-              </li>
-            </ul>
-
-            {socials.length > 0 && (
-              <div className="mt-8 flex flex-wrap gap-2">
-                {socials.map((item) => (
-                  <a
-                    key={item.label}
-                    href={item.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1.5 rounded-full border border-[#e2e8f0] bg-white px-3 py-1.5 text-xs font-semibold text-[#334155] transition-colors hover:border-indigo-200 hover:text-[#111827]"
-                  >
-                    {item.label}
-                    <ArrowUpRight className="h-3 w-3" aria-hidden />
-                  </a>
-                ))}
-              </div>
-            )}
+            <div className="lg:sticky lg:top-[calc(var(--nav-h)+2rem)] lg:self-start">
+              <ul className="space-y-8">
+                <li className="flex items-start gap-4">
+                  <span className="mt-0.5 flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-indigo-100 bg-white text-indigo-500 shadow-[0_4px_16px_rgba(79,110,247,0.08)]">
+                    <Mail className="h-4 w-4" aria-hidden />
+                  </span>
+                  <div>
+                    <p className="text-[0.68rem] font-semibold tracking-[0.18em] text-[#94a3b8] uppercase">
+                      {t("email")}
+                    </p>
+                    <a
+                      href={`mailto:${siteConfig.email}`}
+                      className="mt-1.5 inline-flex text-base font-medium text-[#111827] transition-colors duration-200 hover:text-[#6366f1]"
+                    >
+                      {siteConfig.email}
+                    </a>
+                  </div>
+                </li>
+                <li className="flex items-start gap-4">
+                  <span className="mt-0.5 flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-indigo-100 bg-white text-indigo-500 shadow-[0_4px_16px_rgba(79,110,247,0.08)]">
+                    <MapPin className="h-4 w-4" aria-hidden />
+                  </span>
+                  <div>
+                    <p className="text-[0.68rem] font-semibold tracking-[0.18em] text-[#94a3b8] uppercase">
+                      {t("location")}
+                    </p>
+                    <p className="mt-1.5 text-base font-medium text-[#111827]">{t("locationValue")}</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </Reveal>
 
           <Reveal delay={0.08}>
-            <div className="rounded-[1.75rem] border border-[#e8ecf4] bg-white p-6 shadow-[0_24px_60px_-28px_rgba(79,110,247,0.2)] md:p-8">
-              <h2 className="font-display text-xl font-bold tracking-tight text-[#111827]">
-                {t("formTitle")}
-              </h2>
-              <p className="mt-2 text-sm text-[#64748b]">{t("formLead")}</p>
-              <div className="mt-8">
+            <div className="rounded-[1.75rem] border border-[#e8ecf4] bg-white p-6 shadow-[0_24px_60px_-28px_rgba(79,110,247,0.18)] md:p-9 lg:p-10">
+              <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
+                <div>
+                  <h2 className="font-display text-[1.35rem] font-bold tracking-tight text-[#111827] md:text-2xl">
+                    {t("formTitle")}
+                  </h2>
+                  <p className="mt-2 max-w-md text-sm leading-relaxed text-[#64748b]">{t("formLead")}</p>
+                </div>
+                <div className="shrink-0 sm:text-right">
+                  <div className="inline-flex items-center gap-2 rounded-full border border-emerald-100 bg-emerald-50/80 px-3 py-1.5">
+                    <span className="contact-status-dot" aria-hidden />
+                    <span className="text-xs font-semibold text-[#111827]">{t("statusAvailable")}</span>
+                  </div>
+                  <p className="mt-2 text-[0.7rem] text-[#94a3b8] sm:text-right">{t("statusResponse")}</p>
+                </div>
+              </div>
+              <div className="mt-9 md:mt-10">
                 <ContactForm />
               </div>
             </div>
           </Reveal>
         </div>
       </section>
+
+      <ContactProcess />
+      <ContactClosingCta />
     </>
   );
 }

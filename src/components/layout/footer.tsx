@@ -1,4 +1,6 @@
-import { getTranslations } from "next-intl/server";
+"use client";
+
+import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { Logo } from "@/components/layout/logo";
 import { siteConfig } from "@/lib/site";
@@ -22,10 +24,10 @@ type FooterProps = {
   className?: string;
 };
 
-export async function Footer({ className }: FooterProps) {
-  const t = await getTranslations("footer");
-  const tNav = await getTranslations("nav");
-  const tLegal = await getTranslations("legal");
+export function Footer({ className }: FooterProps) {
+  const t = useTranslations("footer");
+  const tNav = useTranslations("nav");
+  const tLegal = useTranslations("legal");
   const year = new Date().getFullYear();
 
   return (
@@ -34,9 +36,7 @@ export async function Footer({ className }: FooterProps) {
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-12 lg:gap-8">
           <div className="lg:col-span-4">
             <Logo className="[&_span]:text-white" />
-            <p className="mt-4 max-w-xs text-sm leading-relaxed text-[#94a3b8]">
-              {t("tagline")}
-            </p>
+            <p className="mt-4 max-w-xs text-sm leading-relaxed text-[#94a3b8]">{t("tagline")}</p>
           </div>
 
           <div className="lg:col-span-3 lg:col-start-7">
