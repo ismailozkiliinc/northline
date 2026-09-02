@@ -1,0 +1,17 @@
+{
+  "macbook": {
+    "left": 20.352,
+    "top": 4.988,
+    "width": 59.035,
+    "height": 57.115
+  },
+  "iphone": {
+    "left": 3.611,
+    "top": 1.034,
+    "width": 92.778,
+    "height": 97.674,
+    "radiusW": 7.784,
+    "radiusH": 3.439,
+    "aspect": "720/1548"
+  }
+}

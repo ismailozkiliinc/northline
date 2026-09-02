@@ -35,7 +35,7 @@ function Bars() {
 
 export function UiOrbitWeb() {
   const rows = [
-    ["ORB-2041", "Northline Cloud", "Live", "99.98%"],
+    ["ORB-2041", "NISCRAFT Cloud", "Live", "99.98%"],
     ["ORB-2038", "Harbor API", "Watch", "99.2%"],
     ["ORB-2033", "Ledger Core", "Live", "99.99%"],
   ];
@@ -270,7 +270,7 @@ export function UiCipherWorkspace() {
         <div className="flex flex-col rounded-xl bg-[#f8faff] p-1.5 ring-1 ring-[#e8ecf4]">
           <p className="mb-1 text-[6px] font-semibold tracking-wide text-indigo-400 uppercase">Prompt</p>
           <div className="rounded-lg bg-white p-1.5 text-[#334155] ring-1 ring-[#eef2f7]">
-            Qualify inbound demos and draft a follow-up in the account voice.
+            Qualify inbound leads and draft a follow-up in the account voice.
           </div>
           <div className="mt-1.5 rounded-lg bg-indigo-50 p-1.5 text-indigo-700">
             Context: 18 leads · CRM attached
@@ -279,7 +279,7 @@ export function UiCipherWorkspace() {
         </div>
         <div className="flex flex-col rounded-xl border border-[#eef2f7] bg-white p-1.5">
           <p className="mb-1 text-[6px] font-semibold tracking-wide text-[#94a3b8] uppercase">Generated brief</p>
-          <p className="font-display text-[10px] font-bold text-[#111827]">Harbor Stay — demo intent</p>
+          <p className="font-display text-[10px] font-bold text-[#111827]">Harbor Stay — yüksek niyet</p>
           <p className="mt-1 leading-relaxed text-[#475569]">
             High intent (94). Budget in range. Recommend a 30-min product walkthrough focused on booking conversions.
           </p>
@@ -315,7 +315,7 @@ export function UiCipherAssistant() {
         Prioritize Harbor and Ledger. Draft two follow-ups.
       </div>
       <div className="mt-1.5 max-w-[92%] rounded-2xl bg-[#f8faff] px-2 py-1.5 text-[#111827] ring-1 ring-indigo-100">
-        Two drafts ready. Harbor: product walkthrough. Ledger: invoice automation demo.
+        Two drafts ready. Harbor: product walkthrough. Ledger: invoice automation flow.
       </div>
       <div className="mt-auto h-7 rounded-full bg-[#f8faff] px-2.5 text-[#94a3b8] ring-1 ring-[#e8ecf4] [line-height:1.75rem]">
         Ask Cipher…

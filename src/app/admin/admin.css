@@ -1,0 +1,88 @@
+.admin-root {
+  --admin-sidebar: 260px;
+  --admin-border: rgba(15, 23, 42, 0.08);
+  --admin-surface: #ffffff;
+  --admin-muted: #64748b;
+  --admin-accent: #4f6ef7;
+}
+
+.admin-card {
+  border: 1px solid var(--admin-border);
+  background: var(--admin-surface);
+  border-radius: 16px;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
+}
+
+.admin-input {
+  width: 100%;
+  border: 1px solid var(--admin-border);
+  border-radius: 10px;
+  background: #fff;
+  padding: 0.625rem 0.875rem;
+  font-size: 0.875rem;
+  outline: none;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.admin-input:focus {
+  border-color: rgba(79, 110, 247, 0.45);
+  box-shadow: 0 0 0 3px rgba(79, 110, 247, 0.12);
+}
+
+.admin-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border-radius: 10px;
+  padding: 0.625rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  transition: all 0.15s;
+}
+
+.admin-btn-primary {
+  background: linear-gradient(135deg, #4f6ef7, #6366f1);
+  color: #fff;
+  box-shadow: 0 4px 14px rgba(79, 110, 247, 0.25);
+}
+
+.admin-btn-primary:hover {
+  filter: brightness(1.05);
+}
+
+.admin-btn-ghost {
+  border: 1px solid var(--admin-border);
+  background: #fff;
+  color: #334155;
+}
+
+.admin-btn-ghost:hover {
+  background: #f8fafc;
+}
+
+.admin-table th {
+  text-align: left;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--admin-muted);
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--admin-border);
+}
+
+.admin-table td {
+  padding: 0.875rem 1rem;
+  border-bottom: 1px solid rgba(15, 23, 42, 0.04);
+  font-size: 0.875rem;
+}
+
+.admin-badge {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  padding: 0.2rem 0.55rem;
+  font-size: 0.6875rem;
+  font-weight: 600;
+}

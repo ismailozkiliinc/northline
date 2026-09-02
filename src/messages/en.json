@@ -1,8 +1,8 @@
 {
   "meta": {
-    "title": "Northline — Digital product studio",
+    "title": "NISCRAFT — Digital product studio",
     "description": "We design and build websites, mobile apps, and custom digital products that move businesses forward.",
-    "ogAlt": "Northline digital product studio"
+    "ogAlt": "NISCRAFT digital product studio"
   },
   "nav": {
     "home": "Home",
@@ -25,9 +25,9 @@
     "titleBefore": "We take your brand to the ",
     "titleHighlight": "summit",
     "titleAfter": " digitally.",
-    "subtitle": "At Northline we deliver strategy, design, and engineering so brands stand out in the digital world.",
+    "subtitle": "At NISCRAFT we deliver strategy, design, and engineering so brands stand out in the digital world.",
     "ctaPrimary": "Explore our services",
-    "ctaSecondary": "Watch intro",
+    "ctaSecondary": "View our work",
     "stats": [
       {
         "value": "120+",
@@ -253,8 +253,8 @@
   "homeStories": {
     "eyebrow": "Selected work",
     "title": "Digital experiences we ship",
-    "body": "The studies below are studio demos and concepts — not verified client results. Each card represents a different sector and product language.",
-    "demo": "Demo",
+    "body": "Digital products and case studies across hospitality, finance, commerce, and software.",
+    "demo": "Concept Project",
     "prev": "Previous",
     "next": "Next",
     "cards": [
@@ -315,7 +315,7 @@
     ]
   },
   "homePitch": {
-    "whyEyebrow": "Why Northline",
+    "whyEyebrow": "Why NISCRAFT",
     "whyTitle": "One studio. Four capabilities.",
     "whyItems": [
       {
@@ -359,13 +359,13 @@
   },
   "work": {
     "title": "Selected digital products",
-    "subtitle": "Demo case studies — updated as verified project data becomes available.",
+    "subtitle": "Digital products and case studies across sectors we serve.",
     "metaTitle": "Work",
-    "metaDesc": "Digital products and case studies by Northline — web, product, and software.",
+    "metaDesc": "Digital products and case studies by NISCRAFT — web, product, and software.",
     "viewProject": "View project",
     "all": "All work",
     "comingSoon": "Coming soon",
-    "demoLabel": "Demo Case Study",
+    "demoLabel": "Concept Project",
     "sector": "Sector",
     "services": "Services",
     "platforms": "Platforms",
@@ -377,12 +377,12 @@
     "heroTitleBefore": "The work\n",
     "heroTitleHighlight": "speaks",
     "heroTitleAfter": " for itself.",
-    "heroBody": "Each project is a problem, a sequence of decisions, and a clear product. The studies below show how Northline thinks.",
+    "heroBody": "Each project is a problem, a sequence of decisions, and a clear product. The studies below show how NISCRAFT thinks.",
     "heroCta": "Start a project",
     "heroSecondary": "Services",
     "projectLabel": "Project",
     "client": "Client",
-    "demoClient": "Studio demo",
+    "demoClient": "Concept Project",
     "year": "Year",
     "ctaTitle": "The next product can start with yours.",
     "ctaBody": "Let’s clarify the scope together. Thirty minutes of discovery is enough to begin well.",
@@ -597,7 +597,7 @@
   },
   "sectors": {
     "title": "Sectors we build for",
-    "subtitle": "Product types explained with original demo interfaces — no fake brands.",
+    "subtitle": "Digital product types and experiences across the sectors we serve.",
     "items": [
       "Hospitality",
       "Education",
@@ -613,19 +613,19 @@
   },
   "about": {
     "title": "A studio that ships products",
-    "subtitle": "Northline exists to build digital products that grow businesses — not to decorate decks.",
+    "subtitle": "NISCRAFT exists to build digital products that grow businesses — not to decorate decks.",
     "metaTitle": "About",
-    "metaDesc": "Northline is a modern product partner combining design, software, technology, and digital growth.",
+    "metaDesc": "NISCRAFT is a modern product partner combining design, software, technology, and digital growth.",
     "eyebrow": "About",
     "heroTitleBefore": "We turn ideas into\n",
     "heroTitleHighlight": "digital products",
     "heroTitleAfter": ".",
-    "heroBody": "We unite design, engineering, technology, AI, and digital growth in one language. Northline is a brand’s digital product partner.",
+    "heroBody": "We unite design, engineering, technology, AI, and digital growth in one language. NISCRAFT is a brand’s digital product partner.",
     "heroCta": "Start together",
     "heroSecondary": "Services",
     "whoEyebrow": "Who we are",
     "whoTitle": "A modern digital product and technology partner.",
-    "whoBody": "Northline does not split interface from code, or strategy from delivery. A small, disciplined team works remote-first — with weekly demos and written decisions.",
+    "whoBody": "NISCRAFT does not split interface from code, or strategy from delivery. A small, disciplined team works remote-first — with weekly demos and written decisions.",
     "whoQuote": "Business problem first. Experience second. Software third.",
     "whoStats": [
       {
@@ -686,7 +686,7 @@
         "body": "Motion and 3D appear only when they clarify the product. Performance is not decoration."
       }
     ],
-    "whyEyebrow": "Why Northline",
+    "whyEyebrow": "Why NISCRAFT",
     "whyTitle": "Design and engineering in one language.",
     "whyLead": "Most teams find either a visual or a technical partner. We keep both at the same table.",
     "whyItems": [
@@ -712,7 +712,7 @@
     "ctaPrimary": "Start a project",
     "ctaSecondary": "Contact us",
     "why": "Why we exist",
-    "whyBody": "Too many companies get either design or engineering. They need one partner speaking both languages. That is why Northline exists.",
+    "whyBody": "Too many companies get either design or engineering. They need one partner speaking both languages. That is why NISCRAFT exists.",
     "how": "How we operate",
     "howBody": "Remote-first, weekly demos, written decisions. A small, disciplined team on the same side as the client.",
     "approach": "Design & technology",
@@ -803,7 +803,7 @@
     "title": "Contact",
     "subtitle": "Send a short note or use the project wizard.",
     "metaTitle": "Contact",
-    "metaDesc": "Talk with Northline about your next product. Discovery call and project form.",
+    "metaDesc": "Talk with NISCRAFT about your next product. Discovery call and project form.",
     "eyebrow": "Contact",
     "heroTitleBefore": "Let's talk about your next big ",
     "heroTitleHighlight": "idea",
@@ -823,6 +823,7 @@
     "budgetLabel": "Budget range",
     "selectPlaceholder": "Select",
     "error": "Could not send. Please try again.",
+    "emailFailed": "Your request was saved, but the email notification could not be delivered. Our team will still review it — you can also reach us via the contact email.",
     "serviceOptions": [
       {
         "value": "web",
@@ -904,7 +905,7 @@
     "ctaPrimary": "Start a project",
     "footerTagline": "Digital products, built with intent.",
     "backToTop": "Back to top ↑",
-    "copyright": "© 2026 Northline Studio",
+    "copyright": "© 2026 NISCRAFT Studio",
     "heroCanvas": {
       "helloTitle": "Hello.",
       "helloSubtitle": "Something new is about to begin.",
@@ -922,8 +923,8 @@
           "text": "Have an idea."
         },
         {
-          "from": "northline",
-          "label": "Northline",
+          "from": "niscraft",
+          "label": "NISCRAFT",
           "text": "Tell us about it."
         },
         {
@@ -932,8 +933,8 @@
           "text": "Something ambitious."
         },
         {
-          "from": "northline",
-          "label": "Northline",
+          "from": "niscraft",
+          "label": "NISCRAFT",
           "text": "Let's build it."
         }
       ],
@@ -945,7 +946,7 @@
     "title": "Insights",
     "subtitle": "Practical writing on web, mobile, product, and strategy.",
     "metaTitle": "Blog",
-    "metaDesc": "Northline notes on digital product, design, AI, and growth.",
+    "metaDesc": "NISCRAFT notes on digital product, design, AI, and growth.",
     "eyebrow": "Blog",
     "heroTitleBefore": "Ideas, insight,\nand the ",
     "heroTitleHighlight": "digital world",
@@ -1021,7 +1022,7 @@
   "common": {
     "learnServices": "Explore services",
     "startProject": "Start a project",
-    "demo": "Sample project",
+    "demo": "Concept Project",
     "loading": "Loading…"
   },
   "principles": {

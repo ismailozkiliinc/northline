@@ -1,7 +1,8 @@
 export const siteConfig = {
-  name: "Northline",
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://northline.studio",
-  email: process.env.NEXT_PUBLIC_CONTACT_EMAIL ?? "hello@northline.studio",
+  name: "NISCRAFT",
+  // Prefer NEXT_PUBLIC_SITE_URL; fallback only for local/dev scaffolding
+  url: (process.env.NEXT_PUBLIC_SITE_URL?.trim() || "https://niscraft.com").replace(/\/$/, ""),
+  email: process.env.NEXT_PUBLIC_CONTACT_EMAIL?.trim() || "hello@niscraft.com",
   phone: process.env.NEXT_PUBLIC_CONTACT_PHONE ?? "",
   whatsapp: process.env.NEXT_PUBLIC_WHATSAPP ?? "",
   calendly: process.env.NEXT_PUBLIC_CALENDLY_URL ?? "",

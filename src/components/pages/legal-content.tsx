@@ -36,13 +36,14 @@ export async function LegalPageContent({
     <>
       <section className="border-b border-border py-16 md:py-24">
         <div className="container-page mx-auto max-w-3xl">
-          <span className="rounded-full border border-danger/30 bg-danger/10 px-3 py-1 text-xs text-danger">
-            {loc === "tr" ? "Taslak" : "Draft"}
-          </span>
-          <h1 className="mt-6 font-display text-3xl font-semibold md:text-4xl">
+          <h1 className="font-display text-3xl font-semibold md:text-4xl">
             {t(titleKey)}
           </h1>
-          <p className="mt-4 text-sm leading-relaxed text-muted">{t("placeholder")}</p>
+          <p className="mt-4 text-sm leading-relaxed text-muted">
+            {loc === "tr"
+              ? "Bu metin bilgilendirme amaçlıdır. Güncel hukuki danışmanlıkla gözden geçirilmesi önerilir."
+              : "This text is informational. Review with legal counsel for your jurisdiction is recommended."}
+          </p>
         </div>
       </section>
       <section className="py-16 md:py-20">
@@ -65,7 +66,7 @@ const privacySections = {
   tr: [
     {
       heading: "Veri sorumlusu",
-      body: "Northline (northline.studio) olarak iletişim formları ve proje başvuruları aracılığıyla toplanan kişisel verileriniz, hizmet sunumu ve iletişim amacıyla işlenir.",
+      body: "NISCRAFT (niscraft.com) olarak iletişim formları ve proje başvuruları aracılığıyla toplanan kişisel verileriniz, hizmet sunumu ve iletişim amacıyla işlenir.",
     },
     {
       heading: "Toplanan veriler",
@@ -77,13 +78,13 @@ const privacySections = {
     },
     {
       heading: "Haklarınız",
-      body: "KVKK kapsamındaki haklarınız için kvkk@northline.studio adresine veya site iletişim formuna başvurabilirsiniz.",
+      body: "KVKK kapsamındaki haklarınız için kvkk@niscraft.com adresine veya site iletişim formuna başvurabilirsiniz.",
     },
   ],
   en: [
     {
       heading: "Data controller",
-      body: "Northline (northline.studio) processes personal data collected via contact forms and project applications for service delivery and communication.",
+      body: "NISCRAFT (niscraft.com) processes personal data collected via contact forms and project applications for service delivery and communication.",
     },
     {
       heading: "Data collected",
@@ -95,7 +96,7 @@ const privacySections = {
     },
     {
       heading: "Your rights",
-      body: "For privacy rights applicable in your jurisdiction, contact us via the site contact form or hello@northline.studio.",
+      body: "For privacy rights applicable in your jurisdiction, contact us via the site contact form or hello@niscraft.com.",
     },
   ],
 };
@@ -104,7 +105,7 @@ const kvkkSections = {
   tr: [
     {
       heading: "Veri sorumlusu kimliği",
-      body: "6698 sayılı KVKK kapsamında veri sorumlusu Northline dijital ürün stüdyosudur. Güncel iletişim bilgileri web sitesinde yer alır.",
+      body: "6698 sayılı KVKK kapsamında veri sorumlusu NISCRAFT dijital ürün stüdyosudur. Güncel iletişim bilgileri web sitesinde yer alır.",
     },
     {
       heading: "İşleme amaçları",
@@ -122,7 +123,7 @@ const kvkkSections = {
   en: [
     {
       heading: "Controller identity",
-      body: "Under Turkish KVKK (Law 6698), Northline acts as data controller. Current contact details are on the website.",
+      body: "Under Turkish KVKK (Law 6698), NISCRAFT acts as data controller. Current contact details are on the website.",
     },
     {
       heading: "Processing purposes",
@@ -182,15 +183,15 @@ const termsSections = {
   tr: [
     {
       heading: "Site kullanımı",
-      body: "Bu web sitesi Northline'ın hizmetlerini tanıtmak içindir. İçerik bilgilendirme amaçlıdır; yazılı sözleşme olmadan bağlayıcı teklif oluşturmaz.",
+      body: "Bu web sitesi NISCRAFT'ın hizmetlerini tanıtmak içindir. İçerik bilgilendirme amaçlıdır; yazılı sözleşme olmadan bağlayıcı teklif oluşturmaz.",
     },
     {
       heading: "Fikri mülkiyet",
-      body: "Sitedeki metin, görsel ve kod örnekleri Northline'a veya lisans verenlere aittir. İzinsiz kopyalama yasaktır.",
+      body: "Sitedeki metin, görsel ve kod örnekleri NISCRAFT'a veya lisans verenlere aittir. İzinsiz kopyalama yasaktır.",
     },
     {
       heading: "Sorumluluk sınırı",
-      body: "Site 'olduğu gibi' sunulur. Kesintisiz erişim veya içerik güncelliği garanti edilmez. Demo case study'ler gerçek müşteri sonucu iddia etmez.",
+      body: "Site 'olduğu gibi' sunulur. Kesintisiz erişim veya içerik güncelliği garanti edilmez.",
     },
     {
       heading: "Uygulanacak hukuk",
@@ -200,15 +201,15 @@ const termsSections = {
   en: [
     {
       heading: "Use of site",
-      body: "This website presents Northline services. Content is informational and does not form a binding offer without a written contract.",
+      body: "This website presents NISCRAFT services. Content is informational and does not form a binding offer without a written contract.",
     },
     {
       heading: "Intellectual property",
-      body: "Text, visuals, and code samples belong to Northline or licensors. Unauthorized copying is prohibited.",
+      body: "Text, visuals, and code samples belong to NISCRAFT or licensors. Unauthorized copying is prohibited.",
     },
     {
       heading: "Limitation of liability",
-      body: "The site is provided 'as is'. Uninterrupted access or content freshness is not guaranteed. Demo case studies do not claim real client outcomes.",
+      body: "The site is provided 'as is'. Uninterrupted access or content freshness is not guaranteed.",
     },
     {
       heading: "Governing law",

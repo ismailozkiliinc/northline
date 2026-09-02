@@ -3,10 +3,11 @@
 import { useEffect, useRef } from "react";
 import { useTranslations } from "next-intl";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
-import { ArrowRight, X } from "lucide-react";
+import { ArrowRight, Mail, X } from "lucide-react";
 import { Link, usePathname } from "@/i18n/navigation";
 import { LocaleSwitcher } from "@/components/layout/locale-switcher";
 import { Logo } from "@/components/layout/logo";
+import { siteConfig } from "@/lib/site";
 import { cn } from "@/lib/utils";
 
 const navItems = [
@@ -128,6 +129,16 @@ export function MobileMenu({ open, onClose }: MobileMenuProps) {
             </nav>
 
             <div className="container-page flex flex-col gap-5 border-t border-[#f1f5f9] pb-10 pt-8">
+              {siteConfig.email ? (
+                <a
+                  href={`mailto:${siteConfig.email}`}
+                  onClick={onClose}
+                  className="inline-flex items-center gap-2 text-sm font-medium text-[#64748b] transition-colors hover:text-[#111827]"
+                >
+                  <Mail className="h-4 w-4 shrink-0 text-[#6366f1]" aria-hidden />
+                  {siteConfig.email}
+                </a>
+              ) : null}
               <div className="rounded-full p-[1.5px] bg-brand-gradient">
                 <Link
                   href="/proje-baslat"

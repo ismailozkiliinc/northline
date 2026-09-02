@@ -108,7 +108,7 @@ export function ProductLaptop({
   children,
   className,
   fit = "cover",
-  url = "app.northline.studio",
+  url = "app.niscraft.com",
 }: {
   children: ReactNode;
   className?: string;

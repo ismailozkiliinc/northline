@@ -19,7 +19,6 @@ function HarborSite() {
       </header>
       <div className="grid h-[calc(100%-22px)] grid-cols-2">
         <div className="overflow-hidden">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
           <motion.img
             src="/images/campaign/harbor-campaign.jpg"
             alt=""

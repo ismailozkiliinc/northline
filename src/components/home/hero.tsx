@@ -1,10 +1,10 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { ArrowRight, Play } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { motion, useReducedMotion } from "framer-motion";
 import { Link } from "@/i18n/navigation";
-import { UniverseLive } from "@/components/demos/universe-live";
+import { HeroMacbook } from "@/components/home/hero-macbook";
 
 export function Hero() {
   const t = useTranslations("hero");
@@ -63,12 +63,13 @@ export function Hero() {
 
             <Link
               href="/calismalar"
-              className="group inline-flex h-12 items-center gap-3 rounded-full border border-[#e2e8f0] bg-white/80 px-5 text-sm font-medium text-[#334155] shadow-[0_2px_12px_rgba(15,23,42,0.04)] backdrop-blur-sm transition-all hover:border-indigo-200 hover:bg-white hover:shadow-[0_4px_20px_rgba(99,102,241,0.12)]"
+              className="group inline-flex h-12 items-center gap-2 rounded-full border border-[#e2e8f0] bg-white/80 px-5 text-sm font-medium text-[#334155] shadow-[0_2px_12px_rgba(15,23,42,0.04)] backdrop-blur-sm transition-all hover:border-indigo-200 hover:bg-white hover:shadow-[0_4px_20px_rgba(99,102,241,0.12)]"
             >
-              <span className="inline-flex h-8 w-8 items-center justify-center rounded-full border border-[#e2e8f0] bg-[#f8fafc] transition-colors group-hover:border-indigo-200 group-hover:bg-indigo-50">
-                <Play className="ml-0.5 h-3.5 w-3.5 fill-[#6366f1] text-[#6366f1]" aria-hidden />
-              </span>
               {t("ctaSecondary")}
+              <ArrowRight
+                className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5"
+                aria-hidden
+              />
             </Link>
           </motion.div>
 
@@ -99,9 +100,9 @@ export function Hero() {
           initial={reduce ? false : { opacity: 0, scale: 0.96 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.9, delay: 0.12, ease: [0.22, 1, 0.36, 1] }}
-          className="relative h-[420px] w-full min-w-0 overflow-hidden md:h-[520px] lg:h-[min(620px,calc(100svh-var(--nav-h)-48px))]"
+          className="relative flex h-[480px] w-full min-w-0 items-center overflow-visible md:h-[580px] lg:h-[min(700px,calc(100svh-var(--nav-h)-40px))]"
         >
-          <UniverseLive />
+          <HeroMacbook />
         </motion.div>
       </div>
     </section>

@@ -44,7 +44,7 @@ export function AiWorkflowLive({ contained = false }: { contained?: boolean }) {
       <DeviceComposition
         layout="monitor"
         laptop={
-          <ProductLaptop url="pulse.northline.studio">
+          <ProductLaptop url="pulse.niscraft.com">
             <AiWorkspaceUi phase={active} />
           </ProductLaptop>
         }

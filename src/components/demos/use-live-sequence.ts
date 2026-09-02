@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, startTransition } from "react";
 import { useInView, useReducedMotion } from "framer-motion";
 
 /** Viewport-bound sequence with a pause at the end, then a soft restart. */
@@ -13,11 +13,11 @@ export function useLiveSequence(length: number, stepMs: number, holdMs = 2200) {
   useEffect(() => {
     if (!inView) return;
     if (reduce) {
-      setStep(length - 1);
+      startTransition(() => setStep(length - 1));
       return;
     }
 
-    setStep(0);
+    startTransition(() => setStep(0));
     let i = 0;
     let timer = 0;
 

@@ -15,7 +15,7 @@ export function ContactCollabStage() {
         transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
         className="absolute top-[8%] left-[8%] h-[62%] w-[72%]"
       >
-        <LightBrowser url="northline.studio /brief" className="h-full">
+        <LightBrowser url="niscraft.com /brief" className="h-full">
           <UiIntakeForm />
         </LightBrowser>
       </motion.div>

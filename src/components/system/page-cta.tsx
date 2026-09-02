@@ -8,7 +8,7 @@ import type { Pathnames } from "@/i18n/routing";
 type StaticPath = Exclude<Pathnames, `${string}[${string}`>;
 
 export function PageCta({
-  eyebrow = "Northline",
+  eyebrow = "NISCRAFT",
   title,
   body,
   primary,

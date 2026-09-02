@@ -1,7 +1,7 @@
 "use client";
 
 import type { ReactNode } from "react";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, startTransition } from "react";
 import { useInView, useReducedMotion } from "framer-motion";
 import { cn } from "@/lib/utils";
 
@@ -53,7 +53,7 @@ export function CountUp({
 
   useEffect(() => {
     if (!active) {
-      setValue(0);
+      startTransition(() => setValue(0));
       return;
     }
     const start = performance.now();

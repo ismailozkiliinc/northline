@@ -1,10 +1,9 @@
 "use client";
 
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useState, startTransition } from "react";
 import { useTranslations } from "next-intl";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { cn } from "@/lib/utils";
 
 const STORAGE_KEY = "northline-cookies";
 
@@ -63,7 +62,7 @@ export function CookieConsent() {
       if (existing.analytics) loadAnalytics();
       return;
     }
-    setVisible(true);
+    startTransition(() => setVisible(true));
   }, []);
 
   return (

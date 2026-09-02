@@ -182,7 +182,7 @@ export function HeroBackground() {
 
       {/* Floating code snippets */}
       {!reduce &&
-        FLOAT_ITEMS.map((item, i) => (
+        FLOAT_ITEMS.map((item) => (
           <motion.span
             key={item.text}
             className="absolute hidden font-mono text-[10px] tracking-wide text-indigo-300/50 md:block lg:text-[11px]"

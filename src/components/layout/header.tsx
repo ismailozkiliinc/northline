@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useTranslations } from "next-intl";
 import { ArrowRight, Menu } from "lucide-react";
 import { LayoutGroup, motion } from "framer-motion";
@@ -25,10 +25,12 @@ export function Header() {
   const t = useTranslations("nav");
   const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
+  const [menuPath, setMenuPath] = useState(pathname);
 
-  useEffect(() => {
+  if (menuPath !== pathname) {
+    setMenuPath(pathname);
     setMenuOpen(false);
-  }, [pathname]);
+  }
 
   return (
     <>

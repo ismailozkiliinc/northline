@@ -1,9 +1,9 @@
 import { test, expect } from "@playwright/test";
 
-test.describe("Northline smoke", () => {
+test.describe("NISCRAFT smoke", () => {
   test("home loads with brand and CTA", async ({ page }) => {
     await page.goto("/");
-    await expect(page.getByRole("link", { name: /Northline/i }).first()).toBeVisible();
+    await expect(page.getByRole("link", { name: /NISCRAFT/i }).first()).toBeVisible();
     await expect(page.getByRole("heading", { level: 1 })).toBeVisible();
   });
 

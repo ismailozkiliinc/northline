@@ -29,7 +29,7 @@ export function BriefLive() {
       <DeviceComposition
         layout="monitor"
         laptop={
-          <ProductLaptop url="brief.northline.studio">
+          <ProductLaptop url="brief.niscraft.com">
             <div className="flex h-full flex-col bg-white px-3 pt-3">
               <p className="text-[8px] font-semibold tracking-[0.18em] text-indigo-400 uppercase">Brief</p>
               <div className="mt-2 space-y-1">
@@ -57,7 +57,7 @@ export function PricingLive() {
       <DeviceComposition
         layout="monitor"
         laptop={
-          <ProductLaptop url="scope.northline.studio">
+          <ProductLaptop url="scope.niscraft.com">
             <div className="h-full bg-white px-3 pt-3">
               <p className="font-display text-[10px] font-bold">Scope</p>
               {["Web ₺64k", "Mobile ₺48k", "AI ₺22k"].map((x) => (
@@ -80,7 +80,7 @@ export function MvpLive() {
       <DeviceComposition
         layout="monitor"
         laptop={
-          <ProductLaptop url="board.northline.studio">
+          <ProductLaptop url="board.niscraft.com">
             <div className="grid h-full grid-cols-3 gap-1 bg-[#f4f6ff] p-2">
               {["Backlog", "Build", "Done"].map((c) => (
                 <div key={c} className="rounded-md bg-white p-1.5 text-[7px] font-semibold">

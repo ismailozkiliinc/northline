@@ -105,7 +105,7 @@ function StoryCard({
 }: {
   story: Story;
   copy: CardCopy;
-  demoLabel: string;
+  demoLabel?: string;
   inert?: boolean;
 }) {
   return (
@@ -127,7 +127,13 @@ function StoryCard({
       <div className="absolute inset-0 bg-[linear-gradient(to_top,rgba(15,23,42,0.82)_0%,rgba(15,23,42,0.28)_42%,transparent_68%)]" />
       <div className="absolute inset-x-0 bottom-0 p-5 text-white md:p-6">
         <p className="text-[10px] font-semibold tracking-[0.2em] text-white/70 uppercase">
-          {demoLabel} · {copy.category}
+          {demoLabel ? (
+            <>
+              {demoLabel}
+              <span className="mx-1.5 opacity-50">·</span>
+            </>
+          ) : null}
+          {copy.category}
         </p>
         <h3 className="mt-2 font-display text-2xl font-bold tracking-tight md:text-[1.75rem]">{copy.title}</h3>
         <dl className="mt-4 grid grid-cols-2 gap-3 text-sm">

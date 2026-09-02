@@ -27,7 +27,7 @@ export function LightStage({
 export function LightBrowser({
   children,
   className,
-  url = "northline.studio",
+  url = "niscraft.com",
 }: {
   children: ReactNode;
   className?: string;

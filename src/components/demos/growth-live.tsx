@@ -66,7 +66,7 @@ export function AdsLive() {
       <DeviceComposition
         layout="laptop-phone"
         laptop={
-          <ProductLaptop url="ads.northline.studio">
+          <ProductLaptop url="ads.niscraft.com">
             <AdsDashboard roas={roas} ctr={ctr} />
           </ProductLaptop>
         }
@@ -93,18 +93,18 @@ export function SeoLive() {
   const { ref, reduce, step } = useLiveSequence(3, 2400, 2600);
   const pos = reduce ? 1 : ([7, 4, 1] as const)[step];
 
-  const northline = {
-    host: "northline.studio",
-    title: "Northline — Premium digital product studio",
+  const niscraft = {
+    host: "niscraft.com",
+    title: "NISCRAFT — Premium digital product studio",
     blurb: "Web, mobile, AI software and performance systems.",
   };
 
   const results =
     pos === 1
-      ? [northline, COMPETITORS[0], COMPETITORS[1]]
+      ? [niscraft, COMPETITORS[0], COMPETITORS[1]]
       : pos === 4
-        ? [COMPETITORS[0], northline, COMPETITORS[1]]
-        : [COMPETITORS[0], COMPETITORS[1], northline];
+        ? [COMPETITORS[0], niscraft, COMPETITORS[1]]
+        : [COMPETITORS[0], COMPETITORS[1], niscraft];
 
   return (
     <CampaignStage contained>
@@ -124,7 +124,7 @@ export function SeoLive() {
                 </div>
                 <ul className="space-y-1 p-2">
                   {results.map((r) => {
-                    const featured = r.host === "northline.studio";
+                    const featured = r.host === "niscraft.com";
                     return (
                       <motion.li
                         key={r.host}

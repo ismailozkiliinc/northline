@@ -14,7 +14,7 @@ export function WebLive() {
       <DeviceComposition
         layout="browser-phone"
         laptop={
-          <ProductLaptop url="northline.studio">
+          <ProductLaptop url="niscraft.com">
             <OrbitWebsite pieces={Math.max(1, pieces)} />
           </ProductLaptop>
         }

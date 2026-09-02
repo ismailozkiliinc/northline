@@ -78,7 +78,6 @@ export default async function CaseStudyPage({
       <CaseStudyEditorialHero
         project={project}
         locale={loc}
-        demoLabel={t("demoLabel")}
         ctaLabel={loc === "tr" ? "Benzer bir proje başlat" : "Start a similar project"}
       />
 

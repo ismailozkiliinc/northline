@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, startTransition } from "react";
 import { useInView, useReducedMotion } from "framer-motion";
 
 export function CountUp({
@@ -23,17 +23,20 @@ export function CountUp({
   const ref = useRef<HTMLSpanElement>(null);
   const inView = useInView(ref, { once: replay === 0, amount: 0.4 });
   const reduce = useReducedMotion();
-  const [value, setValue] = useState(reduce ? to : 0);
+  const [value, setValue] = useState(0);
 
   useEffect(() => {
     if (!inView) return;
+    let frame = 0;
+    let startTimer = 0;
+
     if (reduce) {
-      setValue(to);
+      startTransition(() => setValue(to));
       return;
     }
-    setValue(0);
-    let frame = 0;
-    const startTimer = window.setTimeout(() => {
+
+    startTransition(() => setValue(0));
+    startTimer = window.setTimeout(() => {
       const start = performance.now();
       const tick = (now: number) => {
         const p = Math.min(1, (now - start) / (duration * 1000));
@@ -43,6 +46,7 @@ export function CountUp({
       };
       frame = requestAnimationFrame(tick);
     }, delay * 1000);
+
     return () => {
       window.clearTimeout(startTimer);
       cancelAnimationFrame(frame);

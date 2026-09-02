@@ -6,6 +6,8 @@ import { ExperienceStories } from "@/components/home/experience-stories";
 import { HomeWhy } from "@/components/home/home-why";
 import { HomeProcess } from "@/components/home/home-process";
 import { PageCta } from "@/components/system/page-cta";
+import { JsonLd, organizationJsonLd, websiteJsonLd } from "@/components/seo/json-ld";
+import { pageMetadata } from "@/lib/metadata";
 import { siteConfig } from "@/lib/site";
 
 export async function generateMetadata({
@@ -15,20 +17,21 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "meta" });
-  return {
+  const base = pageMetadata({
     title: t("title"),
     description: t("description"),
-    alternates: {
-      canonical: `${siteConfig.url}${locale === "en" ? "/en" : ""}`,
-      languages: {
-        tr: siteConfig.url,
-        en: `${siteConfig.url}/en`,
-      },
-    },
+    locale,
+    path: "/",
+  });
+
+  return {
+    ...base,
+    title: t("title"),
     openGraph: {
+      ...base.openGraph,
       title: t("title"),
       description: t("description"),
-      url: siteConfig.url,
+      url: locale === "en" ? `${siteConfig.url}/en` : siteConfig.url,
       siteName: siteConfig.name,
       locale: locale === "tr" ? "tr_TR" : "en_US",
       type: "website",
@@ -47,6 +50,7 @@ export default async function HomePage({
 
   return (
     <>
+      <JsonLd data={[organizationJsonLd(), websiteJsonLd(locale)]} />
       <Hero />
       <HomeServices />
       <ExperienceStories />

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
+import { getPublishedProjects } from "@/lib/cms/queries";
 import { WorkContent } from "@/components/pages/work-content";
 import { pageMetadata } from "@/lib/metadata";
 
@@ -24,5 +25,6 @@ export default async function WorkPage({
 }) {
   const { locale } = await params;
   setRequestLocale(locale);
-  return <WorkContent />;
+  const projects = await getPublishedProjects();
+  return <WorkContent projects={projects} />;
 }

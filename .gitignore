@@ -33,9 +33,11 @@ yarn-error.log*
 # env files (can opt-in for committing if needed)
 .env*
 !.env.example
+!.env.local.template
 
 # local lead fallback
 .data/
+/public/uploads/
 
 # vercel
 .vercel

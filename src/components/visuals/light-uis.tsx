@@ -363,7 +363,7 @@ export function UiAiChat() {
         Lead’i nitelendir ve CRM’e yaz.
       </div>
       <div className="mt-1.5 max-w-[85%] rounded-2xl bg-[#f8faff] px-2 py-1.5 text-[8px] text-[#111827] ring-1 ring-indigo-100">
-        Niyet: demo talebi. Skor 82. Kayıt açıldı.
+        Niyet: proje talebi. Skor 82. Kayıt açıldı.
       </div>
       <div className="mt-auto h-7 rounded-full bg-[#f8faff] ring-1 ring-[#e8ecf4]" />
     </div>
@@ -413,7 +413,7 @@ export function UiCorporateSite() {
     <div className={cn("flex h-full bg-white", tx)}>
       <div className="flex min-w-0 flex-[1.2] flex-col p-2.5">
         <header className="flex items-center justify-between">
-          <span className="font-display text-[10px] font-bold text-[#111827]">Northline</span>
+          <span className="font-display text-[10px] font-bold text-[#111827]">NISCRAFT</span>
           <span className="rounded-full bg-brand-gradient px-2 py-0.5 text-[7px] text-white">Teklif Al</span>
         </header>
         <div className="mt-2 rounded-xl bg-gradient-to-r from-indigo-100 via-blue-50 to-violet-50 p-2.5">

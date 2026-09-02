@@ -15,7 +15,7 @@ export function AboutEcosystem() {
         transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
         className="absolute top-[6%] left-[4%] h-[50%] w-[78%]"
       >
-        <LightBrowser url="northline.studio" className="h-full">
+        <LightBrowser url="niscraft.com" className="h-full">
           <UiCorporateSite />
         </LightBrowser>
       </motion.div>

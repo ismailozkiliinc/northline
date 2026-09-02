@@ -102,7 +102,7 @@ export function AiMiniVisual() {
             transformOrigin: "left center",
           }}
         >
-          <StudioBrowser url="cipher.northline/workspace" className="h-full">
+          <StudioBrowser url="cipher.niscraft/workspace" className="h-full">
             <UiCipherWorkspace />
           </StudioBrowser>
         </div>
@@ -125,7 +125,7 @@ export function BrandMiniVisual() {
           className="absolute top-[10%] bottom-[12%] left-[4%] w-[62%]"
           style={{ transform: "perspective(1400px) rotateY(-10deg) rotateX(4deg)" }}
         >
-          <StudioBrowser url="design.northline /system" className="h-full">
+          <StudioBrowser url="design.niscraft /system" className="h-full">
             <UiNorthSystem />
           </StudioBrowser>
         </div>
@@ -187,7 +187,7 @@ export function MarketingMiniVisual() {
           className="absolute inset-[8%]"
           style={{ transform: "perspective(1400px) rotateY(-10deg) rotateX(4deg)" }}
         >
-          <StudioBrowser url="ads.northline /kampanya" className="h-full">
+          <StudioBrowser url="ads.niscraft /kampanya" className="h-full">
             <UiAdsBoard />
           </StudioBrowser>
         </div>
@@ -204,7 +204,7 @@ export function SeoMiniVisual() {
           className="absolute inset-[8%]"
           style={{ transform: "perspective(1400px) rotateY(-10deg) rotateX(4deg)" }}
         >
-          <StudioBrowser url="northline.studio /seo" className="h-full">
+          <StudioBrowser url="niscraft.com /seo" className="h-full">
             <UiSeoBoard />
           </StudioBrowser>
         </div>

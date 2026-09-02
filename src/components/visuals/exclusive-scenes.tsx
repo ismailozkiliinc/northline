@@ -59,7 +59,7 @@ export function CapabilityMesh() {
           <p className="text-[9px] text-white/50">Paid → site → CRM</p>
         </div>
         <div className="rounded-2xl border border-[#e8ecf4] bg-white p-3">
-          <p className="text-[8px] text-emerald-700">northline.studio</p>
+          <p className="text-[8px] text-emerald-700">niscraft.com</p>
           <p className="mt-1 text-[11px] font-semibold text-[#1d4ed8]">Organic · Position 1</p>
           <p className="mt-1 text-[8px] text-[#64748b]">premium digital studio</p>
         </div>
@@ -104,7 +104,7 @@ export function UxJourneyLive() {
       <div className="absolute inset-0 bg-[linear-gradient(to_top,rgba(28,25,23,0.55),transparent_50%)]" />
       <div className="absolute bottom-5 left-5 text-white">
         <p className="text-[10px] tracking-[0.2em] uppercase opacity-70">Identity</p>
-        <p className="font-display text-xl font-bold">Northline system</p>
+        <p className="font-display text-xl font-bold">NISCRAFT system</p>
       </div>
       <div className="absolute top-5 right-5 flex gap-1.5">
         {["#111827", "#4F6EF7", "#EEF2FF"].map((c) => (
@@ -163,7 +163,7 @@ export function ShopLookbook() {
 export function EditorialMasthead() {
   return (
     <Stage className="rounded-2xl border border-[#e8ecf4] bg-[#f7f5f0] p-6 md:p-8">
-      <p className="text-[10px] font-semibold tracking-[0.22em] text-[#a8a29e] uppercase">Northline Review</p>
+      <p className="text-[10px] font-semibold tracking-[0.22em] text-[#a8a29e] uppercase">NISCRAFT Review</p>
       <p className="mt-4 font-display text-[clamp(1.8rem,4vw,2.6rem)] font-bold leading-[1.05] tracking-tight text-[#111827]">
         Notes on
         <br />
@@ -186,7 +186,7 @@ export function SaasModulesLive() {
     <Stage className="rounded-2xl border border-[#e8ecf4] bg-[#f7f8fc]">
       <div className="flex h-full">
         <aside className="hidden w-[28%] flex-col border-r border-[#e8ecf4] bg-white p-3 sm:flex">
-          <p className="font-display text-[11px] font-bold">Northline OS</p>
+          <p className="font-display text-[11px] font-bold">NISCRAFT OS</p>
           <p className="text-[8px] text-[#94a3b8]">Production</p>
           <div className="mt-3 space-y-1 text-[10px] font-semibold text-[#64748b]">
             {["Overview", "Billing", "Roles", "Jobs"].map((x, i) => (
@@ -304,8 +304,8 @@ export function SerpBoardLive() {
       </div>
       <ul className="mt-4 space-y-3">
         <li className="rounded-xl bg-indigo-50 px-3 py-2.5 ring-1 ring-indigo-100">
-          <p className="text-[10px] text-emerald-700">northline.studio</p>
-          <p className="text-sm font-semibold text-[#1d4ed8]">Northline — Digital product studio</p>
+          <p className="text-[10px] text-emerald-700">niscraft.com</p>
+          <p className="text-sm font-semibold text-[#1d4ed8]">NISCRAFT — Digital product studio</p>
           <p className="text-[10px] font-semibold text-indigo-600">Position 1 · organic</p>
         </li>
         <li className="px-3 py-1.5">
@@ -337,7 +337,7 @@ export function BrandBoardLive() {
         <div className="grid grid-rows-2 gap-3">
           <div className="rounded-2xl bg-[#111827] p-4 text-white shadow-sm">
             <p className="text-[8px] tracking-[0.18em] text-white/40 uppercase">Card</p>
-            <p className="mt-5 font-display text-sm font-bold">Northline</p>
+            <p className="mt-5 font-display text-sm font-bold">NISCRAFT</p>
             <p className="text-[10px] text-white/55">Digital studio</p>
           </div>
           <div className="rounded-2xl border border-[#e8e4dc] bg-white p-4">

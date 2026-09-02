@@ -1,6 +1,6 @@
 "use client";
 
-import { Mail, MapPin, ArrowRight } from "lucide-react";
+import { Mail, MapPin } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { PageHero } from "@/components/system/page-hero";
 import { Reveal } from "@/components/motion/reveal";

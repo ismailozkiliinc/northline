@@ -45,9 +45,9 @@ export default async function LocaleLayout({
   return (
     <html
       lang={locale}
-      className={`${plusJakarta.variable} ${geistSans.variable} ${geistMono.variable} h-full`}
+      className={`${plusJakarta.variable} ${geistSans.variable} ${geistMono.variable} h-full overflow-x-clip`}
     >
-      <body className="min-h-full bg-bg text-fg antialiased">
+      <body className="min-h-full overflow-x-clip bg-bg text-fg antialiased">
         <NextIntlClientProvider messages={messages}>
           <SmoothScroll>
             <SiteShell>{children}</SiteShell>

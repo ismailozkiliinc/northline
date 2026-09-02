@@ -1,5 +1,5 @@
 /**
- * Northline media catalog
+ * NISCRAFT media catalog
  * Art direction: premium creative technology studio
  * — architectural interiors, cinematic light, unique per section
  */

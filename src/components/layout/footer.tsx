@@ -1,5 +1,6 @@
 "use client";
 
+import { Mail } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { Logo } from "@/components/layout/logo";
@@ -37,9 +38,18 @@ export function Footer({ className }: FooterProps) {
           <div className="lg:col-span-4">
             <Logo className="[&_span]:text-white" />
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-[#94a3b8]">{t("tagline")}</p>
+            {siteConfig.email ? (
+              <a
+                href={`mailto:${siteConfig.email}`}
+                className="mt-5 inline-flex items-center gap-2 text-sm text-[#cbd5e1] transition-colors hover:text-white"
+              >
+                <Mail className="h-4 w-4 shrink-0 text-indigo-400" aria-hidden />
+                {siteConfig.email}
+              </a>
+            ) : null}
           </div>
 
-          <div className="lg:col-span-3 lg:col-start-7">
+          <div className="lg:col-span-3 lg:col-start-5">
             <h2 className="text-xs font-semibold uppercase tracking-wider text-[#94a3b8]">
               {t("company")}
             </h2>

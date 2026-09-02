@@ -930,7 +930,7 @@ export function GrowthOrbitMonitor({ className }: Props) {
       <GlassCard className="absolute top-6 left-6 w-[38%] max-w-[160px] p-2.5">
         <div className="mb-1.5 text-[7px] tracking-wider text-white/40 uppercase">Health</div>
         <div className="space-y-1">
-          {["API", "CDN", "DB"].map((row, i) => (
+          {["API", "CDN", "DB"].map((row) => (
             <div key={row} className="flex items-center gap-1.5">
               <span className="size-1 rounded-full bg-[#3dbf8a]" />
               <span className="text-[8px] text-white/55">{row}</span>

@@ -9,7 +9,7 @@ export function UniverseLive() {
       <DeviceComposition
         layout="laptop-phone"
         laptop={
-          <ProductLaptop url="orbit.northline.studio">
+          <ProductLaptop url="orbit.niscraft.com">
             <OrbitWebsite pieces={4} />
           </ProductLaptop>
         }

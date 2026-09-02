@@ -13,9 +13,6 @@ export function SplitTitle({
   as?: "h1" | "h2" | "h3";
 }) {
   const reduce = useReducedMotion();
-  const lines = text.split("\n").flatMap((line) =>
-    line === "" ? [] : [line],
-  );
 
   // Split into phrases by sentence-ish chunks for reveal
   const words = text.split(" ");

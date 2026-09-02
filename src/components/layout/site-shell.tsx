@@ -1,6 +1,7 @@
 import { Header } from "@/components/layout/header";
 import { SiteFooter } from "@/components/layout/site-footer";
 import { CookieConsent } from "@/components/shared/cookie-consent";
+import { AnalyticsTracker } from "@/components/admin/analytics-tracker";
 import { cn } from "@/lib/utils";
 
 type SiteShellProps = {
@@ -15,7 +16,7 @@ export function SiteShell({ children, className }: SiteShellProps) {
         href="#content"
         className="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-50 focus:rounded-full focus:bg-accent focus:px-4 focus:py-2 focus:text-sm focus:text-white"
       >
-        Skip to content
+        Skip to content / İçeriğe geç
       </a>
       <Header />
       <main id="content" className={cn("min-h-screen pt-[var(--nav-h)]", className)}>
@@ -23,6 +24,7 @@ export function SiteShell({ children, className }: SiteShellProps) {
       </main>
       <SiteFooter />
       <CookieConsent />
+      <AnalyticsTracker />
     </>
   );
 }

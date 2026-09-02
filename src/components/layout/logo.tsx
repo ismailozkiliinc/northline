@@ -15,7 +15,7 @@ export function Logo({ className, onClick }: LogoProps) {
         "group inline-flex items-center gap-2.5 transition-opacity hover:opacity-90",
         className,
       )}
-      aria-label="Northline — Ana sayfa"
+      aria-label="NISCRAFT — Ana sayfa"
     >
       <svg
         width="34"
@@ -43,7 +43,7 @@ export function Logo({ className, onClick }: LogoProps) {
         />
       </svg>
       <span className="font-display text-[0.95rem] font-bold tracking-[0.06em] text-[#111827] uppercase">
-        Northline
+        NISCRAFT
       </span>
     </Link>
   );

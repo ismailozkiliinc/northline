@@ -10,7 +10,7 @@ function SoftwareDesk() {
   return (
     <div className="flex h-full bg-[#f7f8fc] text-[#111827]">
       <aside className="hidden w-[22%] flex-col border-r border-[#e8ecf4] bg-white p-2 sm:flex">
-        <p className="font-display text-[9px] font-bold">Northline OS</p>
+        <p className="font-display text-[9px] font-bold">NISCRAFT OS</p>
         <p className="mt-0.5 text-[6px] text-[#94a3b8]">Production</p>
         <div className="mt-2 space-y-0.5 text-[7px] font-semibold text-[#64748b]">
           {["Overview", "Pipeline", "Customers", "Automations"].map((x, i) => (
@@ -53,7 +53,7 @@ export function SoftwareLive() {
       <DeviceComposition
         layout="monitor"
         laptop={
-          <ProductLaptop url="os.northline.studio">
+          <ProductLaptop url="os.niscraft.com">
             <SoftwareDesk />
           </ProductLaptop>
         }

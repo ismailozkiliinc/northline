@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, startTransition } from "react";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 
 const EASE = [0.22, 1, 0.36, 1] as const;
@@ -399,8 +399,10 @@ export function ContactHeroVisual() {
 
   useEffect(() => {
     if (reduce) {
-      setPhase("hello");
-      setChat([]);
+      startTransition(() => {
+        setPhase("hello");
+        setChat([]);
+      });
       return;
     }
 

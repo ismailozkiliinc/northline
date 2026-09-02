@@ -85,6 +85,7 @@ const wizardSchema = z.object({
   phone: z.string().optional(),
   channel: z.enum(channels),
   message: z.string().optional(),
+  website: z.string().max(0).optional(),
   consent: z.boolean().refine((v) => v === true, { message: "consent_required" }),
 });
 
@@ -119,8 +120,10 @@ function saveStored(data: Partial<WizardValues>) {
 
 export function ProjectWizard({ locale }: { locale: "tr" | "en" }) {
   const t = useTranslations("start");
+  const tc = useTranslations("contact");
   const [step, setStep] = useState(0);
   const [done, setDone] = useState(false);
+  const [emailFailed, setEmailFailed] = useState(false);
   const totalSteps = 6;
 
   const form = useForm<WizardValues>({
@@ -181,15 +184,42 @@ export function ProjectWizard({ locale }: { locale: "tr" | "en" }) {
   }
 
   async function onSubmit(data: WizardValues) {
+    if (data.website) {
+      setDone(true);
+      return;
+    }
     const res = await fetch("/api/lead", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ ...data, source: "wizard" }),
+      body: JSON.stringify({ ...data, website: data.website ?? "", source: "wizard" }),
     });
-    if (res.ok) {
+    const body = (await res.json().catch(() => ({}))) as {
+      success?: boolean;
+      ok?: boolean;
+      error?: string;
+      stored?: boolean;
+      emailed?: boolean;
+      warning?: string;
+    };
+    const accepted = body.success === true || body.ok === true;
+    if (res.ok && accepted && (body.emailed === true || body.warning === "email_skipped_dev")) {
       localStorage.removeItem(STORAGE_KEY);
       setDone(true);
+      return;
     }
+    if (body.stored && (body.error === "email_failed" || body.emailed === false)) {
+      localStorage.removeItem(STORAGE_KEY);
+      setEmailFailed(true);
+      return;
+    }
+  }
+
+  if (emailFailed) {
+    return (
+      <div className="mx-auto max-w-lg rounded-2xl border border-amber-200 bg-amber-50 p-8 text-center">
+        <p className="text-sm leading-relaxed text-[#111827]">{tc("emailFailed")}</p>
+      </div>
+    );
   }
 
   if (done) {
@@ -342,6 +372,16 @@ export function ProjectWizard({ locale }: { locale: "tr" | "en" }) {
         {step === 5 && (
           <div className="space-y-4">
             <h3 className="font-display text-lg font-medium">{t("steps.contact")}</h3>
+            <div className="absolute -left-[9999px] top-auto h-px w-px overflow-hidden" aria-hidden="true">
+              <label htmlFor="wizard-website">Website</label>
+              <input
+                id="wizard-website"
+                type="text"
+                tabIndex={-1}
+                autoComplete="off"
+                {...register("website")}
+              />
+            </div>
             <div className="grid gap-4 sm:grid-cols-2">
               <div>
                 <label className="mb-1 block text-sm text-muted">{t("fields.name")}</label>

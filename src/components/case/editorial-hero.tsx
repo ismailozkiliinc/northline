@@ -8,12 +8,10 @@ import { ProjectStoryCover } from "@/components/visuals/project-story-cover";
 export function CaseStudyEditorialHero({
   project,
   locale,
-  demoLabel,
   ctaLabel,
 }: {
   project: Project;
   locale: Locale;
-  demoLabel: string;
   ctaLabel: string;
 }) {
   return (
@@ -21,7 +19,13 @@ export function CaseStudyEditorialHero({
       <div className="container-wide relative grid items-center gap-8 overflow-hidden pt-14 pb-10 lg:grid-cols-[minmax(0,0.4fr)_minmax(0,0.6fr)] lg:gap-10 lg:pt-16 lg:pb-12">
         <div className="relative z-[2] min-w-0 max-w-xl">
           <p className="text-[11px] font-semibold tracking-[0.22em] text-indigo-500 uppercase">
-            {demoLabel} · {project.sector[locale]}
+            {project.status === "demo" ? (
+              <>
+                {locale === "tr" ? "Concept Project" : "Concept Project"}
+                <span className="mx-2 text-indigo-300">·</span>
+              </>
+            ) : null}
+            {project.sector[locale]}
           </p>
           <h1 className="mt-4 font-display text-[clamp(2.4rem,4.8vw,4.4rem)] font-semibold tracking-[-0.04em] text-balance text-[#111827]">
             {project.shortTitle[locale]}

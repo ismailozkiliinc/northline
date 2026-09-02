@@ -2,7 +2,7 @@
 
 import type { ReactNode } from "react";
 import { useId } from "react";
-import { motion } from "framer-motion";
+import { motion, useReducedMotion } from "framer-motion";
 import { CountUp } from "@/components/demos/count-up";
 import { cn } from "@/lib/utils";
 
@@ -24,13 +24,17 @@ export function LineChart({
   d = "M2 26 C18 24, 30 12, 48 14 S78 8, 98 6",
   duration = 1.8,
   delay = 0,
+  live = false,
 }: {
   className?: string;
   d?: string;
   duration?: number;
   delay?: number;
+  live?: boolean;
 }) {
   const gid = useId();
+  const reduce = useReducedMotion();
+
   return (
     <svg viewBox="0 0 100 32" className={className} aria-hidden>
       <defs>
@@ -39,7 +43,12 @@ export function LineChart({
           <stop offset="100%" stopColor="#6366f1" stopOpacity="0" />
         </linearGradient>
       </defs>
-      <path d={`${d} L100 32 L0 32 Z`} fill={`url(#${gid})`} />
+      <motion.path
+        d={`${d} L100 32 L0 32 Z`}
+        fill={`url(#${gid})`}
+        animate={live && !reduce ? { opacity: [0.55, 0.95, 0.55] } : undefined}
+        transition={live && !reduce ? { duration: 2.8, repeat: Infinity, ease: "easeInOut" } : undefined}
+      />
       <motion.path
         d={d}
         fill="none"
@@ -49,11 +58,28 @@ export function LineChart({
         animate={{ pathLength: 1 }}
         transition={{ duration, delay, ease: [0.22, 1, 0.36, 1] }}
       />
+      {live && !reduce ? (
+        <motion.circle
+          r="1.6"
+          fill="#a5b4fc"
+          style={{ offsetPath: `path('${d}')` }}
+          animate={{ offsetDistance: ["0%", "100%"] }}
+          transition={{ duration: 2.6, repeat: Infinity, ease: "linear", delay: delay + duration * 0.35 }}
+        />
+      ) : null}
     </svg>
   );
 }
 
-export function BarChart({ values = [42, 68, 54, 88, 72, 96] }: { values?: number[] }) {
+export function BarChart({
+  values = [42, 68, 54, 88, 72, 96],
+  live = false,
+}: {
+  values?: number[];
+  live?: boolean;
+}) {
+  const reduce = useReducedMotion();
+
   return (
     <div className="flex h-full items-end gap-[3px]">
       {values.map((v, i) => (
@@ -61,20 +87,39 @@ export function BarChart({ values = [42, 68, 54, 88, 72, 96] }: { values?: numbe
           key={i}
           className="flex-1 rounded-[2px] bg-gradient-to-t from-indigo-500 to-violet-400"
           initial={{ height: "8%" }}
-          animate={{ height: `${v}%` }}
-          transition={{ duration: 0.95, delay: i * 0.1, ease: [0.22, 1, 0.36, 1] }}
+          animate={
+            live && !reduce
+              ? { height: [`${Math.max(v - 14, 12)}%`, `${v}%`, `${Math.max(v - 8, 16)}%`, `${v}%`] }
+              : { height: `${v}%` }
+          }
+          transition={
+            live && !reduce
+              ? {
+                  duration: 2.4,
+                  delay: delayForBar(i),
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                }
+              : { duration: 0.95, delay: i * 0.1, ease: [0.22, 1, 0.36, 1] }
+          }
         />
       ))}
     </div>
   );
 }
 
+function delayForBar(index: number) {
+  return index * 0.14;
+}
+
 export function OrbitWebsite({
   pieces = 4,
   className,
+  live = false,
 }: {
   pieces?: number;
   className?: string;
+  live?: boolean;
 }) {
   return (
     <div data-scrollpane className={cn("flex h-full min-h-full flex-col bg-white text-[#111827]", className)}>
@@ -135,7 +180,7 @@ export function OrbitWebsite({
               <p className="font-display text-[10px] font-bold text-white">
                 <CountUp to={142800} prefix="₺" duration={2.1} delay={0.35} />
               </p>
-              <LineChart className="mt-0.5 h-7 w-full" />
+              <LineChart className="mt-0.5 h-7 w-full" live={live} />
             </>
           ) : null}
         </div>
@@ -158,24 +203,14 @@ export function OrbitWebsite({
       ) : null}
 
       {pieces >= 4 ? (
-        <div className="mt-1.5 grid min-h-0 flex-1 grid-cols-[1.2fr_0.8fr] gap-1 px-2.5 pb-2">
-          <div className="flex min-h-0 flex-col rounded-md bg-[#f8faff] p-1.5">
-            <p className="text-[5.5px] font-semibold tracking-wider text-[#94a3b8] uppercase">Performance</p>
-            <div className="mt-1 min-h-0 flex-1">
-              <BarChart />
+        <div className="mt-1.5 min-h-0 flex-1 px-2.5 pb-2.5">
+          <div className="flex h-full min-h-0 flex-col rounded-md bg-[#f8faff] p-1.5">
+            <p className="shrink-0 text-[5.5px] font-semibold tracking-wider text-[#94a3b8] uppercase">
+              Performance
+            </p>
+            <div className="mt-1.5 min-h-0 flex-1">
+              <BarChart live={live} />
             </div>
-          </div>
-          <div className="space-y-1">
-            {[
-              ["Release 14.2", "Ready"],
-              ["Access review", "3 pending"],
-              ["Incident log", "Clear"],
-            ].map(([t, s]) => (
-              <div key={t} className="rounded-md border border-[#eef2f7] px-1.5 py-1">
-                <p className="text-[6px] font-semibold">{t}</p>
-                <p className="text-[5.5px] text-[#64748b]">{s}</p>
-              </div>
-            ))}
           </div>
         </div>
       ) : (
@@ -421,7 +456,7 @@ export function AiWorkspaceUi({ phase = 5 }: { phase?: number }) {
   return (
     <div className="flex h-full bg-[#f7f8fc] text-[#111827]">
       <aside className="w-[28%] border-r border-[#e8ecf4] bg-white p-1.5">
-        <p className="font-display text-[8px] font-bold">Northline AI</p>
+        <p className="font-display text-[8px] font-bold">NISCRAFT AI</p>
         <div className="mt-1.5 space-y-0.5 text-[6.5px]">
           {["Conversations", "Automations", "Data", "Integrations"].map((item, i) => (
             <div
@@ -475,7 +510,6 @@ export function ShopWebsite({ step = 3 }: { step?: number }) {
       </header>
       <div className="grid h-[calc(100%-22px)] grid-cols-2 gap-1 px-2 pb-2">
         <div className="overflow-hidden rounded-md">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
           <motion.img
             src="/images/campaign/atelier-campaign.jpg"
             alt=""

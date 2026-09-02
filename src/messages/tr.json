@@ -1,8 +1,8 @@
 {
   "meta": {
-    "title": "Northline — Dijital ürün stüdyosu",
+    "title": "NISCRAFT — Dijital ürün stüdyosu",
     "description": "İşletmeleri büyüten web siteleri, mobil uygulamalar ve özel dijital ürünler tasarlıyor ve geliştiriyoruz.",
-    "ogAlt": "Northline dijital ürün stüdyosu"
+    "ogAlt": "NISCRAFT dijital ürün stüdyosu"
   },
   "nav": {
     "home": "Ana Sayfa",
@@ -25,9 +25,9 @@
     "titleBefore": "Markanızı dijitalde ",
     "titleHighlight": "zirveye",
     "titleAfter": " taşıyoruz.",
-    "subtitle": "Northline olarak markaların dijital dünyada öne çıkmasını sağlayan strateji, tasarım ve yazılım çözümleri sunuyoruz.",
+    "subtitle": "NISCRAFT olarak markaların dijital dünyada öne çıkmasını sağlayan strateji, tasarım ve yazılım çözümleri sunuyoruz.",
     "ctaPrimary": "Hizmetlerimizi İncele",
-    "ctaSecondary": "Tanıtım Videosu",
+    "ctaSecondary": "Projelerimizi İncele",
     "stats": [
       { "value": "120+", "label": "Proje" },
       { "value": "8+", "label": "Yıl Deneyim" },
@@ -130,8 +130,8 @@
   "homeStories": {
     "eyebrow": "Seçili projeler",
     "title": "Ürettiğimiz dijital deneyimler",
-    "body": "Aşağıdaki çalışmalar stüdyo demo ve konseptlerdir; gerçek müşteri sonuçları değildir. Her kart, farklı bir sektör ve ürün dilini temsil eder.",
-    "demo": "Demo",
+    "body": "Farklı sektörlerde ürettiğimiz dijital ürünler ve vaka çalışmaları.",
+    "demo": "Concept Project",
     "prev": "Önceki",
     "next": "Sonraki",
     "cards": [
@@ -192,7 +192,7 @@
     ]
   },
   "homePitch": {
-    "whyEyebrow": "Neden Northline",
+    "whyEyebrow": "Neden NISCRAFT",
     "whyTitle": "Tek stüdyo, dört yetkinlik.",
     "whyItems": [
       { "title": "Strateji", "hint": "Kapsam, öncelik ve ölçüt netleşir." },
@@ -216,13 +216,13 @@
   },
   "work": {
     "title": "Seçilmiş dijital ürünler",
-    "subtitle": "Demo vaka çalışmaları — gerçek müşteri verisi eklendikçe güncellenir.",
+    "subtitle": "Farklı sektörlerde ürettiğimiz dijital ürünler ve vaka çalışmaları.",
     "metaTitle": "Projelerimiz",
-    "metaDesc": "Northline’ın ürettiği dijital ürünler ve vaka çalışmaları — web, ürün ve yazılım.",
+    "metaDesc": "NISCRAFT’ın ürettiği dijital ürünler ve vaka çalışmaları — web, ürün ve yazılım.",
     "viewProject": "Projeyi Gör",
     "all": "Tüm çalışmalar",
     "comingSoon": "Yakında",
-    "demoLabel": "Demo Case Study",
+    "demoLabel": "Concept Project",
     "sector": "Sektör",
     "services": "Hizmetler",
     "platforms": "Platformlar",
@@ -234,12 +234,12 @@
     "heroTitleBefore": "Ürettiğimiz işler\n",
     "heroTitleHighlight": "kendini",
     "heroTitleAfter": " anlatıyor.",
-    "heroBody": "Her proje bir problem, bir karar dizisi ve net bir ürün çıktısı. Aşağıdaki çalışmalar, Northline’ın nasıl düşündüğünü gösterir.",
+    "heroBody": "Her proje bir problem, bir karar dizisi ve net bir ürün çıktısı. Aşağıdaki çalışmalar, NISCRAFT’ın nasıl düşündüğünü gösterir.",
     "heroCta": "Proje başlat",
     "heroSecondary": "Hizmetlerimiz",
     "projectLabel": "Proje",
     "client": "Müşteri",
-    "demoClient": "Studio demo",
+    "demoClient": "Concept Project",
     "year": "Yıl",
     "ctaTitle": "Sıradaki ürün sizinle başlasın.",
     "ctaBody": "Kapsamı birlikte netleştirelim. 30 dakikalık keşif, doğru başlangıç için yeter.",
@@ -454,7 +454,7 @@
   },
   "sectors": {
     "title": "Çalıştığımız sektörler",
-    "subtitle": "Genel demo arayüzleriyle anlatılan ürün tipleri — sahte marka yok.",
+    "subtitle": "Farklı sektörlerde ürettiğimiz dijital ürün tipleri ve deneyimler.",
     "items": [
       "Otel ve turizm",
       "Eğitim",
@@ -470,19 +470,19 @@
   },
   "about": {
     "title": "Ürün üreten bir stüdyo",
-    "subtitle": "Northline; marka hikâyesi anlatmak için değil, işletmeleri büyüten dijital ürünler kurmak için var.",
+    "subtitle": "NISCRAFT; marka hikâyesi anlatmak için değil, işletmeleri büyüten dijital ürünler kurmak için var.",
     "metaTitle": "Hakkımızda",
-    "metaDesc": "Northline, tasarım, yazılım, teknoloji ve dijital büyümeyi bir araya getiren modern bir ürün partneridir.",
+    "metaDesc": "NISCRAFT, tasarım, yazılım, teknoloji ve dijital büyümeyi bir araya getiren modern bir ürün partneridir.",
     "eyebrow": "Hakkımızda",
     "heroTitleBefore": "Fikirleri dijital\n",
     "heroTitleHighlight": "ürünlere",
     "heroTitleAfter": " dönüştürüyoruz.",
-    "heroBody": "Tasarım, yazılım, teknoloji, yapay zekâ ve dijital büyümeyi tek dilde birleştiriyoruz. Northline, markaların dijital ürün partneridir.",
+    "heroBody": "Tasarım, yazılım, teknoloji, yapay zekâ ve dijital büyümeyi tek dilde birleştiriyoruz. NISCRAFT, markaların dijital ürün partneridir.",
     "heroCta": "Birlikte başlayalım",
     "heroSecondary": "Hizmetlerimiz",
     "whoEyebrow": "Biz kimiz",
     "whoTitle": "Modern dijital ürün ve teknoloji partneri.",
-    "whoBody": "Northline; arayüzü koddan, stratejiyi teslimattan ayırmayan bir stüdyo. Küçük, disiplinli bir ekiple uzaktan çalışır; haftalık demolar ve yazılı kararlarla ilerleriz.",
+    "whoBody": "NISCRAFT; arayüzü koddan, stratejiyi teslimattan ayırmayan bir stüdyo. Küçük, disiplinli bir ekiple uzaktan çalışır; haftalık demolar ve yazılı kararlarla ilerleriz.",
     "whoQuote": "Önce iş problemi. Sonra deneyim. Sonra yazılım.",
     "whoStats": [
       { "value": "5", "label": "Disiplin" },
@@ -506,7 +506,7 @@
       { "title": "Sahiplik", "body": "Kod, içerik ve hesaplar müşterinindir. El değiştirme, teslimin parçasıdır." },
       { "title": "Ölçülebilirlik", "body": "Animasyon ve 3D yalnızca ürünü netleştirdiğinde kullanılır. Performans bir süs değildir." }
     ],
-    "whyEyebrow": "Neden Northline",
+    "whyEyebrow": "Neden NISCRAFT",
     "whyTitle": "Tek dilde tasarım ve mühendislik.",
     "whyLead": "Birçok ekip ya görsel ya teknik partner bulur. Biz ikisini aynı masada tutarız.",
     "whyItems": [
@@ -520,7 +520,7 @@
     "ctaPrimary": "Proje başlat",
     "ctaSecondary": "İletişime geç",
     "why": "Neden kuruldu?",
-    "whyBody": "Birçok işletme ya yalnızca tasarım ya yalnızca yazılım buluyor. İkisini aynı dilde konuşan tek bir partner arıyordu. Northline bu boşluğu doldurmak için kuruldu.",
+    "whyBody": "Birçok işletme ya yalnızca tasarım ya yalnızca yazılım buluyor. İkisini aynı dilde konuşan tek bir partner arıyordu. NISCRAFT bu boşluğu doldurmak için kuruldu.",
     "how": "Nasıl çalışıyoruz?",
     "howBody": "Uzaktan-first, haftalık demolar, yazılı kararlar. Müşteri ile aynı tarafta duran küçük, disiplinli bir ekip modeli.",
     "approach": "Tasarım ve teknoloji",
@@ -611,7 +611,7 @@
     "title": "İletişim",
     "subtitle": "Kısa bir not bırakın veya proje sihirbazını kullanın.",
     "metaTitle": "İletişim",
-    "metaDesc": "Northline ile bir sonraki ürününüzü konuşun. Keşif görüşmesi ve proje formu.",
+    "metaDesc": "NISCRAFT ile bir sonraki ürününüzü konuşun. Keşif görüşmesi ve proje formu.",
     "eyebrow": "İletişim",
     "heroTitleBefore": "Bir sonraki büyük ",
     "heroTitleHighlight": "fikri",
@@ -630,9 +630,9 @@
       "letsTalk": "Konuşalım",
       "conversation": [
         { "from": "you", "label": "Siz", "text": "Bir fikrim var." },
-        { "from": "northline", "label": "Northline", "text": "Anlatın." },
+        { "from": "niscraft", "label": "NISCRAFT", "text": "Anlatın." },
         { "from": "you", "label": "Siz", "text": "Cesur bir şey." },
-        { "from": "northline", "label": "Northline", "text": "Birlikte inşa edelim." }
+        { "from": "niscraft", "label": "NISCRAFT", "text": "Birlikte inşa edelim." }
       ],
       "finaleTitle": "Hayata geçirelim.",
       "finaleCta": "Projeyi başlat"
@@ -655,6 +655,7 @@
     "selectPlaceholder": "Seçin",
     "messagePlaceholder": "Projenizi, hedefinizi veya aklınızdaki fikri birkaç cümleyle anlatın...",
     "error": "Gönderilemedi. Lütfen tekrar deneyin.",
+    "emailFailed": "Talebiniz kaydedildi ancak e-posta bildirimi şu an iletilemedi. Ekibimiz kaydı inceleyecek; dilerseniz sitedeki iletişim e-postasından da ulaşabilirsiniz.",
     "serviceOptions": [
       { "value": "web", "label": "Web Tasarım" },
       { "value": "mobile", "label": "Mobil Uygulama" },
@@ -682,13 +683,13 @@
     "ctaPrimary": "Projeyi Başlat",
     "footerTagline": "Digital products, built with intent.",
     "backToTop": "Back to top ↑",
-    "copyright": "© 2026 Northline Studio"
+    "copyright": "© 2026 NISCRAFT Studio"
   },
   "blog": {
     "title": "Blog",
     "subtitle": "Web, mobil, ürün ve strateji üzerine pratik yazılar.",
     "metaTitle": "Blog",
-    "metaDesc": "Dijital ürün, tasarım, yapay zekâ ve büyüme üzerine Northline içgörüleri.",
+    "metaDesc": "Dijital ürün, tasarım, yapay zekâ ve büyüme üzerine NISCRAFT içgörüleri.",
     "eyebrow": "Blog",
     "heroTitleBefore": "Fikirler, içgörüler\nve ",
     "heroTitleHighlight": "dijital dünya",
@@ -764,7 +765,7 @@
   "common": {
     "learnServices": "Hizmetleri incele",
     "startProject": "Proje Başlat",
-    "demo": "Örnek Proje",
+    "demo": "Concept Project",
     "loading": "Yükleniyor…"
   },
   "principles": {

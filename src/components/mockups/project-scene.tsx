@@ -13,7 +13,6 @@ export type ProjectSlug =
 export function ProjectScene({
   slug,
   className,
-  variant,
 }: {
   slug: ProjectSlug;
   className?: string;

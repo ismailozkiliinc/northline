@@ -2,18 +2,17 @@
 
 import { useLocale, useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
-import { projects } from "@/content/projects";
+import type { Project } from "@/content/types";
 import { PageHero } from "@/components/system/page-hero";
 import { PageCta } from "@/components/system/page-cta";
 import { VisualSlot } from "@/components/demos/campaign-scene";
 import { ProjectStoryCover } from "@/components/visuals/project-story-cover";
 import { WorkHeroVisual } from "@/components/pages/work-hero-visual";
 import { Reveal } from "@/components/motion/reveal";
-import type { Locale } from "@/content/types";
 
-export function WorkContent() {
+export function WorkContent({ projects }: { projects: Project[] }) {
   const t = useTranslations("work");
-  const locale = useLocale() as Locale;
+  const locale = useLocale() as "tr" | "en";
 
   return (
     <>
@@ -38,6 +37,12 @@ export function WorkContent() {
               >
                 <div className="project-copy pr-1 lg:pr-2">
                 <p className="font-mono text-[11px] font-semibold tracking-[0.18em] text-indigo-400 uppercase">
+                  {project.status === "demo" ? (
+                    <>
+                      {t("demoLabel")}
+                      <span className="mx-2 text-indigo-200">·</span>
+                    </>
+                  ) : null}
                   {t("projectLabel")} {String(i + 1).padStart(2, "0")}
                 </p>
                 <h2 className="mt-3 font-display text-2xl font-bold tracking-tight text-[#111827] transition-transform duration-500 group-hover:translate-x-[3px] md:text-3xl">
@@ -47,14 +52,6 @@ export function WorkContent() {
                   <div>
                     <dt className="font-medium text-[#94a3b8] uppercase tracking-wider">{t("sector")}</dt>
                     <dd className="mt-0.5">{project.sector[locale]}</dd>
-                  </div>
-                  <div>
-                    <dt className="font-medium text-[#94a3b8] uppercase tracking-wider">{t("client")}</dt>
-                    <dd className="mt-0.5">{t("demoClient")}</dd>
-                  </div>
-                  <div>
-                    <dt className="font-medium text-[#94a3b8] uppercase tracking-wider">{t("year")}</dt>
-                    <dd className="mt-0.5">2025</dd>
                   </div>
                   <div>
                     <dt className="font-medium text-[#94a3b8] uppercase tracking-wider">{t("services")}</dt>

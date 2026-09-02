@@ -21,8 +21,12 @@ function Meta({
   return (
     <div className={cn("flex flex-col gap-3 md:gap-4", light ? "text-ink" : "text-fg")}>
       <div className="flex flex-wrap items-center gap-2 text-[11px] tracking-[0.16em] uppercase">
-        <span className={light ? "text-sky-700" : "text-accent"}>{t("demoLabel")}</span>
-        <span className="opacity-40">·</span>
+        {project.status === "demo" ? (
+          <>
+            <span className={light ? "text-sky-700" : "text-accent"}>{t("demoLabel")}</span>
+            <span className="opacity-40">·</span>
+          </>
+        ) : null}
         <span className={light ? "text-ink-muted" : "text-muted"}>{project.sector[locale]}</span>
       </div>
       <h3 className="font-display text-2xl font-semibold tracking-tight md:text-4xl lg:text-5xl">

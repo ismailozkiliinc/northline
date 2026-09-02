@@ -13,8 +13,8 @@ export const blogPosts: BlogPost[] = [
     },
     category: "web",
     seoTitle: {
-      tr: "Kurumsal web sitesi kontrol listesi | Northline",
-      en: "Corporate website checklist | Northline",
+      tr: "Kurumsal web sitesi kontrol listesi | NISCRAFT",
+      en: "Corporate website checklist | NISCRAFT",
     },
     seoDescription: {
       tr: "Kurumsal site lansmanı öncesi bilgi mimarisi, SEO, erişilebilirlik ve güven sinyalleri için pratik kontrol listesi.",
@@ -22,7 +22,7 @@ export const blogPosts: BlogPost[] = [
     },
     publishedAt: "2025-11-12",
     updatedAt: "2026-01-08",
-    author: "Northline",
+    author: "NISCRAFT",
     relatedService: "web",
     body: {
       tr: `## Neden bir kontrol listesi?
@@ -135,8 +135,8 @@ This checklist does not promise fixed timelines or conversion rates; it improves
     },
     category: "mobile",
     seoTitle: {
-      tr: "Mobil uygulama geliştirme süreci | Northline",
-      en: "Mobile app development process | Northline",
+      tr: "Mobil uygulama geliştirme süreci | NISCRAFT",
+      en: "Mobile app development process | NISCRAFT",
     },
     seoDescription: {
       tr: "Mobil uygulama projelerinde keşif, tasarım, geliştirme, test ve App Store / Play Store yayın adımları.",
@@ -144,7 +144,7 @@ This checklist does not promise fixed timelines or conversion rates; it improves
     },
     publishedAt: "2025-10-03",
     updatedAt: "2026-02-14",
-    author: "Northline",
+    author: "NISCRAFT",
     relatedService: "mobile",
     body: {
       tr: `## Mobil proje neden farklı?
@@ -231,8 +231,8 @@ Transparent milestones, written scope, and weekly demos reduce risk on mobile. S
     },
     category: "mobile",
     seoTitle: {
-      tr: "Flutter vs native karşılaştırması | Northline",
-      en: "Flutter vs native comparison | Northline",
+      tr: "Flutter vs native karşılaştırması | NISCRAFT",
+      en: "Flutter vs native comparison | NISCRAFT",
     },
     seoDescription: {
       tr: "Mobil uygulama stack seçiminde Flutter ve native geliştirmenin artıları, eksileri ve ne zaman hangisi.",
@@ -240,7 +240,7 @@ Transparent milestones, written scope, and weekly demos reduce risk on mobile. S
     },
     publishedAt: "2025-09-18",
     updatedAt: "2026-01-22",
-    author: "Northline",
+    author: "NISCRAFT",
     relatedService: "mobile",
     body: {
       tr: `## Kısa cevap
@@ -275,7 +275,7 @@ Keşifte şu soruları sorarız: hangi SDK'lar şart, offline ihtiyacı var mı,
 
 ## Sonuç
 
-Stack seçimi teknik ve iş kararıdır. Northline her iki yolu da uygular; projeye uygun olanı teklifte gerekçelendirir.`,
+Stack seçimi teknik ve iş kararıdır. NISCRAFT her iki yolu da uygular; projeye uygun olanı teklifte gerekçelendirir.`,
       en: `## Short answer
 
 The right choice depends on features, team skills, and third-party SDK needs. Neither "always Flutter" nor "always native" is correct.
@@ -308,7 +308,7 @@ In discovery we ask: which SDKs are mandatory, is offline required, who maintain
 
 ## Conclusion
 
-Stack choice is a technical and business decision. Northline builds both; we justify the fit in the proposal.`,
+Stack choice is a technical and business decision. NISCRAFT builds both; we justify the fit in the proposal.`,
     },
   },
   {
@@ -323,8 +323,8 @@ Stack choice is a technical and business decision. Northline builds both; we jus
     },
     category: "ecommerce",
     seoTitle: {
-      tr: "E-ticaret olmazsa olmaz özellikler | Northline",
-      en: "Essential e-commerce features | Northline",
+      tr: "E-ticaret olmazsa olmaz özellikler | NISCRAFT",
+      en: "Essential e-commerce features | NISCRAFT",
     },
     seoDescription: {
       tr: "Online mağaza kurarken ürün kataloğu, ödeme, kargo, iade ve güven sinyalleri için temel özellik listesi.",
@@ -332,7 +332,7 @@ Stack choice is a technical and business decision. Northline builds both; we jus
     },
     publishedAt: "2025-08-27",
     updatedAt: "2026-03-01",
-    author: "Northline",
+    author: "NISCRAFT",
     relatedService: "ecommerce",
     body: {
       tr: `## Mağaza sadece vitrin değil
@@ -439,8 +439,8 @@ The feature list shrinks or grows with your business model. In discovery we sepa
     },
     category: "strategy",
     seoTitle: {
-      tr: "Web sitesi fiyat faktörleri | Northline",
-      en: "Website pricing factors | Northline",
+      tr: "Web sitesi fiyat faktörleri | NISCRAFT",
+      en: "Website pricing factors | NISCRAFT",
     },
     seoDescription: {
       tr: "Web projesi bütçesini belirleyen sayfa sayısı, CMS, dil, entegrasyon ve tasarım derinliği faktörleri.",
@@ -448,7 +448,7 @@ The feature list shrinks or grows with your business model. In discovery we sepa
     },
     publishedAt: "2025-07-15",
     updatedAt: "2026-02-02",
-    author: "Northline",
+    author: "NISCRAFT",
     relatedService: "web",
     body: {
       tr: `## Sabit fiyat neden yok?
@@ -479,7 +479,7 @@ CRM, rezervasyon, ödeme, ERP, canlı chat — her biri keşif, test ve bakım m
 
 Hosting, domain, bakım retainer ve içerik güncellemesi proje bütçesinden ayrı düşünülmeli.
 
-## Northline yaklaşımı
+## NISCRAFT yaklaşımı
 
 Fiyat talep üzerine; teklifte kapsam, milestone ve dahil/hariç maddeler yazılı olur. Sahte "başlangıç fiyatı" veya garantili ROI rakamı kullanmıyoruz.
 
@@ -514,7 +514,7 @@ CRM, booking, payments, ERP, live chat — each adds discovery, testing, and mai
 
 Hosting, domain, care retainer, and content updates should be budgeted separately from the build.
 
-## Northline approach
+## NISCRAFT approach
 
 Price on request; proposals list scope, milestones, and in/out items in writing. We do not use fake "starting at" numbers or guaranteed ROI figures.
 
@@ -535,8 +535,8 @@ Sharing your budget frame in discovery helps us propose fitting scope — clarit
     },
     category: "product",
     seoTitle: {
-      tr: "MVP rehberi | Northline",
-      en: "MVP guide | Northline",
+      tr: "MVP rehberi | NISCRAFT",
+      en: "MVP guide | NISCRAFT",
     },
     seoDescription: {
       tr: "SaaS ve mobil ürünlerde MVP kapsamı, doğrulama yöntemleri ve faz 2 planlaması için pratik rehber.",
@@ -544,7 +544,7 @@ Sharing your budget frame in discovery helps us propose fitting scope — clarit
     },
     publishedAt: "2025-06-04",
     updatedAt: "2026-01-30",
-    author: "Northline",
+    author: "NISCRAFT",
     relatedService: "saas",
     body: {
       tr: `## MVP yanlış anlaşılma
@@ -625,8 +625,8 @@ An MVP is a learning tool. A discovery call is enough to start writing scope tog
     },
     category: "product",
     seoTitle: {
-      tr: "UI/UX iş değeri | Northline",
-      en: "UI/UX business value | Northline",
+      tr: "UI/UX iş değeri | NISCRAFT",
+      en: "UI/UX business value | NISCRAFT",
     },
     seoDescription: {
       tr: "UI/UX tasarımının geliştirme maliyeti, kullanılabilirlik ve marka güvenine etkisi — gerçekçi çerçeve.",
@@ -634,7 +634,7 @@ An MVP is a learning tool. A discovery call is enough to start writing scope tog
     },
     publishedAt: "2025-05-20",
     updatedAt: "2026-02-20",
-    author: "Northline",
+    author: "NISCRAFT",
     relatedService: "ui-ux",
     body: {
       tr: `## Tasarım neden "lüks" değil?

@@ -103,7 +103,7 @@ export function PreviewDocuments({ className }: PreviewProps) {
         <aside className="hidden w-[26%] flex-col gap-1 rounded-[9px] border border-white/10 bg-[#0e1520]/80 p-2 sm:flex">
           <div className="mb-1.5 flex items-center gap-1.5">
             <span className="size-1.5 rounded-full bg-accent" />
-            <span className="text-[6.5px] font-semibold text-white/70">Northline</span>
+            <span className="text-[6.5px] font-semibold text-white/70">NISCRAFT</span>
           </div>
           {[
             { label: "Brief", on: true },

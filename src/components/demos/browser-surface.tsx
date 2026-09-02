@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils";
 /** HTML browser chrome — not a photographed device. Used so homepage ≠ web-service MacBook. */
 export function BrowserSurface({
   children,
-  url = "northline.studio",
+  url = "niscraft.com",
   className,
 }: {
   children: ReactNode;
