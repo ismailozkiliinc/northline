@@ -149,7 +149,7 @@ export function ServicesShowcase() {
                     className={cn(
                       "w-full rounded-[var(--radius-card)] border px-5 py-5 text-left transition-all duration-300 md:px-6 md:py-7",
                       isActive
-                        ? "border-accent/30 bg-white shadow-[var(--shadow-soft)]"
+                        ? "border-accent/30 bg-transparent shadow-[var(--shadow-soft)]"
                         : "border-transparent bg-transparent hover:border-border-ink hover:bg-white/50",
                     )}
                     aria-expanded={isActive}

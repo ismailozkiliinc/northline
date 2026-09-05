@@ -88,8 +88,8 @@ export default async function CaseStudyPage({
             <section
               key={stage.id}
               className={cn(
-                "border-b border-[#eef2f7] py-14 md:py-20",
-                even ? "bg-white" : "bg-[#f8faff]",
+                "border-b border-white/8 py-14 md:py-20",
+                even ? "bg-transparent" : "bg-transparent",
               )}
             >
               <div className="container-page grid gap-8 lg:grid-cols-[0.75fr_1.25fr] lg:gap-14 lg:items-start">
@@ -97,17 +97,17 @@ export default async function CaseStudyPage({
                   <p className="font-mono text-xs text-indigo-400">
                     {String(i + 1).padStart(2, "0")}
                   </p>
-                  <h2 className="mt-3 font-display text-[clamp(1.5rem,2.6vw,2.25rem)] font-semibold tracking-tight text-[#111827]">
+                  <h2 className="mt-3 font-display text-[clamp(1.5rem,2.6vw,2.25rem)] font-semibold tracking-tight text-[#F7F9FC]">
                     {stage.title}
                   </h2>
                 </div>
                 <div>
-                  <p className="max-w-2xl text-base leading-relaxed text-[#475569] md:text-lg">
+                  <p className="max-w-2xl text-base leading-relaxed text-[#98A2B3] md:text-lg">
                     {stage.body}
                   </p>
 
                   {stage.id === "problem" && (
-                    <ul className="mt-6 space-y-2.5 text-[15px] text-[#334155]">
+                    <ul className="mt-6 space-y-2.5 text-[15px] text-[#C7D0DC]">
                       {project.goals[loc].map((g) => (
                         <li key={g} className="flex gap-3">
                           <span className="text-indigo-500">▸</span>
@@ -118,7 +118,7 @@ export default async function CaseStudyPage({
                   )}
 
                   {stage.id === "ui" && (
-                    <ul className="mt-6 space-y-2 text-sm text-[#475569]">
+                    <ul className="mt-6 space-y-2 text-sm text-[#98A2B3]">
                       {project.screens[loc].map((s) => (
                         <li key={s}>· {s}</li>
                       ))}
@@ -126,7 +126,7 @@ export default async function CaseStudyPage({
                   )}
 
                   {stage.id === "results" && (
-                    <p className="mt-6 rounded-2xl border border-indigo-100 bg-white p-5 text-sm leading-relaxed text-[#475569]">
+                    <p className="mt-6 rounded-2xl border border-indigo-100 bg-transparent p-5 text-sm leading-relaxed text-[#98A2B3]">
                       {project.results[loc]}
                     </p>
                   )}
@@ -137,37 +137,37 @@ export default async function CaseStudyPage({
         })}
       </div>
 
-      <section className="border-b border-[#eef2f7] bg-[#f8faff] py-14 md:py-20">
+      <section className="border-b border-white/8 bg-transparent py-14 md:py-20">
         <div className="container-page">
-          <h2 className="font-display text-2xl font-semibold text-[#111827] md:text-3xl">
+          <h2 className="font-display text-2xl font-semibold text-[#F7F9FC] md:text-3xl">
             {loc === "tr" ? "Teknoloji" : "Technology"}
           </h2>
           <ul className="mt-6 flex flex-wrap gap-2">
               {project.tech[loc].map((tech) => (
                 <li
                   key={tech}
-                  className="rounded-full border border-indigo-100 bg-white px-3 py-1.5 text-xs text-[#475569]"
+                  className="rounded-full border border-indigo-100 bg-transparent px-3 py-1.5 text-xs text-[#98A2B3]"
                 >
                   {tech}
                 </li>
               ))}
             </ul>
-            <p className="mt-5 max-w-2xl text-sm leading-relaxed text-[#64748b]">
+            <p className="mt-5 max-w-2xl text-sm leading-relaxed text-[#98A2B3]">
               {project.testing[loc]}
             </p>
         </div>
       </section>
 
-      <section className="border-b border-[#eef2f7] bg-white py-12 md:py-14">
+      <section className="border-b border-white/8 bg-transparent py-12 md:py-14">
         <div className="container-page flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
           <div>
-            <p className="text-xs tracking-wider text-[#94a3b8] uppercase">{t("next")}</p>
+            <p className="text-xs tracking-wider text-[#98A2B3] uppercase">{t("next")}</p>
             <Link
               href={{
                 pathname: "/calismalar/[slug]",
                 params: { slug: nextProject.slug },
               }}
-              className="mt-2 block font-display text-2xl font-semibold text-[#111827] hover:text-indigo-600 md:text-3xl"
+              className="mt-2 block font-display text-2xl font-semibold text-[#F7F9FC] hover:text-indigo-600 md:text-3xl"
             >
               {nextProject.shortTitle[loc]} →
             </Link>

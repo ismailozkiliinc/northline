@@ -124,7 +124,7 @@ export function ProcessSticky() {
           {steps.map((step, i) => (
             <details
               key={step.n}
-              className="group rounded-[var(--radius-card)] border border-border-light bg-white p-5 open:shadow-md"
+              className="group rounded-[var(--radius-card)] border border-border-light bg-transparent p-5 open:shadow-md"
               open={i === 0}
             >
               <summary className="cursor-pointer list-none font-display text-lg font-semibold text-ink [&::-webkit-details-marker]:hidden">

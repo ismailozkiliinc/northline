@@ -48,6 +48,7 @@ export function ServicesContent() {
   return (
     <>
       <PageHero
+        atmosphere="default"
         eyebrow={t("heroEyebrow")}
         titleBefore={t("heroTitleBefore")}
         titleHighlight={t("heroTitleHighlight")}
@@ -58,7 +59,7 @@ export function ServicesContent() {
         visual={<CapabilityMesh />}
       />
 
-      <section className="border-t border-[#eef2f7] bg-[#f8faff] py-16 md:py-24">
+      <section className="border-t border-white/8 bg-transparent py-16 md:py-24">
         <div className="container-wide space-y-16 md:space-y-24">
           {cards.map((card, index) => (
             <Reveal key={card.id} delay={index * 0.04} variant={index % 2 === 0 ? "rise" : "mask"}>
@@ -73,10 +74,10 @@ export function ServicesContent() {
                   <p className="text-[11px] font-semibold tracking-[0.22em] text-brand-gradient uppercase">
                     {card.label}
                   </p>
-                  <h2 className="mt-3 font-display text-[1.75rem] font-bold tracking-tight text-[#111827] md:text-[2.1rem]">
+                  <h2 className="mt-3 font-display text-[1.75rem] font-bold tracking-tight text-[#F7F9FC] md:text-[2.1rem]">
                     {card.title}
                   </h2>
-                  <p className="mt-4 text-sm leading-relaxed text-[#475569] md:text-base">{card.body}</p>
+                  <p className="mt-4 text-sm leading-relaxed text-[#98A2B3] md:text-base">{card.body}</p>
                   <span className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-[#4f6ef7]">
                     {t("cardExplore")}
                     <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" aria-hidden />

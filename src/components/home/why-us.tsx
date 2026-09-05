@@ -7,7 +7,7 @@ export async function WhyUs() {
   const items = t.raw("items") as { title: string; desc: string }[];
 
   return (
-    <section className="border-t border-border bg-bg-secondary py-20 md:py-28">
+    <section className="border-t border-border bg-transparent py-20 md:py-28">
       <div className="container-page">
         <SectionHeading title={t("title")} subtitle={t("subtitle")} />
         <ul className="mt-12 grid gap-x-10 gap-y-10 sm:grid-cols-2 lg:grid-cols-4">

@@ -5,7 +5,7 @@ import { CountUp } from "@/components/demos/count-up";
 import { cn } from "@/lib/utils";
 
 const MACBOOK = {
-  frame: "/images/hero/devices/macbook-frame.png?v=2",
+  frame: "/images/hero/devices/macbook-frame.png?v=5",
   aspectRatio: 1536 / 1024,
   screen: { left: 20.352, top: 4.988, width: 59.035, height: 57.115 },
 } as const;
@@ -114,11 +114,13 @@ function OrbitPhoneScreen() {
 function MacBookDevice() {
   return (
     <div
-      className="relative w-full"
+      className="relative w-full overflow-hidden"
       style={{
         aspectRatio: MACBOOK.aspectRatio,
+        // Crop baked under-chassis fringe / hairlines from the frame asset
+        clipPath: "inset(0 0 3.2% 0)",
         filter:
-          "drop-shadow(0 28px 48px rgba(15,23,42,0.16)) drop-shadow(0 8px 18px rgba(15,23,42,0.08))",
+          "drop-shadow(0 28px 50px rgba(5,7,13,0.65)) drop-shadow(0 10px 20px rgba(5,7,13,0.4))",
       }}
     >
       <div

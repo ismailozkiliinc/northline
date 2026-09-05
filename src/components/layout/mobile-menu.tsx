@@ -74,7 +74,7 @@ export function MobileMenu({ open, onClose }: MobileMenuProps) {
     <AnimatePresence>
       {open && (
         <motion.div
-          className="fixed inset-0 z-50 flex flex-col bg-white"
+          className="fixed inset-0 z-50 flex flex-col bg-[#05070D]"
           initial={reduce ? false : { opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={reduce ? undefined : { opacity: 0 }}
@@ -84,13 +84,13 @@ export function MobileMenu({ open, onClose }: MobileMenuProps) {
           aria-label={t("menu")}
         >
           <div ref={panelRef} className="flex h-full flex-col">
-            <div className="container-page flex h-[var(--nav-h)] items-center justify-between border-b border-[#f1f5f9]">
+            <div className="container-page flex h-[var(--nav-h)] items-center justify-between border-b border-white/8">
               <Logo onClick={onClose} />
               <button
                 ref={closeBtnRef}
                 type="button"
                 onClick={onClose}
-                className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-[#e2e8f0] text-[#64748b]"
+                className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/12 text-[#98A2B3]"
                 aria-label={t("close")}
               >
                 <X className="h-5 w-5" aria-hidden />
@@ -115,7 +115,7 @@ export function MobileMenu({ open, onClose }: MobileMenuProps) {
                       onClick={onClose}
                       className={cn(
                         "font-display flex items-center gap-3 rounded-xl px-3 py-3.5 text-2xl font-semibold tracking-tight",
-                        active ? "text-brand-gradient" : "text-[#111827]",
+                        active ? "text-brand-gradient" : "text-[#F7F9FC]",
                       )}
                     >
                       {t(item.labelKey)}
@@ -128,12 +128,12 @@ export function MobileMenu({ open, onClose }: MobileMenuProps) {
               })}
             </nav>
 
-            <div className="container-page flex flex-col gap-5 border-t border-[#f1f5f9] pb-10 pt-8">
+            <div className="container-page flex flex-col gap-5 border-t border-white/8 pb-10 pt-8">
               {siteConfig.email ? (
                 <a
                   href={`mailto:${siteConfig.email}`}
                   onClick={onClose}
-                  className="inline-flex items-center gap-2 text-sm font-medium text-[#64748b] transition-colors hover:text-[#111827]"
+                  className="inline-flex items-center gap-2 text-sm font-medium text-[#98A2B3] transition-colors hover:text-[#F7F9FC]"
                 >
                   <Mail className="h-4 w-4 shrink-0 text-[#6366f1]" aria-hidden />
                   {siteConfig.email}
@@ -143,7 +143,7 @@ export function MobileMenu({ open, onClose }: MobileMenuProps) {
                 <Link
                   href="/proje-baslat"
                   onClick={onClose}
-                  className="group flex h-12 w-full items-center justify-center gap-2 rounded-full bg-white text-sm font-semibold text-[#111827]"
+                  className="group flex h-12 w-full items-center justify-center gap-2 rounded-full bg-[#0B1020] text-sm font-semibold text-[#F7F9FC]"
                 >
                   {t("start")}
                   <ArrowRight className="h-4 w-4 text-[#6366f1]" aria-hidden />

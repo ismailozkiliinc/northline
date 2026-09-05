@@ -171,7 +171,7 @@ export function DiscoveryBand() {
           <h2 className="font-display text-[clamp(1.75rem,3vw,2.5rem)] font-semibold tracking-tight text-white">
             {t("discoveryTitle")}
           </h2>
-          <p className="mt-3 max-w-md text-[#94a3b8]">{t("discoveryBody")}</p>
+          <p className="mt-3 max-w-md text-[#98A2B3]">{t("discoveryBody")}</p>
         </div>
         <Button asChild size="lg">
           <Link href="/proje-baslat">{t("discoveryCta")}</Link>

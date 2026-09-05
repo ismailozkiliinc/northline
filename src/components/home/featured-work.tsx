@@ -116,7 +116,7 @@ export function FeaturedWork() {
         <div className="mt-16 flex justify-center">
           <Link
             href="/calismalar"
-            className="inline-flex h-12 items-center rounded-full border border-border-ink bg-white px-8 text-sm font-medium text-ink shadow-[var(--shadow-card)] transition-all hover:border-accent/30 hover:shadow-[var(--shadow-soft)]"
+            className="inline-flex h-12 items-center rounded-full border border-border-ink bg-transparent px-8 text-sm font-medium text-ink shadow-[var(--shadow-card)] transition-all hover:border-accent/30 hover:shadow-[var(--shadow-soft)]"
           >
             {t("all")} →
           </Link>
@@ -150,7 +150,7 @@ function CaseLink({
         className={cn(
           "group relative block rounded-[var(--radius-media)] border border-border-ink p-7 transition-[border-color,box-shadow,transform] duration-500 md:p-8",
           "hover:border-accent/20 hover:shadow-[var(--shadow-soft)] hover:-translate-y-1",
-          light ? "border-border-ink bg-white" : "bg-white shadow-[var(--shadow-card)]",
+          light ? "border-border-ink bg-transparent" : "bg-transparent shadow-[var(--shadow-card)]",
         )}
       >
         <Meta project={project} locale={locale} t={t} light={light} />

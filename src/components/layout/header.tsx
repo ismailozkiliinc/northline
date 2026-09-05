@@ -34,7 +34,7 @@ export function Header() {
 
   return (
     <>
-      <header className="fixed inset-x-0 top-0 z-40 border-b border-[#f1f5f9] bg-white/95 backdrop-blur-md">
+      <header className="fixed inset-x-0 top-0 z-40 border-b border-white/8 bg-[#05070D]/80 backdrop-blur-md">
         <div className="container-page flex h-[var(--nav-h)] items-center justify-between gap-6">
           <Logo />
 
@@ -49,8 +49,8 @@ export function Header() {
                   className={cn(
                     "relative py-1 text-sm transition-colors duration-200",
                     active
-                      ? "font-semibold text-[#111827]"
-                      : "font-medium text-[#64748b] hover:text-[#111827] after:absolute after:inset-x-0 after:-bottom-1 after:h-px after:origin-left after:scale-x-0 after:bg-[#cbd5e1] after:transition-transform after:duration-200 hover:after:scale-x-100",
+                      ? "font-semibold text-[#F7F9FC]"
+                      : "font-medium text-[#98A2B3] hover:text-[#F7F9FC] after:absolute after:inset-x-0 after:-bottom-1 after:h-px after:origin-left after:scale-x-0 after:bg-white/25 after:transition-transform after:duration-200 hover:after:scale-x-100",
                   )}
                   aria-current={active ? "page" : undefined}
                 >
@@ -74,7 +74,7 @@ export function Header() {
             <div className="hidden rounded-full p-[1.5px] bg-brand-gradient sm:block">
               <Link
                 href="/proje-baslat"
-                className="group inline-flex h-10 items-center gap-2 rounded-full bg-white px-5 text-sm font-semibold text-[#111827] transition-colors hover:bg-[#fafbff]"
+                className="group inline-flex h-10 items-center gap-2 rounded-full bg-[#0B1020] px-5 text-sm font-semibold text-[#F7F9FC] transition-colors hover:bg-[#111827]"
               >
                 {t("start")}
                 <ArrowRight
@@ -85,7 +85,7 @@ export function Header() {
             </div>
             <button
               type="button"
-              className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-[#e2e8f0] text-[#64748b] transition-colors hover:text-[#111827] xl:hidden"
+              className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/12 text-[#98A2B3] transition-colors hover:text-[#F7F9FC] xl:hidden"
               onClick={() => setMenuOpen(true)}
               aria-expanded={menuOpen}
               aria-controls="mobile-menu"

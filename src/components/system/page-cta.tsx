@@ -23,7 +23,7 @@ export function PageCta({
   const reduce = useReducedMotion();
 
   return (
-    <section className="border-t border-[#e8ecf4] bg-white py-20 md:py-28">
+    <section className="border-t border-white/8 bg-transparent py-20 md:py-28">
       <motion.div
         initial={reduce ? false : { opacity: 0, y: 24 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -31,13 +31,13 @@ export function PageCta({
         transition={{ duration: 0.65 }}
         className="container-page"
       >
-        <div className="relative overflow-hidden rounded-[2rem] bg-[#0f172a] px-8 py-14 md:px-16 md:py-20">
+        <div className="relative overflow-hidden rounded-[2rem] border border-white/10 bg-[rgba(15,23,42,0.55)] px-8 py-14 backdrop-blur-md md:px-16 md:py-20">
           <div
-            className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_70%_80%_at_100%_0%,rgba(99,102,241,0.25),transparent)]"
+            className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_70%_80%_at_100%_0%,rgba(99,102,241,0.2),transparent)]"
             aria-hidden
           />
           <div
-            className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_50%_60%_at_0%_100%,rgba(59,130,246,0.12),transparent)]"
+            className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_50%_60%_at_0%_100%,rgba(56,189,248,0.08),transparent)]"
             aria-hidden
           />
           <div className="relative grid gap-10 lg:grid-cols-[1fr_auto] lg:items-center lg:gap-16">

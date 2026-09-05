@@ -47,7 +47,7 @@ export function LocaleSwitcher({
                 "rounded px-1 py-0.5 uppercase tracking-wider transition-colors",
                 locale === loc
                   ? "text-[#6366f1]"
-                  : "text-[#94a3b8] hover:text-[#64748b]",
+                  : "text-[#98A2B3] hover:text-[#F7F9FC]",
               )}
               aria-current={locale === loc ? "true" : undefined}
               lang={loc}
@@ -70,7 +70,7 @@ export function LocaleSwitcher({
         <span className="text-[10px] font-medium tracking-[0.2em] text-ink-muted uppercase">
           Language
         </span>
-        <div className="inline-flex rounded-full border border-border-ink bg-white p-1 shadow-[var(--shadow-card)]">
+        <div className="inline-flex rounded-full border border-border-ink bg-transparent p-1 shadow-[var(--shadow-card)]">
           {siteConfig.locales.map((loc) => (
             <button
               key={loc}

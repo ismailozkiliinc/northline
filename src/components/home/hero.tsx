@@ -11,7 +11,16 @@ export function Hero() {
   const reduce = useReducedMotion();
 
   return (
-    <section className="relative isolate -mt-[var(--nav-h)] overflow-x-clip bg-white pt-[var(--nav-h)]">
+    <section className="relative isolate -mt-[var(--nav-h)] overflow-x-clip bg-[#05070B] pt-[var(--nav-h)]">
+      {/* Continuity glow from brand intro */}
+      <div
+        className="pointer-events-none absolute inset-0"
+        style={{
+          background:
+            "radial-gradient(circle at 70% 30%, rgba(79,124,255,0.12), transparent 35%), radial-gradient(circle at 20% 80%, rgba(124,92,255,0.06), transparent 40%)",
+        }}
+        aria-hidden
+      />
       <div className="container-page relative z-10 grid min-h-[calc(100svh-var(--nav-h))] items-center gap-8 py-10 lg:grid-cols-[minmax(0,0.92fr)_minmax(0,1.18fr)] lg:gap-6 lg:py-8">
         {/* Left — content */}
         <div className="relative max-w-xl">
@@ -19,7 +28,7 @@ export function Hero() {
             initial={reduce ? false : { opacity: 0, y: 14 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.55 }}
-            className="mb-5 text-xs font-semibold tracking-[0.22em] text-brand-gradient uppercase"
+            className="mb-5 text-xs font-semibold tracking-[0.22em] text-[#98A2B3] uppercase"
           >
             {t("eyebrow")}
           </motion.p>
@@ -28,7 +37,7 @@ export function Hero() {
             initial={reduce ? false : { opacity: 0, y: 28 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.75, delay: 0.08, ease: [0.22, 1, 0.36, 1] }}
-            className="font-display text-[clamp(2.25rem,5vw,3.75rem)] font-bold leading-[1.08] tracking-[-0.03em] text-[#111827]"
+            className="font-display text-[clamp(2.25rem,5vw,3.75rem)] font-bold leading-[1.08] tracking-[-0.03em] text-[#F7F9FC]"
           >
             {t("titleBefore")}
             <span className="text-brand-gradient">{t("titleHighlight")}</span>
@@ -39,7 +48,7 @@ export function Hero() {
             initial={reduce ? false : { opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.65, delay: 0.2 }}
-            className="mt-6 max-w-md text-base leading-[1.7] text-[#64748b] md:text-[1.05rem]"
+            className="mt-6 max-w-md text-base leading-[1.7] text-[#98A2B3] md:text-[1.05rem]"
           >
             {t("subtitle")}
           </motion.p>
@@ -63,7 +72,7 @@ export function Hero() {
 
             <Link
               href="/calismalar"
-              className="group inline-flex h-12 items-center gap-2 rounded-full border border-[#e2e8f0] bg-white/80 px-5 text-sm font-medium text-[#334155] shadow-[0_2px_12px_rgba(15,23,42,0.04)] backdrop-blur-sm transition-all hover:border-indigo-200 hover:bg-white hover:shadow-[0_4px_20px_rgba(99,102,241,0.12)]"
+              className="group inline-flex h-12 items-center gap-2 rounded-full border border-white/12 bg-[#111827]/80 px-5 text-sm font-medium text-[#F7F9FC] backdrop-blur-sm transition-all hover:border-[#4F7CFF]/40 hover:bg-[#111827]"
             >
               {t("ctaSecondary")}
               <ArrowRight
@@ -78,7 +87,7 @@ export function Hero() {
             initial={reduce ? false : { opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.48 }}
-            className="mt-12 flex flex-wrap gap-8 border-t border-indigo-100/80 pt-8"
+            className="mt-12 flex flex-wrap gap-8 border-t border-white/10 pt-8"
           >
             {(t.raw("stats") as { value: string; label: string }[]).map((stat, i) => (
               <motion.div
@@ -88,7 +97,7 @@ export function Hero() {
                 transition={{ delay: 0.55 + i * 0.08 }}
               >
                 <p className="font-display text-2xl font-bold text-brand-gradient">{stat.value}</p>
-                <p className="mt-0.5 text-xs font-medium tracking-wide text-[#94a3b8] uppercase">
+                <p className="mt-0.5 text-xs font-medium tracking-wide text-[#98A2B3] uppercase">
                   {stat.label}
                 </p>
               </motion.div>

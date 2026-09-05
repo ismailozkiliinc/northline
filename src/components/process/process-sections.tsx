@@ -22,7 +22,7 @@ export function ProcessTrust() {
         <ul className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {items.map((item, i) => (
             <Reveal key={item.title} as="li" delay={i * 0.04}>
-              <div className="h-full rounded-[1.5rem] border border-border-ink bg-white p-6 shadow-[var(--shadow-soft)] md:p-7">
+              <div className="h-full rounded-[1.5rem] border border-border-ink bg-transparent p-6 shadow-[var(--shadow-soft)] md:p-7">
                 <span className="font-mono text-xs text-accent">
                   {String(i + 1).padStart(2, "0")}
                 </span>

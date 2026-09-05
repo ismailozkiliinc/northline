@@ -42,7 +42,7 @@ export function Logo({ className, onClick }: LogoProps) {
           fill="none"
         />
       </svg>
-      <span className="font-display text-[0.95rem] font-bold tracking-[0.06em] text-[#111827] uppercase">
+      <span className="font-display text-[0.95rem] font-bold tracking-[0.06em] text-[#F7F9FC] uppercase">
         NISCRAFT
       </span>
     </Link>

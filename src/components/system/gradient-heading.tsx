@@ -20,7 +20,7 @@ export function GradientHeading({
   return (
     <Tag
       className={cn(
-        "font-display font-bold tracking-[-0.03em] whitespace-pre-line text-balance text-[#111827]",
+        "font-display font-bold tracking-[-0.03em] whitespace-pre-line text-balance text-[#F7F9FC]",
         className,
       )}
     >

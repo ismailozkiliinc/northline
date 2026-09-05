@@ -11,7 +11,7 @@ export function HomeProcess() {
   const steps = t.raw("processSteps") as { title: string }[];
 
   return (
-    <section className="border-t border-[#eef2f7] bg-[#f8faff] py-16 md:py-20">
+    <section className="border-t border-white/8 bg-transparent py-16 md:py-20">
       <div className="container-page">
         <Reveal className="max-w-xl">
           <SectionLabel>{t("processEyebrow")}</SectionLabel>
@@ -22,9 +22,9 @@ export function HomeProcess() {
         <ol className="mt-10 grid gap-3 sm:grid-cols-4">
           {steps.map((step, i) => (
             <Reveal key={step.title} as="li" delay={i * 0.04}>
-              <div className="flex items-center gap-3 rounded-2xl border border-[#e8ecf4] bg-white px-4 py-4">
+              <div className="flex items-center gap-3 rounded-2xl border border-white/8 bg-transparent px-4 py-4">
                 <span className="font-mono text-[11px] text-indigo-400">{String(i + 1).padStart(2, "0")}</span>
-                <span className="font-display text-base font-bold text-[#111827]">{step.title}</span>
+                <span className="font-display text-base font-bold text-[#F7F9FC]">{step.title}</span>
               </div>
             </Reveal>
           ))}

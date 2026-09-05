@@ -10,7 +10,7 @@ export function HomeWhy() {
   const items = t.raw("whyItems") as { title: string; hint: string }[];
 
   return (
-    <section className="border-t border-[#eef2f7] bg-white py-16 md:py-20">
+    <section className="border-t border-white/8 bg-transparent py-16 md:py-20">
       <div className="container-page">
         <Reveal className="max-w-xl">
           <SectionLabel>{t("whyEyebrow")}</SectionLabel>
@@ -22,8 +22,8 @@ export function HomeWhy() {
           {items.map((item, i) => (
             <Reveal key={item.title} as="li" delay={i * 0.05}>
               <p className="font-mono text-[11px] tracking-[0.18em] text-indigo-400">{String(i + 1).padStart(2, "0")}</p>
-              <h3 className="mt-3 font-display text-lg font-bold tracking-tight text-[#111827]">{item.title}</h3>
-              <p className="mt-2 text-sm text-[#64748b]">{item.hint}</p>
+              <h3 className="mt-3 font-display text-lg font-bold tracking-tight text-[#F7F9FC]">{item.title}</h3>
+              <p className="mt-2 text-sm text-[#98A2B3]">{item.hint}</p>
             </Reveal>
           ))}
         </ol>

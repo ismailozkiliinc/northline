@@ -10,21 +10,21 @@ export async function CtaBand({ className }: { className?: string }) {
 
   return (
     <section
-      className={cn("border-t border-[#eef2f7] bg-[#f8faff]", className)}
+      className={cn("border-t border-white/8 bg-transparent", className)}
       aria-labelledby="cta-band-title"
     >
       <div className="container-page py-16 md:py-24 lg:py-28">
         <div className="relative z-[1] max-w-xl">
-          <p className="mb-5 text-[11px] tracking-[0.24em] text-indigo-500 uppercase">
+          <p className="mb-5 text-[11px] tracking-[0.24em] text-indigo-400 uppercase">
             {t("eyebrow")}
           </p>
           <h2
             id="cta-band-title"
-            className="max-w-[12ch] font-display text-[clamp(2.5rem,6vw,5rem)] font-semibold tracking-tight text-balance text-[#111827]"
+            className="max-w-[12ch] font-display text-[clamp(2.5rem,6vw,5rem)] font-semibold tracking-tight text-balance text-[#F7F9FC]"
           >
             {t("title")}
           </h2>
-          <p className="mt-6 max-w-lg text-lg leading-relaxed text-[#64748b]">
+          <p className="mt-6 max-w-lg text-lg leading-relaxed text-[#98A2B3]">
             {t("subtitle")}
           </p>
           <div className="mt-12 flex flex-col gap-3 sm:flex-row">

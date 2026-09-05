@@ -16,6 +16,8 @@ type CtaLink = {
   label: string;
 };
 
+type AtmosphereTone = "default" | "web" | "mobile" | "ai" | "work" | "about" | "contact" | "mist";
+
 type PageHeroProps = {
   eyebrow: string;
   titleBefore: string;
@@ -28,6 +30,7 @@ type PageHeroProps = {
   visual?: React.ReactNode;
   visualClassName?: string;
   className?: string;
+  atmosphere?: AtmosphereTone;
 };
 
 export function PageHero({
@@ -42,18 +45,19 @@ export function PageHero({
   visual,
   visualClassName,
   className,
+  atmosphere = "default",
 }: PageHeroProps) {
   const reduce = useReducedMotion();
 
   return (
     <section
       className={cn(
-        "relative isolate -mt-[var(--nav-h)] bg-white pt-[var(--nav-h)]",
+        "relative isolate -mt-[var(--nav-h)] bg-transparent pt-[var(--nav-h)]",
         visual ? "overflow-x-clip" : "overflow-hidden",
         className,
       )}
     >
-      <PageAtmosphere />
+      <PageAtmosphere tone={atmosphere} />
       <div
         className={cn(
           "container-page relative z-10 grid items-center gap-12 py-16 md:py-20 lg:gap-16 lg:py-24",
@@ -86,7 +90,7 @@ export function PageHero({
             initial={reduce ? false : { opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.65, delay: 0.2 }}
-            className="mt-6 max-w-md text-base leading-[1.7] text-[#475569] md:text-[1.05rem]"
+            className="mt-6 max-w-md text-base leading-[1.7] text-[#98A2B3] md:text-[1.05rem]"
           >
             {subtitle}
           </motion.p>
@@ -96,7 +100,7 @@ export function PageHero({
               initial={reduce ? false : { opacity: 0, y: 12 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.55, delay: 0.28 }}
-              className="mt-5 text-[0.68rem] font-medium tracking-[0.22em] text-[#94a3b8] uppercase sm:text-[0.72rem]"
+              className="mt-5 text-[0.68rem] font-medium tracking-[0.22em] text-[#98A2B3] uppercase sm:text-[0.72rem]"
             >
               {capabilityLine}
             </motion.p>
@@ -124,7 +128,7 @@ export function PageHero({
               {secondary && (
                 <Link
                   href={secondary.href}
-                  className="inline-flex h-12 items-center gap-2 rounded-full border border-[#e2e8f0] bg-white/80 px-5 text-sm font-medium text-[#334155] shadow-[0_2px_12px_rgba(15,23,42,0.04)] backdrop-blur-sm transition-all hover:border-indigo-200 hover:bg-white hover:shadow-[0_4px_20px_rgba(99,102,241,0.12)]"
+                  className="inline-flex h-12 items-center gap-2 rounded-full border border-white/12 bg-[rgba(15,23,42,0.55)] px-5 text-sm font-medium text-[#F7F9FC] backdrop-blur-sm transition-all hover:border-indigo-400/40 hover:bg-[rgba(15,23,42,0.75)]"
                 >
                   {secondary.label}
                 </Link>

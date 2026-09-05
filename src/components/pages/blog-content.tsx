@@ -59,6 +59,7 @@ export function BlogContent() {
   return (
     <>
       <PageHero
+        atmosphere="default"
         eyebrow={t("eyebrow")}
         titleBefore={t("heroTitleBefore")}
         titleHighlight={t("heroTitleHighlight")}
@@ -67,7 +68,7 @@ export function BlogContent() {
         visual={<EditorialMasthead />}
       />
 
-      <section className="border-t border-[#eef2f7] bg-[#f8faff] py-16 md:py-24">
+      <section className="border-t border-white/8 bg-transparent py-16 md:py-24">
         <div className="container-page">
           {featuredVisible && (
             <Reveal>
@@ -80,17 +81,17 @@ export function BlogContent() {
                     {t("featured")} · {t(`topics.${topicOf(featured.slug)}`)}
                   </p>
                   <time
-                    className="mt-3 block text-xs text-[#94a3b8]"
+                    className="mt-3 block text-xs text-[#98A2B3]"
                     dateTime={featured.publishedAt}
                   >
                     {new Date(featured.publishedAt).toLocaleDateString(
                       locale === "tr" ? "tr-TR" : "en-US",
                     )}
                   </time>
-                  <h2 className="mt-3 font-display text-2xl font-bold tracking-tight text-[#111827] md:text-3xl">
+                  <h2 className="mt-3 font-display text-2xl font-bold tracking-tight text-[#F7F9FC] md:text-3xl">
                     {featured.title[locale]}
                   </h2>
-                  <p className="mt-4 text-sm leading-relaxed text-[#475569]">{featured.excerpt[locale]}</p>
+                  <p className="mt-4 text-sm leading-relaxed text-[#98A2B3]">{featured.excerpt[locale]}</p>
                   <span className="mt-6 text-sm font-semibold text-[#6366f1]">
                     {t("readStory")} →
                   </span>
@@ -114,7 +115,7 @@ export function BlogContent() {
                   "rounded-full px-4 py-2 text-xs font-semibold transition-all",
                   filter === key
                     ? "bg-[#111827] text-white"
-                    : "border border-[#e2e8f0] bg-white text-[#64748b] hover:border-indigo-200 hover:text-[#111827]",
+                    : "border border-white/12 bg-transparent text-[#98A2B3] hover:border-indigo-200 hover:text-[#F7F9FC]",
                 )}
               >
                 {t(`topics.${key}`)}
@@ -123,7 +124,7 @@ export function BlogContent() {
           </div>
 
           {rest.length === 0 && !featuredVisible ? (
-            <p className="mt-16 text-sm text-[#64748b]">{t("empty")}</p>
+            <p className="mt-16 text-sm text-[#98A2B3]">{t("empty")}</p>
           ) : (
             <ul className="mt-10 grid gap-6 md:grid-cols-6">
               {rest.map((post, i) => {
@@ -142,7 +143,7 @@ export function BlogContent() {
                         className="h-[180px] md:h-[200px]"
                       />
                       <div className="flex flex-1 flex-col p-6">
-                        <div className="flex items-center justify-between gap-3 text-[11px] text-[#94a3b8]">
+                        <div className="flex items-center justify-between gap-3 text-[11px] text-[#98A2B3]">
                           <span className="font-semibold tracking-wider text-indigo-400 uppercase">
                             {t(`topics.${topicOf(post.slug)}`)}
                           </span>
@@ -152,15 +153,15 @@ export function BlogContent() {
                             )}
                           </time>
                         </div>
-                        <h3 className="mt-3 font-display text-lg font-bold tracking-tight text-[#111827] group-hover:text-[#4f46e5]">
+                        <h3 className="mt-3 font-display text-lg font-bold tracking-tight text-[#F7F9FC] group-hover:text-[#4f46e5]">
                           {post.title[locale]}
                         </h3>
                         {i < 3 && (
-                          <p className="mt-2 line-clamp-2 text-sm leading-relaxed text-[#64748b]">
+                          <p className="mt-2 line-clamp-2 text-sm leading-relaxed text-[#98A2B3]">
                             {post.excerpt[locale]}
                           </p>
                         )}
-                        <p className="mt-auto pt-4 text-xs text-[#94a3b8]">
+                        <p className="mt-auto pt-4 text-xs text-[#98A2B3]">
                           {t("read")}: {readingTime(post.body[locale])} {t("min")}
                         </p>
                       </div>

@@ -43,8 +43,8 @@ function Overlay({ kind }: { kind: Story["overlay"] }) {
     return (
       <div className="absolute top-5 right-5 w-[42%] rounded-xl border border-white/40 bg-white/88 p-3 shadow-[0_16px_40px_rgba(15,23,42,0.16)] backdrop-blur-md">
         <p className="text-[8px] font-semibold tracking-[0.16em] text-teal-700 uppercase">CarePath</p>
-        <p className="mt-1 font-display text-sm font-bold text-[#111827]">A. Demir</p>
-        <p className="text-[10px] text-[#64748b]">Suite 4 · Care</p>
+        <p className="mt-1 font-display text-sm font-bold text-[#F7F9FC]">A. Demir</p>
+        <p className="text-[10px] text-[#98A2B3]">Suite 4 · Care</p>
         <div className="mt-2 h-1 overflow-hidden rounded-full bg-teal-100">
           <div className="h-full w-2/3 rounded-full bg-teal-600" />
         </div>
@@ -77,7 +77,7 @@ function Overlay({ kind }: { kind: Story["overlay"] }) {
     return (
       <div className="absolute top-5 right-5 rounded-xl bg-white/90 px-3 py-2 shadow-sm backdrop-blur-md">
         <p className="text-[8px] tracking-[0.16em] text-[#a8a29e] uppercase">Atelier</p>
-        <p className="font-display text-sm font-bold text-[#111827]">Arc lamp</p>
+        <p className="font-display text-sm font-bold text-[#F7F9FC]">Arc lamp</p>
       </div>
     );
   }
@@ -338,7 +338,7 @@ export function ExperienceStories() {
   };
 
   return (
-    <section className="border-t border-[#eef2f7] bg-white py-16 md:py-24">
+    <section className="border-t border-white/8 bg-transparent py-16 md:py-24">
       <div className="container-wide">
         <div className="flex items-end justify-between gap-6">
           <div className="max-w-xl">
@@ -346,13 +346,13 @@ export function ExperienceStories() {
             <GradientHeading as="h2" className="text-[clamp(1.85rem,3.4vw,3rem)] leading-[1.1]">
               {t("title")}
             </GradientHeading>
-            <p className="mt-4 max-w-md text-sm leading-relaxed text-[#64748b] md:text-base">{t("body")}</p>
+            <p className="mt-4 max-w-md text-sm leading-relaxed text-[#98A2B3] md:text-base">{t("body")}</p>
           </div>
           <div className="mb-1 hidden gap-2 md:flex">
             <button
               type="button"
               onClick={() => nudge(-1)}
-              className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-[#e2e8f0] bg-white text-[#334155] transition-colors hover:border-indigo-200 hover:text-[#111827]"
+              className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/12 bg-transparent text-[#C7D0DC] transition-colors hover:border-indigo-200 hover:text-[#F7F9FC]"
               aria-label={t("prev")}
             >
               <ChevronLeft className="h-4 w-4" />
@@ -360,7 +360,7 @@ export function ExperienceStories() {
             <button
               type="button"
               onClick={() => nudge(1)}
-              className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-[#e2e8f0] bg-white text-[#334155] transition-colors hover:border-indigo-200 hover:text-[#111827]"
+              className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/12 bg-transparent text-[#C7D0DC] transition-colors hover:border-indigo-200 hover:text-[#F7F9FC]"
               aria-label={t("next")}
             >
               <ChevronRight className="h-4 w-4" />

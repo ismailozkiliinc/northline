@@ -17,6 +17,7 @@ export function WorkContent({ projects }: { projects: Project[] }) {
   return (
     <>
       <PageHero
+        atmosphere="work"
         eyebrow={t("eyebrow")}
         titleBefore={t("heroTitleBefore")}
         titleHighlight={t("heroTitleHighlight")}
@@ -27,7 +28,7 @@ export function WorkContent({ projects }: { projects: Project[] }) {
         visual={<WorkHeroVisual />}
       />
 
-      <section className="overflow-x-clip bg-[#f8faff] py-16 md:py-24">
+      <section className="overflow-x-clip bg-transparent py-16 md:py-24">
         <div className="container-wide space-y-12 md:space-y-16">
           {projects.map((project, i) => (
             <Reveal key={project.slug} delay={i * 0.04} variant={i % 2 === 0 ? "rise" : "mask"}>
@@ -45,21 +46,21 @@ export function WorkContent({ projects }: { projects: Project[] }) {
                   ) : null}
                   {t("projectLabel")} {String(i + 1).padStart(2, "0")}
                 </p>
-                <h2 className="mt-3 font-display text-2xl font-bold tracking-tight text-[#111827] transition-transform duration-500 group-hover:translate-x-[3px] md:text-3xl">
+                <h2 className="mt-3 font-display text-2xl font-bold tracking-tight text-[#F7F9FC] transition-transform duration-500 group-hover:translate-x-[3px] md:text-3xl">
                   {project.shortTitle[locale]}
                 </h2>
-                <dl className="mt-5 flex flex-wrap gap-x-6 gap-y-2 text-xs text-[#64748b]">
+                <dl className="mt-5 flex flex-wrap gap-x-6 gap-y-2 text-xs text-[#98A2B3]">
                   <div>
-                    <dt className="font-medium text-[#94a3b8] uppercase tracking-wider">{t("sector")}</dt>
+                    <dt className="font-medium text-[#98A2B3] uppercase tracking-wider">{t("sector")}</dt>
                     <dd className="mt-0.5">{project.sector[locale]}</dd>
                   </div>
                   <div>
-                    <dt className="font-medium text-[#94a3b8] uppercase tracking-wider">{t("services")}</dt>
+                    <dt className="font-medium text-[#98A2B3] uppercase tracking-wider">{t("services")}</dt>
                     <dd className="mt-0.5">{project.services[locale].join(" · ")}</dd>
                   </div>
                 </dl>
-                <p className="mt-5 max-w-xl text-sm leading-relaxed text-[#475569]">{project.problem[locale]}</p>
-                <p className="mt-2 max-w-xl text-sm leading-relaxed text-[#111827]/80">{project.solution[locale]}</p>
+                <p className="mt-5 max-w-xl text-sm leading-relaxed text-[#98A2B3]">{project.problem[locale]}</p>
+                <p className="mt-2 max-w-xl text-sm leading-relaxed text-[#F7F9FC]/80">{project.solution[locale]}</p>
                 <span className="mt-6 inline-flex text-sm font-semibold text-[#6366f1]">
                   {t("viewCase")} →
                 </span>

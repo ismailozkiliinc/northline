@@ -25,7 +25,7 @@ const schema = z.object({
 type FormValues = z.infer<typeof schema>;
 
 const inputClass =
-  "contact-field w-full rounded-[14px] border border-[#e2e8f0] bg-[#f4f6fa] px-4 py-3.5 text-sm text-[#111827] outline-none transition-[border-color,box-shadow,background-color] duration-200 placeholder:text-[#94a3b8] focus:border-[#6366f1] focus:bg-white focus:shadow-[0_0_0_4px_rgba(99,102,241,0.1)] focus-visible:outline-none";
+  "contact-field w-full rounded-[14px] border border-white/12 bg-[#f4f6fa] px-4 py-3.5 text-sm text-[#F7F9FC] outline-none transition-[border-color,box-shadow,background-color] duration-200 placeholder:text-[#98A2B3] focus:border-[#6366f1] focus:bg-transparent focus:shadow-[0_0_0_4px_rgba(99,102,241,0.1)] focus-visible:outline-none";
 
 export function ContactForm() {
   const t = useTranslations("start");
@@ -96,7 +96,7 @@ export function ContactForm() {
 
   if (status === "success") {
     return (
-      <p className="rounded-2xl border border-emerald-200 bg-emerald-50 p-6 text-sm text-[#111827]" role="status">
+      <p className="rounded-2xl border border-emerald-200 bg-emerald-50 p-6 text-sm text-[#F7F9FC]" role="status">
         {t("successBody")}
       </p>
     );
@@ -104,7 +104,7 @@ export function ContactForm() {
 
   if (status === "email_failed") {
     return (
-      <p className="rounded-2xl border border-amber-200 bg-amber-50 p-6 text-sm text-[#111827]" role="status">
+      <p className="rounded-2xl border border-amber-200 bg-amber-50 p-6 text-sm text-[#F7F9FC]" role="status">
         {tc("emailFailed")}
       </p>
     );
@@ -173,8 +173,8 @@ export function ContactForm() {
                       className={cn(
                         "contact-chip rounded-full border px-3.5 py-2 text-sm font-medium transition-all duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#6366f1]",
                         selected
-                          ? "border-[#6366f1] bg-[rgba(99,102,241,0.08)] text-[#111827] shadow-[0_1px_0_rgba(99,102,241,0.12)]"
-                          : "border-[#e2e8f0] bg-[#f8faff] text-[#475569] hover:-translate-y-px hover:border-[#cbd5e1]",
+                          ? "border-[#6366f1] bg-[rgba(99,102,241,0.08)] text-[#F7F9FC] shadow-[0_1px_0_rgba(99,102,241,0.12)]"
+                          : "border-white/12 bg-transparent text-[#98A2B3] hover:-translate-y-px hover:border-[#cbd5e1]",
                       )}
                     >
                       {opt.label}
@@ -200,7 +200,7 @@ export function ContactForm() {
         </Field>
       </div>
 
-      <label className="flex items-start gap-3 text-sm leading-relaxed text-[#64748b] sm:col-span-2">
+      <label className="flex items-start gap-3 text-sm leading-relaxed text-[#98A2B3] sm:col-span-2">
         <input type="checkbox" {...register("consent")} className="mt-1 accent-[#6366f1]" required />
         <span>{t("consent")}</span>
       </label>
@@ -224,7 +224,7 @@ export function ContactForm() {
             </>
           )}
         </button>
-        <p className="mt-3 text-center text-xs text-[#94a3b8]">{tc("formTrust")}</p>
+        <p className="mt-3 text-center text-xs text-[#98A2B3]">{tc("formTrust")}</p>
       </div>
 
       {status === "error" && (
@@ -247,7 +247,7 @@ function Field({
 }) {
   return (
     <div>
-      <label htmlFor={htmlFor} className="mb-2.5 block text-xs font-medium tracking-wide text-[#64748b]">
+      <label htmlFor={htmlFor} className="mb-2.5 block text-xs font-medium tracking-wide text-[#98A2B3]">
         {label}
       </label>
       {children}

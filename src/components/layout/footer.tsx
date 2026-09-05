@@ -32,7 +32,7 @@ export function Footer({ className }: FooterProps) {
   const year = new Date().getFullYear();
 
   return (
-    <footer className={cn("border-t border-border bg-bg-footer text-[#f8fafc]", className)}>
+    <footer className={cn("border-t border-white/8 bg-[#05070D] text-[#f7f9fc]", className)}>
       <div className="container-page py-16 md:py-20">
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-12 lg:gap-8">
           <div className="lg:col-span-4">
