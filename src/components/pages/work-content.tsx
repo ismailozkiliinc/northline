@@ -33,7 +33,7 @@ export function WorkContent({ projects }: { projects: Project[] }) {
           {projects.map((project, i) => (
             <Reveal key={project.slug} delay={i * 0.04} variant={i % 2 === 0 ? "rise" : "mask"}>
               <Link
-                href={{ pathname: "/calismalar/[slug]", params: { slug: project.slug } }}
+                href={`/calismalar/${project.slug}`}
                 className="project-showcase group gap-8 lg:gap-10"
               >
                 <div className="project-copy pr-1 lg:pr-2">

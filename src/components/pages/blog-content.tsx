@@ -73,7 +73,7 @@ export function BlogContent() {
           {featuredVisible && (
             <Reveal>
               <Link
-                href={{ pathname: "/icgoruler/[slug]", params: { slug: featured.slug } }}
+                href={`/icgoruler/${featured.slug}`}
                 className="group grid items-center gap-8 lg:grid-cols-2"
               >
                 <div className="relative z-10 max-w-md">
@@ -133,7 +133,7 @@ export function BlogContent() {
                 return (
                   <Reveal key={post.slug} as="li" delay={i * 0.04} className={span}>
                     <Link
-                      href={{ pathname: "/icgoruler/[slug]", params: { slug: post.slug } }}
+                      href={`/icgoruler/${post.slug}`}
                       className="group flex h-full flex-col"
                     >
                       <ArticleCover

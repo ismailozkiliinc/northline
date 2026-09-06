@@ -25,13 +25,9 @@ export function AiAssistant() {
     setLoading(true);
     setResult(null);
     try {
-      const res = await fetch("/api/ai-assist", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ text }),
-      });
-      const data = (await res.json()) as AssistResult;
-      setResult(data);
+      const { analyzeProjectBrief } = await import("@/lib/client/ai-assist");
+      const locale = (document.documentElement.lang === "en" ? "en" : "tr") as "tr" | "en";
+      setResult(analyzeProjectBrief(text, locale));
     } catch {
       setResult({
         disclaimer: t("disclaimer"),

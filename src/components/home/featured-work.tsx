@@ -146,7 +146,7 @@ function CaseLink({
       transition={{ duration: 0.75, ease: [0.22, 1, 0.36, 1] }}
     >
       <Link
-        href={{ pathname: "/calismalar/[slug]", params: { slug: project.slug } }}
+        href={`/calismalar/${project.slug}`}
         className={cn(
           "group relative block rounded-[var(--radius-media)] border border-border-ink p-7 transition-[border-color,box-shadow,transform] duration-500 md:p-8",
           "hover:border-accent/20 hover:shadow-[var(--shadow-soft)] hover:-translate-y-1",

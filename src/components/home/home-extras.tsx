@@ -115,7 +115,7 @@ export function InsightsTeaser() {
           {posts.map((post) => (
             <li key={post.slug}>
               <Link
-                href={{ pathname: "/icgoruler/[slug]", params: { slug: post.slug } }}
+                href={`/icgoruler/${post.slug}`}
                 className="group block"
               >
                 <p className="text-xs tracking-wider text-ink-muted uppercase">{post.category}</p>

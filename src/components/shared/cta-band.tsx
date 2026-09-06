@@ -32,13 +32,23 @@ export async function CtaBand({ className }: { className?: string }) {
               <Link href="/proje-baslat">{t("primary")}</Link>
             </Button>
             {meeting ? (
-              <Button asChild size="lg" variant="secondary" className="w-full sm:w-auto">
+              <Button
+                asChild
+                size="lg"
+                variant="secondary"
+                className="w-full text-[#0B1220] hover:text-[#0B1220] focus-visible:text-[#0B1220] active:text-[#0B1220] sm:w-auto"
+              >
                 <a href={meeting} target="_blank" rel="noopener noreferrer">
                   {t("meeting")}
                 </a>
               </Button>
             ) : (
-              <Button asChild size="lg" variant="secondary" className="w-full sm:w-auto">
+              <Button
+                asChild
+                size="lg"
+                variant="secondary"
+                className="w-full text-[#0B1220] hover:text-[#0B1220] focus-visible:text-[#0B1220] active:text-[#0B1220] sm:w-auto"
+              >
                 <Link href="/iletisim">{t("meeting")}</Link>
               </Button>
             )}

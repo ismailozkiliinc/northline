@@ -1,97 +1,39 @@
 import { defineRouting } from "next-intl/routing";
 
+/**
+ * Static export cannot use middleware / pathnames rewrites.
+ * Same path segments for every locale; always prefixed (/tr/..., /en/...).
+ */
 export const routing = defineRouting({
   locales: ["tr", "en"],
   defaultLocale: "tr",
-  localePrefix: "as-needed",
-  pathnames: {
-    "/": "/",
-    "/hizmetler": {
-      tr: "/hizmetler",
-      en: "/services",
-    },
-    "/hizmetler/web": {
-      tr: "/hizmetler/web",
-      en: "/services/web",
-    },
-    "/hizmetler/mobil": {
-      tr: "/hizmetler/mobil",
-      en: "/services/mobile",
-    },
-    "/hizmetler/ui-ux": {
-      tr: "/hizmetler/ui-ux",
-      en: "/services/ui-ux",
-    },
-    "/hizmetler/saas": {
-      tr: "/hizmetler/saas",
-      en: "/services/saas",
-    },
-    "/hizmetler/e-ticaret": {
-      tr: "/hizmetler/e-ticaret",
-      en: "/services/ecommerce",
-    },
-    "/hizmetler/ai": {
-      tr: "/hizmetler/ai",
-      en: "/services/ai",
-    },
-    "/calismalar": {
-      tr: "/calismalar",
-      en: "/work",
-    },
-    "/calismalar/[slug]": {
-      tr: "/calismalar/[slug]",
-      en: "/work/[slug]",
-    },
-    "/surec": {
-      tr: "/surec",
-      en: "/process",
-    },
-    "/hakkimizda": {
-      tr: "/hakkimizda",
-      en: "/about",
-    },
-    "/paketler": {
-      tr: "/paketler",
-      en: "/packages",
-    },
-    "/icgoruler": {
-      tr: "/icgoruler",
-      en: "/insights",
-    },
-    "/icgoruler/[slug]": {
-      tr: "/icgoruler/[slug]",
-      en: "/insights/[slug]",
-    },
-    "/sss": {
-      tr: "/sss",
-      en: "/faq",
-    },
-    "/proje-baslat": {
-      tr: "/proje-baslat",
-      en: "/start-project",
-    },
-    "/iletisim": {
-      tr: "/iletisim",
-      en: "/contact",
-    },
-    "/gizlilik": {
-      tr: "/gizlilik",
-      en: "/privacy",
-    },
-    "/kvkk": {
-      tr: "/kvkk",
-      en: "/kvkk",
-    },
-    "/cerezler": {
-      tr: "/cerezler",
-      en: "/cookies",
-    },
-    "/kullanim-kosullari": {
-      tr: "/kullanim-kosullari",
-      en: "/terms",
-    },
-  },
+  localePrefix: "always",
+  localeDetection: false,
 });
 
-export type Pathnames = keyof typeof routing.pathnames;
 export type Locale = (typeof routing.locales)[number];
+
+/** App pathnames used by typed Link hrefs (no localized rewrites under static export). */
+export type Pathnames =
+  | "/"
+  | "/hizmetler"
+  | "/hizmetler/web"
+  | "/hizmetler/mobil"
+  | "/hizmetler/ui-ux"
+  | "/hizmetler/saas"
+  | "/hizmetler/e-ticaret"
+  | "/hizmetler/ai"
+  | "/calismalar"
+  | "/calismalar/[slug]"
+  | "/surec"
+  | "/hakkimizda"
+  | "/paketler"
+  | "/icgoruler"
+  | "/icgoruler/[slug]"
+  | "/sss"
+  | "/proje-baslat"
+  | "/iletisim"
+  | "/gizlilik"
+  | "/kvkk"
+  | "/cerezler"
+  | "/kullanim-kosullari";

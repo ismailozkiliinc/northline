@@ -51,39 +51,26 @@ export function ContactForm() {
     }
     setStatus("loading");
     try {
-      const res = await fetch("/api/lead", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          name: data.name,
-          email: data.email,
-          phone: data.phone,
-          company: data.company,
-          message: data.message,
-          consent: data.consent,
-          website: data.website ?? "",
-          type: data.services.join(", "),
-          source: "contact",
-        }),
+      const { submitLeadClient } = await import("@/lib/client/submit-lead");
+      const body = await submitLeadClient({
+        name: data.name,
+        email: data.email,
+        phone: data.phone,
+        company: data.company,
+        message: data.message,
+        consent: data.consent,
+        website: data.website ?? "",
+        type: data.services.join(", "),
+        source: "contact",
       });
-      const body = (await res.json().catch(() => ({}))) as {
-        success?: boolean;
-        ok?: boolean;
-        error?: string;
-        stored?: boolean;
-        emailed?: boolean;
-        warning?: string;
-      };
 
-      const accepted = body.success === true || body.ok === true;
-      if (res.ok && accepted && (body.emailed === true || body.warning === "email_skipped_dev")) {
+      if (body.ok && body.emailed === true) {
         setStatus("success");
         reset();
         return;
       }
 
-      // Stored but email failed — do not show full success
-      if (body.stored && (body.error === "email_failed" || body.emailed === false)) {
+      if (body.stored && body.emailed === false) {
         setStatus("email_failed");
         return;
       }

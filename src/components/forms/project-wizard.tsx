@@ -188,26 +188,18 @@ export function ProjectWizard({ locale }: { locale: "tr" | "en" }) {
       setDone(true);
       return;
     }
-    const res = await fetch("/api/lead", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ ...data, website: data.website ?? "", source: "wizard" }),
+    const { submitLeadClient } = await import("@/lib/client/submit-lead");
+    const body = await submitLeadClient({
+      ...data,
+      website: data.website ?? "",
+      source: "wizard",
     });
-    const body = (await res.json().catch(() => ({}))) as {
-      success?: boolean;
-      ok?: boolean;
-      error?: string;
-      stored?: boolean;
-      emailed?: boolean;
-      warning?: string;
-    };
-    const accepted = body.success === true || body.ok === true;
-    if (res.ok && accepted && (body.emailed === true || body.warning === "email_skipped_dev")) {
+    if (body.ok && body.emailed === true) {
       localStorage.removeItem(STORAGE_KEY);
       setDone(true);
       return;
     }
-    if (body.stored && (body.error === "email_failed" || body.emailed === false)) {
+    if (body.stored && body.emailed === false) {
       localStorage.removeItem(STORAGE_KEY);
       setEmailFailed(true);
       return;

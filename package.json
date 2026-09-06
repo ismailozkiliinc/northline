@@ -5,8 +5,9 @@
   "scripts": {
     "predev": "node scripts/validate-i18n.mjs",
     "dev": "next dev",
-    "prebuild": "node scripts/validate-i18n.mjs",
+    "prebuild": "node scripts/validate-i18n.mjs && node scripts/generate-static-seo.mjs",
     "build": "next build",
+    "build:static": "NEXT_PUBLIC_SITE_URL=https://niscraft.com npm run build",
     "start": "next start",
     "lint": "eslint",
     "typecheck": "tsc --noEmit",

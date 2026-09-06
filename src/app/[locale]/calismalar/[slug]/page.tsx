@@ -163,10 +163,7 @@ export default async function CaseStudyPage({
           <div>
             <p className="text-xs tracking-wider text-[#98A2B3] uppercase">{t("next")}</p>
             <Link
-              href={{
-                pathname: "/calismalar/[slug]",
-                params: { slug: nextProject.slug },
-              }}
+              href={`/calismalar/${nextProject.slug}`}
               className="mt-2 block font-display text-2xl font-semibold text-[#F7F9FC] hover:text-indigo-600 md:text-3xl"
             >
               {nextProject.shortTitle[loc]} →

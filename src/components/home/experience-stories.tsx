@@ -110,7 +110,7 @@ function StoryCard({
 }) {
   return (
     <Link
-      href={{ pathname: "/calismalar/[slug]", params: { slug: story.slug } }}
+      href={`/calismalar/${story.slug}`}
       tabIndex={inert ? -1 : undefined}
       aria-hidden={inert || undefined}
       draggable={false}
