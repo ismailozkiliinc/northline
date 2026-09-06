@@ -62,13 +62,20 @@ export function pageMetadata({
       locale: locale === "tr" ? "tr_TR" : "en_US",
       type: "website",
       url: canonical,
-      images: [{ url: "/opengraph-image.png", width: 1200, height: 630, alt: siteConfig.name }],
+      images: [
+        {
+          url: "/opengraph-image.png?v=niscraft-2",
+          width: 1200,
+          height: 630,
+          alt: siteConfig.name,
+        },
+      ],
     },
     twitter: {
       card: "summary_large_image",
       title: fullTitle,
       description,
-      images: ["/twitter-image.png"],
+      images: ["/twitter-image.png?v=niscraft-2"],
     },
   };
 }

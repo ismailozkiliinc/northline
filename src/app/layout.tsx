@@ -19,11 +19,20 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     siteName: siteConfig.name,
-    images: [{ url: "/opengraph-image.png", width: 1200, height: 630, alt: siteConfig.name }],
+    title: siteConfig.name,
+    images: [
+      {
+        url: "/opengraph-image.png?v=niscraft-2",
+        width: 1200,
+        height: 630,
+        alt: siteConfig.name,
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
-    images: ["/twitter-image.png"],
+    title: siteConfig.name,
+    images: ["/twitter-image.png?v=niscraft-2"],
   },
 };
 
