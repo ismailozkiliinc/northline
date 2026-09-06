@@ -35,6 +35,37 @@ export async function submitLeadClient(payload: LeadPayload): Promise<LeadSubmit
     return { ok: true, stored: true, emailed: true };
   }
 
+  // Prefer Next.js API when Node hosting is available (Resend + file/Supabase).
+  try {
+    const res = await fetch("/api/lead", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(payload),
+    });
+    if (res.ok) {
+      const body = (await res.json().catch(() => ({}))) as {
+        success?: boolean;
+        ok?: boolean;
+        stored?: boolean;
+        emailed?: boolean;
+        warning?: string;
+        error?: string;
+      };
+      const accepted = body.success === true || body.ok === true;
+      if (accepted) {
+        return {
+          ok: true,
+          stored: body.stored ?? true,
+          emailed: body.emailed === true || body.warning === "email_skipped_dev",
+          warning: body.warning,
+          error: body.error,
+        };
+      }
+    }
+  } catch {
+    /* fall through to static fallbacks */
+  }
+
   const sb = getSupabase();
   if (sb) {
     const { error } = await sb.from("leads").insert({

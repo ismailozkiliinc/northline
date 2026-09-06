@@ -41,3 +41,5 @@ niscraft-cpanel-upload.zip
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+deploy-cpanel-node/
+niscraft-cpanel-node.zip

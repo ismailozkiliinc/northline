@@ -30,5 +30,5 @@
     ".next/dev/types/**/*.ts",
     "**/*.mts"
   ],
-  "exclude": ["node_modules", "deploy-cpanel", "src/_server-runtime"]
+  "exclude": ["node_modules", "deploy-cpanel", "deploy-cpanel-node", "src/_server-runtime"]
 }
