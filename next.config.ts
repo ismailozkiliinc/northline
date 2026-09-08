@@ -17,8 +17,11 @@ const nextConfig: NextConfig = {
         images: { unoptimized: true },
       }
     : {
+        // Smaller runtime footprint for shared Node hosts
+        output: "standalone",
         images: {
           formats: ["image/avif", "image/webp"],
+          unoptimized: true,
         },
         headers: async () => [
           {
